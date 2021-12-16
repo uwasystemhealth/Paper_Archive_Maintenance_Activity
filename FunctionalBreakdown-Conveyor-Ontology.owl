@@ -14,13 +14,22 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.industrialontologies.org/core/</Import>
     <Declaration>
-        <Class IRI="#FunctionalObject"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#alarm"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#bend_pulley"/>
+        <Class IRI="#analyser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#belt_conveyor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#blade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bolt"/>
     </Declaration>
     <Declaration>
         <Class IRI="#bracket"/>
@@ -32,16 +41,16 @@
         <Class IRI="#cable"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#carry_idler"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#chute"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#control_and_monitoring"/>
+        <Class IRI="#clamp"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#conveyor_belt"/>
+        <Class IRI="#conduit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#control_and_monitoring"/>
     </Declaration>
     <Declaration>
         <Class IRI="#conveyor_system"/>
@@ -50,7 +59,34 @@
         <Class IRI="#cooler"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#coupling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coupling_fluid"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#cover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deflector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#door"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dust_suppression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#emergency_stop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flowmeter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#frame"/>
@@ -59,19 +95,28 @@
         <Class IRI="#gearbox"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#grease_line"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#guard"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#head_pulley"/>
+        <Class IRI="#guide"/>
     </Declaration>
     <Declaration>
         <Class IRI="#hose"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#idler_roller"/>
+        <Class IRI="#idler_carry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#impact_idler"/>
+        <Class IRI="#idler_impact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#idler_return"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#idler_roller"/>
     </Declaration>
     <Declaration>
         <Class IRI="#instrumentation"/>
@@ -83,6 +128,9 @@
         <Class IRI="#liner"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#load_cell"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#lubrication_system"/>
     </Declaration>
     <Declaration>
@@ -90,6 +138,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="#motor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pads"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#picking_station"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pipe"/>
     </Declaration>
     <Declaration>
         <Class IRI="#plate"/>
@@ -101,10 +158,37 @@
         <Class IRI="#pulley"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#return_idler"/>
+        <Class IRI="#pulley-tail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pulley_bend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pulley_head"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pulley_takeup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pullwire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sample_point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scaffold"/>
     </Declaration>
     <Declaration>
         <Class IRI="#scraper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sensor_speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shaft"/>
     </Declaration>
     <Declaration>
         <Class IRI="#skirt_skirting"/>
@@ -119,10 +203,19 @@
         <Class IRI="#spray"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#structure"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#switch"/>
     </Declaration>
     <Declaration>
         <Class IRI="#switch_drift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#switch_flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#switch_limit"/>
     </Declaration>
     <Declaration>
         <Class IRI="#switch_tilt"/>
@@ -131,10 +224,16 @@
         <Class IRI="#switch_underspeed"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#tail_pulley"/>
+        <Class IRI="#tachometer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#take-up_gravity_pulley"/>
+        <Class IRI="#tripper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trolley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#valve"/>
     </Declaration>
     <Declaration>
         <Class IRI="#vsd"/>
@@ -143,7 +242,58 @@
         <Class IRI="#weightometer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#winch"/>
+        <Class IRI="#winch_hoist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_controlling(Q)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_covering(N)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_driving(M)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_emitting(E)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_generating(G)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_guiding(W)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_holding(U)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_human_interaction(S)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_information_processing(K)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_interfacing(X)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_matter_processing(M)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_presenting(P)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_protecting(F)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_restricting(R)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_sensing(B)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_storing(C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_transforming(T)"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
@@ -160,33 +310,33 @@
     <Declaration>
         <ObjectProperty IRI="#isInstalledAs"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000176"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#FunctionalObject"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </SubClassOf>
     <SubClassOf>
         <Class IRI="#alarm"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#bend_pulley"/>
-        <Class IRI="#pulley"/>
+        <Class IRI="#analyser"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bearing"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#belt_conveyor"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#blade"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bolt"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#bracket"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#brake"/>
@@ -197,20 +347,20 @@
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#carry_idler"/>
-        <Class IRI="#idler_roller"/>
+        <Class IRI="#chute"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#chute"/>
+        <Class IRI="#clamp"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#conduit"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#control_and_monitoring"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#conveyor_belt"/>
-        <Class IRI="#FunctionalObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conveyor_system"/>
@@ -221,8 +371,44 @@
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#coupling"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coupling_fluid"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#cover"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deflector"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#door"/>
+        <Class IRI="#object_covering(N)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dust_suppression"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#emergency_stop"/>
+        <Class IRI="#object_controlling(Q)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fan"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fitting"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flowmeter"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#frame"/>
@@ -230,27 +416,39 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#gearbox"/>
-        <Class IRI="#FunctionalObject"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grease_line"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#guard"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#head_pulley"/>
-        <Class IRI="#pulley"/>
+        <Class IRI="#guide"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#hose"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#idler_roller"/>
-        <Class IRI="#FunctionalObject"/>
+        <Class IRI="#idler_carry"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#impact_idler"/>
+        <Class IRI="#idler_impact"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#idler_return"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#idler_roller"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#instrumentation"/>
@@ -265,6 +463,10 @@
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#load_cell"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#lubrication_system"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
@@ -274,7 +476,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#motor"/>
-        <Class IRI="#FunctionalObject"/>
+        <Class IRI="#object_driving(M)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pads"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#picking_station"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pipe"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#plate"/>
@@ -286,15 +500,51 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#pulley"/>
-        <Class IRI="#FunctionalObject"/>
+        <Class IRI="#object_transforming(T)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#return_idler"/>
-        <Class IRI="#idler_roller"/>
+        <Class IRI="#pulley-tail"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pulley_bend"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pulley_head"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pulley_takeup"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pullwire"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sample_point"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scaffold"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#scraper"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sensor_speed"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shaft"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#skirt_skirting"/>
@@ -306,11 +556,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#splice"/>
-        <Class IRI="#conveyor_belt"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#spray"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#structure"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#switch"/>
@@ -321,20 +575,36 @@
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#switch_flow"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#switch_limit"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#switch_tilt"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#switch_underspeed"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tachometer"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tripper"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#tail_pulley"/>
-        <Class IRI="#pulley"/>
+        <Class IRI="#trolley"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#take-up_gravity_pulley"/>
-        <Class IRI="#pulley"/>
+        <Class IRI="#valve"/>
+        <Class IRI="#object_controlling(Q)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#vsd"/>
@@ -345,107 +615,94 @@
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#winch"/>
+        <Class IRI="#winch_hoist"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_controlling(Q)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_covering(N)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_driving(M)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_emitting(E)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_generating(G)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_guiding(W)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_holding(U)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_human_interaction(S)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_information_processing(K)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_interfacing(X)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_matter_processing(M)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_presenting(P)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_protecting(F)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_restricting(R)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_sensing(B)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_storing(C)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_transforming(T)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#FunctionalObject"/>
-        <Class IRI="#alarm"/>
-        <Class IRI="#bracket"/>
-        <Class IRI="#brake"/>
-        <Class IRI="#cable"/>
-        <Class IRI="#chute"/>
-        <Class IRI="#control_and_monitoring"/>
-        <Class IRI="#conveyor_system"/>
-        <Class IRI="#cooler"/>
-        <Class IRI="#cover"/>
-        <Class IRI="#frame"/>
-        <Class IRI="#guard"/>
-        <Class IRI="#hose"/>
-        <Class IRI="#instrumentation"/>
-        <Class IRI="#lighting"/>
-        <Class IRI="#liner"/>
-        <Class IRI="#lubrication_system"/>
-        <Class IRI="#metal_detector"/>
-        <Class IRI="#plate"/>
-        <Class IRI="#plough"/>
-        <Class IRI="#scraper"/>
-        <Class IRI="#skirt_skirting"/>
-        <Class IRI="#solenoid"/>
-        <Class IRI="#spray"/>
-        <Class IRI="#switch"/>
-        <Class IRI="#switch_drift"/>
-        <Class IRI="#switch_tilt"/>
-        <Class IRI="#switch_underspeed"/>
-        <Class IRI="#vsd"/>
-        <Class IRI="#weightometer"/>
-        <Class IRI="#winch"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#FunctionalObject"/>
-        <Class IRI="#bracket"/>
-        <Class IRI="#brake"/>
-        <Class IRI="#cable"/>
-        <Class IRI="#chute"/>
-        <Class IRI="#control_and_monitoring"/>
-        <Class IRI="#conveyor_system"/>
-        <Class IRI="#cooler"/>
-        <Class IRI="#cover"/>
-        <Class IRI="#frame"/>
-        <Class IRI="#guard"/>
-        <Class IRI="#hose"/>
-        <Class IRI="#lighting"/>
-        <Class IRI="#liner"/>
-        <Class IRI="#plate"/>
-        <Class IRI="#plough"/>
-        <Class IRI="#scraper"/>
-        <Class IRI="#skirt_skirting"/>
-        <Class IRI="#spray"/>
-        <Class IRI="#vsd"/>
-        <Class IRI="#winch"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#FunctionalObject"/>
-        <Class IRI="#brake"/>
-        <Class IRI="#cable"/>
-        <Class IRI="#chute"/>
-        <Class IRI="#control_and_monitoring"/>
-        <Class IRI="#conveyor_system"/>
-        <Class IRI="#frame"/>
-        <Class IRI="#guard"/>
-        <Class IRI="#lighting"/>
-        <Class IRI="#liner"/>
-        <Class IRI="#plate"/>
-        <Class IRI="#plough"/>
-        <Class IRI="#scraper"/>
-        <Class IRI="#skirt_skirting"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#FunctionalObject"/>
-        <Class IRI="#brake"/>
-        <Class IRI="#chute"/>
-        <Class IRI="#control_and_monitoring"/>
-        <Class IRI="#frame"/>
-        <Class IRI="#scraper"/>
-        <Class IRI="#skirt_skirting"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#bend_pulley"/>
-        <Class IRI="#head_pulley"/>
-        <Class IRI="#tail_pulley"/>
-        <Class IRI="#take-up_gravity_pulley"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#carry_idler"/>
-        <Class IRI="#impact_idler"/>
-        <Class IRI="#return_idler"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#conveyor_belt"/>
+        <Class IRI="#belt_conveyor"/>
         <Class IRI="#gearbox"/>
         <Class IRI="#idler_roller"/>
         <Class IRI="#motor"/>
         <Class IRI="#pulley"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#idler_carry"/>
+        <Class IRI="#idler_impact"/>
+        <Class IRI="#idler_return"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#pulley-tail"/>
+        <Class IRI="#pulley_bend"/>
+        <Class IRI="#pulley_head"/>
+        <Class IRI="#pulley_takeup"/>
     </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
@@ -489,7 +746,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
-        <Class IRI="#FunctionalObject"/>
+        <Class IRI="#pullwire"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isInstalledAs"/>
@@ -509,26 +766,16 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
-        <Class IRI="#FunctionalObject"/>
+        <Class IRI="#pullwire"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isInstalledAs"/>
-        <Class IRI="#FunctionalObject"/>
+        <Class IRI="#pullwire"/>
     </ObjectPropertyRange>
     <DisjointObjectProperties>
         <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
         <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
     </DisjointObjectProperties>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#FunctionalObject</IRI>
-        <Literal>Functional Object</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>#FunctionalObject</IRI>
-        <Literal>under development</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ancillaryPartOfAtSomeTime</IRI>
@@ -561,12 +808,42 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#idler_roller</IRI>
+        <Literal>idler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#idler_roller</IRI>
+        <Literal>roller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isInstalledAs</IRI>
         <Literal>is installed as</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>#isInstalledAs</IRI>
+        <Literal>under development</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#pulley_bend</IRI>
+        <Literal>pulley_snub</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#pulley_takeup</IRI>
+        <Literal>pulley_gravity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pullwire</IRI>
+        <Literal>Functional Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#pullwire</IRI>
         <Literal>under development</Literal>
     </AnnotationAssertion>
 </Ontology>
