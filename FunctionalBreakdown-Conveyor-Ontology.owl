@@ -275,7 +275,7 @@
         <Class IRI="#object_interfacing(X)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#object_matter_processing(M)"/>
+        <Class IRI="#object_matter_processing(H)"/>
     </Declaration>
     <Declaration>
         <Class IRI="#object_presenting(P)"/>
@@ -659,7 +659,7 @@
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#object_matter_processing(M)"/>
+        <Class IRI="#object_matter_processing(H)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
@@ -845,6 +845,101 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>#pullwire</IRI>
         <Literal>under development</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/excerptedFrom"/>
+        <IRI>#object_controlling(Q)</IRI>
+        <Literal>ISO 81346-2:2019</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_controlling(Q)</IRI>
+        <Literal>object for controlling access or flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/excerptedFrom"/>
+        <IRI>#object_covering(N)</IRI>
+        <Literal>ISO 81346-2:2019</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_covering(N)</IRI>
+        <Literal>object for enclosing partly or fully another object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_driving(M)</IRI>
+        <Literal>object for providing mechanical movement or force</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_emitting(E)</IRI>
+        <Literal>object for emitting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_generating(G)</IRI>
+        <Literal>object for providing a controllable flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_guiding(W)</IRI>
+        <Literal>object for leading from one place to another</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_holding(U)</IRI>
+        <Literal>object for localising of other objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_human_interaction(S)</IRI>
+        <Literal>object for detecting a human action and providing an appropriate response</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_information_processing(K)</IRI>
+        <Literal>object for treating input signals and providing an appropriate output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_interfacing(X)</IRI>
+        <Literal>object for interfacing an object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_matter_processing(H)</IRI>
+        <Literal>object for treating matter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_presenting(P)</IRI>
+        <Literal>object for providing perceptoble information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_protecting(F)</IRI>
+        <Literal>object for protecting against the effects of dangerous or undesirable conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_restricting(R)</IRI>
+        <Literal>object for restricting or stabilising</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_sensing(B)</IRI>
+        <Literal>object for picking up information and providing a representation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_storing(C)</IRI>
+        <Literal>object for storing and subsequent retrieval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_transforming(T)</IRI>
+        <Literal>object for transforming</Literal>
     </AnnotationAssertion>
 </Ontology>
 
