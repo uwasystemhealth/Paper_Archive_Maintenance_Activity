@@ -164,9 +164,6 @@
         <Class IRI="#frame"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#functional_object"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#gas_cyliner"/>
     </Declaration>
     <Declaration>
@@ -326,70 +323,10 @@
         <Class IRI="#scraper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#sense_density"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_electric_current"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_electric_potential"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_energy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_field"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_flow"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_humidity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_level"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_multiple_quantities"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_power"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_pressure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_radiation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_resistivity_or_conductivity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_spatial_dimension_or_position"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_substrate_concentration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_temperature"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_time"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sense_time_rate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sensing"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#sensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sensor_metal_detector"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#sensor_speed"/>
     </Declaration>
     <Declaration>
         <Class IRI="#settling_tank"/>
@@ -428,13 +365,10 @@
         <Class IRI="#switch_flow"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#switch_limit"/>
+        <Class IRI="#switch_speed"/>
     </Declaration>
     <Declaration>
         <Class IRI="#switch_tilt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#switch_underspeed"/>
     </Declaration>
     <Declaration>
         <Class IRI="#tachometer"/>
@@ -468,6 +402,57 @@
     </Declaration>
     <Declaration>
         <Class IRI="#winch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_control_access_or_flow(Q)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_detect_human_action_and_provide_response(S)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_emit(E)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_enclose_or_partially_enclose_another_object(N)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_guide_from_one_place_to-another(W)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_interface(X)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_localise(U)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_protect_against_undesirable_conditions(F)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_provide_controllable_flow(G)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_provide_mechanical_movement_or_force(M)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_provide_perceptible_information(P)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_restrict_or_stabilise(R)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_sense(B)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_store(C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_transform(T)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_treat_input_signals_and_provide_output(K)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_treat_or_process_matter(H)"/>
     </Declaration>
     <Declaration>
         <Class IRI="#object_controlling(Q)"/>
@@ -519,6 +504,72 @@
     </Declaration>
     <Declaration>
         <Class IRI="#object_transforming(T)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_density(BD)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_electric_current(BC)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_electric_potential(BA)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_energy(BH)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_field(BE)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_flow(BF)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_humidity(BM)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_incidents_or_amounts(BZ)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_level(BL)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_multiple_quantities(BU)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_power(BJ)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_pressure(BP)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_radiation(BR)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_resistivity_or_conductivity(BB)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_sound_or_visual_appearance(BX)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_spatial_dimension_or_position(BG)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_stored_information(BY)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_substrate_concentration(BQ)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_temperature(BT)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_time(BK)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_time_rate(BS)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_weight_force_or_torque(BW)"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
@@ -658,7 +709,7 @@
         <Class IRI="#flowmeter"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="#sense_flow"/>
+            <Class IRI="#sense_flow(BF)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -718,10 +769,52 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#sensor_metal_detector"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#sense_incidents_or_amounts(BZ)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#switch_drift"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#sense_spatial_dimension_or_position(BG)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#switch_flow"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="#sense_flow"/>
+            <Class IRI="#sense_flow(BF)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#switch_speed"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#sense_time_rate(BS)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#switch_tilt"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#sense_spatial_dimension_or_position(BG)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#tachometer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#sense_time_rate(BS)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_controlling(Q)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_control_access_or_flow(Q)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
@@ -941,10 +1034,6 @@
         <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#functional_object"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#gas_cyliner"/>
         <Class IRI="#object_storing(C)"/>
     </SubClassOf>
@@ -1157,92 +1246,12 @@
         <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#sense_density"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_electric_current"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_electric_potential"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_energy"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_field"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_flow"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_humidity"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_level"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_multiple_quantities"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_power"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_pressure"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_radiation"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_resistivity_or_conductivity"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_spatial_dimension_or_position"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_substrate_concentration"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_temperature"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_time"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sense_time_rate"/>
-        <Class IRI="#sensing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sensing"/>
-        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#sensor"/>
         <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sensor_metal_detector"/>
-        <Class IRI="#ToBePlaced"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sensor_speed"/>
-        <Class IRI="#ToBePlaced"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#settling_tank"/>
@@ -1286,23 +1295,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#switch_drift"/>
-        <Class IRI="#ToBePlaced"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#switch_flow"/>
         <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#switch_limit"/>
-        <Class IRI="#ToBePlaced"/>
+        <Class IRI="#switch_speed"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#switch_tilt"/>
-        <Class IRI="#ToBePlaced"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#switch_underspeed"/>
-        <Class IRI="#ToBePlaced"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#tachometer"/>
@@ -1347,6 +1352,74 @@
     <SubClassOf>
         <Class IRI="#winch"/>
         <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_control_access_or_flow(Q)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_detect_human_action_and_provide_response(S)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_emit(E)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_enclose_or_partially_enclose_another_object(N)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_guide_from_one_place_to-another(W)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_interface(X)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_localise(U)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_protect_against_undesirable_conditions(F)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_provide_controllable_flow(G)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_provide_mechanical_movement_or_force(M)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_provide_perceptible_information(P)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_restrict_or_stabilise(R)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_sense(B)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_store(C)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_transform(T)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_treat_input_signals_and_provide_output(K)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_treat_or_process_matter(H)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#object_controlling(Q)"/>
@@ -1416,6 +1489,94 @@
         <Class IRI="#object_transforming(T)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_density(BD)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_electric_current(BC)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_electric_potential(BA)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_energy(BH)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_field(BE)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_flow(BF)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_humidity(BM)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_incidents_or_amounts(BZ)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_level(BL)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_multiple_quantities(BU)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_power(BJ)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_pressure(BP)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_radiation(BR)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_resistivity_or_conductivity(BB)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_sound_or_visual_appearance(BX)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_spatial_dimension_or_position(BG)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_stored_information(BY)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_substrate_concentration(BQ)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_temperature(BT)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_time(BK)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_time_rate(BS)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_weight_force_or_torque(BW)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#belt_for_a_conveyor"/>
         <Class IRI="#drum_pulley"/>
@@ -1475,10 +1636,6 @@
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
-        <Class IRI="#functional_object"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isInstalledAs"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </ObjectPropertyDomain>
@@ -1493,14 +1650,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
-        <Class IRI="#functional_object"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isInstalledAs"/>
-        <Class IRI="#functional_object"/>
     </ObjectPropertyRange>
     <DisjointObjectProperties>
         <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
@@ -1519,16 +1668,6 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>#functionalPartAtSomeTime</IRI>
-        <Literal>under development</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#functional_object</IRI>
-        <Literal>Functional Object</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>#functional_object</IRI>
         <Literal>under development</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1575,16 +1714,6 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>#pulley_takeup</IRI>
         <Literal>pulley_gravity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition"/>
-        <IRI>#sensing</IRI>
-        <Literal>the capability to detect or measure a physical property</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#sensing</IRI>
-        <Literal>aligned to Class Code B in ISO 81346</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
@@ -1690,6 +1819,16 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>#object_transforming(T)</IRI>
         <Literal>object for transforming</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition"/>
+        <IRI>#sense_stored_information(BY)</IRI>
+        <Literal>the capability to detect or measure a physical property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sense_stored_information(BY)</IRI>
+        <Literal>aligned to Class Code B in ISO 81346</Literal>
     </AnnotationAssertion>
 </Ontology>
 
