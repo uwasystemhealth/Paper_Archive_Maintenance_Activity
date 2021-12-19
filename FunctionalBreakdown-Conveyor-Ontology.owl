@@ -23,9 +23,6 @@
         <Class IRI="#RTU"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ToBePlaced"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#UPS"/>
     </Declaration>
     <Declaration>
@@ -191,15 +188,6 @@
         <Class IRI="#hose"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#idler_carry"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#idler_impact"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#idler_return"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#idler_roller"/>
     </Declaration>
     <Declaration>
@@ -263,19 +251,7 @@
         <Class IRI="#pull_wire"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#pulley-tail"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#pulley_bend"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#pulley_head"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#pulley_lagging"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#pulley_takeup"/>
     </Declaration>
     <Declaration>
         <Class IRI="#pump"/>
@@ -942,10 +918,6 @@
         <Class IRI="#object_information_processing(K)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ToBePlaced"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#UPS"/>
         <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
@@ -1182,18 +1154,6 @@
         <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#idler_carry"/>
-        <Class IRI="#ToBePlaced"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#idler_impact"/>
-        <Class IRI="#ToBePlaced"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#idler_return"/>
-        <Class IRI="#ToBePlaced"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#idler_roller"/>
         <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
@@ -1278,24 +1238,8 @@
         <Class IRI="#object_human_interaction(S)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#pulley-tail"/>
-        <Class IRI="#ToBePlaced"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#pulley_bend"/>
-        <Class IRI="#ToBePlaced"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#pulley_head"/>
-        <Class IRI="#ToBePlaced"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#pulley_lagging"/>
         <Class IRI="#object_protecting(F)"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#pulley_takeup"/>
-        <Class IRI="#ToBePlaced"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#pump"/>
@@ -1696,17 +1640,6 @@
         <Class IRI="#idler_roller"/>
         <Class IRI="#motor"/>
     </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#idler_carry"/>
-        <Class IRI="#idler_impact"/>
-        <Class IRI="#idler_return"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#pulley-tail"/>
-        <Class IRI="#pulley_bend"/>
-        <Class IRI="#pulley_head"/>
-        <Class IRI="#pulley_takeup"/>
-    </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000176"/>
@@ -1816,16 +1749,6 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>#isInstalledAs</IRI>
         <Literal>under development</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#pulley_bend</IRI>
-        <Literal>pulley_snub</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>#pulley_takeup</IRI>
-        <Literal>pulley_gravity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
