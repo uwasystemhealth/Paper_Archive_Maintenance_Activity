@@ -817,6 +817,118 @@
             <Class IRI="#capability_to_control_access_or_flow(Q)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_covering(N)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_enclose_or_partially_enclose_another_object(N)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_driving(M)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_provide_mechanical_movement_or_force(M)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_emitting(E)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_emit(E)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_generating(G)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_provide_controllable_flow(G)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_guiding(W)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_guide_from_one_place_to-another(W)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_holding(U)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_localise(U)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_human_interaction(S)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_detect_human_action_and_provide_response(S)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_information_processing(K)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_treat_input_signals_and_provide_output(K)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_interfacing(X)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_interface(X)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_matter_processing(H)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_treat_or_process_matter(H)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_presenting(P)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_provide_perceptible_information(P)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_protecting(F)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_protect_against_undesirable_conditions(F)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_restricting(R)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_restrict_or_stabilise(R)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_sensing(B)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_sense(B)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_storing(C)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_store(C)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_transforming(T)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_transform(T)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#CPU"/>
         <Class IRI="#object_information_processing(K)"/>
