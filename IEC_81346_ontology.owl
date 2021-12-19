@@ -38,1593 +38,1433 @@
         <Class IRI="#baseplate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#battery"/>
+        <Class IRI="#battery"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#bearing"/>
+        <Class IRI="#bearing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#belt_for_a_conveyor"/>
+        <Class IRI="#belt_for_a_conveyor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#blade"/>
+        <Class IRI="#blade"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#bolt"/>
+        <Class IRI="#bolt"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#bracket"/>
+        <Class IRI="#bracket"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#brake"/>
+        <Class IRI="#brake"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#bucket_elevator"/>
+        <Class IRI="#bucket_elevator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#cabinet"/>
+        <Class IRI="#cabinet"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#cable"/>
+        <Class IRI="#cable"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capacitor"/>
+        <Class IRI="#capacitor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#chute"/>
+        <Class IRI="#chute"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#clamp"/>
+        <Class IRI="#clamp"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#clutch"/>
+        <Class IRI="#clutch"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#compressor"/>
+        <Class IRI="#compressor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#computer"/>
+        <Class IRI="#computer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conduit"/>
+        <Class IRI="#conduit"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#cooler"/>
+        <Class IRI="#cooler"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#counterweight"/>
+        <Class IRI="#counterweight"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#coupling"/>
+        <Class IRI="#coupling"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#coupling_fluid"/>
+        <Class IRI="#coupling_fluid"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#crane"/>
+        <Class IRI="#crane"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#crusher"/>
+        <Class IRI="#crusher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#cyclone"/>
+        <Class IRI="#cyclone"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#deflector"/>
+        <Class IRI="#deflector"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#diode"/>
+        <Class IRI="#diode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#door"/>
+        <Class IRI="#door"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#drum_pulley"/>
+        <Class IRI="#drum_pulley"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#dust_suppression_system"/>
+        <Class IRI="#dust_suppression_system"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#emergency_stop"/>
+        <Class IRI="#emergency_stop"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#fan"/>
+        <Class IRI="#fan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#filter"/>
+        <Class IRI="#filter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#fitting"/>
+        <Class IRI="#fitting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#flowmeter"/>
+        <Class IRI="#flowmeter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#flywheel"/>
+        <Class IRI="#flywheel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#frame"/>
+        <Class IRI="#frame"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#gas_cyliner"/>
+        <Class IRI="#gas_cyliner"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#gate"/>
+        <Class IRI="#gate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#gearbox"/>
+        <Class IRI="#gearbox"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#generator"/>
+        <Class IRI="#generator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#grease_line"/>
+        <Class IRI="#grease_line"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#guard"/>
+        <Class IRI="#guard"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#guide"/>
+        <Class IRI="#guide"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hoist"/>
+        <Class IRI="#hoist"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hose"/>
+        <Class IRI="#hose"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#idler_roller"/>
+        <Class IRI="#idler_roller"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#impeller"/>
+        <Class IRI="#impeller"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#instrumentation"/>
+        <Class IRI="#instrumentation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#insulation"/>
+        <Class IRI="#insulation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#junction_box"/>
+        <Class IRI="#junction_box"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#laser"/>
+        <Class IRI="#laser"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#lighting"/>
+        <Class IRI="#lighting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#liner"/>
+        <Class IRI="#liner"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#load_cell"/>
+        <Class IRI="#load_cell"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#lubrication_system"/>
+        <Class IRI="#lubrication_system"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#mechanical_seal"/>
+        <Class IRI="#mechanical_seal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#motor"/>
+        <Class IRI="#motor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#noise_barrier"/>
+        <Class IRI="#noise_barrier"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#nozzle"/>
+        <Class IRI="#nozzle"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#orifice_plate"/>
+        <Class IRI="#orifice_plate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pads"/>
+        <Class IRI="#pads"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pipe"/>
+        <Class IRI="#pipe"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#plate"/>
+        <Class IRI="#plate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#plough"/>
+        <Class IRI="#plough"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pull_handle"/>
+        <Class IRI="#pull_handle"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pull_wire"/>
+        <Class IRI="#pull_wire"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pulley_lagging"/>
+        <Class IRI="#pulley_lagging"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump"/>
+        <Class IRI="#pump"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_centrifugal"/>
+        <Class IRI="#pump_centrifugal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_gear"/>
+        <Class IRI="#pump_gear"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_packing"/>
+        <Class IRI="r#pump_packing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_piston"/>
+        <Class IRI="#pump_piston"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_positive_displacement"/>
+        <Class IRI="#pump_positive_displacement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_screw"/>
+        <Class IRI="#pump_screw"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_volute"/>
+        <Class IRI="#pump_volute"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pushbutton_switch"/>
+        <Class IRI="#pushbutton_switch"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#reactor"/>
+        <Class IRI="#reactor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#relay"/>
+        <Class IRI="#relay"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sample_point"/>
+        <Class IRI="#sample_point"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#scaffold"/>
+        <Class IRI="#scaffold"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#scraper"/>
+        <Class IRI="#scraper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sensor"/>
+        <Class IRI="#sensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sensor_metal_detector"/>
+        <Class IRI="#sensor_metal_detector"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#settling_tank"/>
+        <Class IRI="#settling_tank"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#shaft"/>
+        <Class IRI="#shaft"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#shutter"/>
+        <Class IRI="#shutter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#signal_generator"/>
+        <Class IRI="#signal_generator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#skirt"/>
+        <Class IRI="#skirt"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#solenoid"/>
+        <Class IRI="#solenoid"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#splice"/>
+        <Class IRI="#splice"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#spraybar"/>
+        <Class IRI="#spraybar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#structure"/>
+        <Class IRI="#structure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#switch"/>
+        <Class IRI="#switch"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#switch_drift"/>
+        <Class IRI="#switch_drift"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#switch_flow"/>
+        <Class IRI="#switch_flow"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#switch_speed"/>
+        <Class IRI="#switch_speed"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#switch_tilt"/>
+        <Class IRI="#switch_tilt"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#tachometer"/>
+        <Class IRI="#tachometer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#tripper"/>
+        <Class IRI="#tripper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#trolley"/>
+        <Class IRI="#trolley"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#valve"/>
+        <Class IRI="#valve"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#valve_non_return"/>
+        <Class IRI="#valve_non_return"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#valve_regulation"/>
+        <Class IRI="r#valve_regulation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#vibrating_feeder"/>
+        <Class IRI="#vibrating_feeder"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#vsd"/>
+        <Class IRI="#vsd"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#weightometer"/>
+        <Class IRI="#weightometer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#welding_machine"/>
+        <Class IRI="#welding_machine"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#winch"/>
+        <Class IRI="#winch"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_control_access_or_flow(Q)"/>
+        <Class IRI="#capability_to_control_access_or_flow(Q)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_detect_human_action_and_provide_response(S)"/>
+        <Class IRI="#capability_to_detect_human_action_and_provide_response(S)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_emit(E)"/>
+        <Class IRI="#capability_to_emit(E)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_enclose_or_partially_enclose_another_object(N)"/>
+        <Class IRI="#capability_to_enclose_or_partially_enclose_another_object(N)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_guide_from_one_place_to-another(W)"/>
+        <Class IRI="#capability_to_guide_from_one_place_to-another(W)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_interface(X)"/>
+        <Class IRI="#capability_to_interface(X)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_localise(U)"/>
+        <Class IRI="#capability_to_localise(U)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_protect_against_undesirable_conditions(F)"/>
+        <Class IRI="#capability_to_protect_against_undesirable_conditions(F)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_provide_controllable_flow(G)"/>
+        <Class IRI="#capability_to_provide_controllable_flow(G)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_provide_mechanical_movement_or_force(M)"/>
+        <Class IRI="#capability_to_provide_mechanical_movement_or_force(M)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_provide_perceptible_information(P)"/>
+        <Class IRI="#capability_to_provide_perceptible_information(P)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_restrict_or_stabilise(R)"/>
+        <Class IRI="#capability_to_restrict_or_stabilise(R)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_store(C)"/>
+        <Class IRI="#capability_to_store(C)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_transform(T)"/>
+        <Class IRI="#capability_to_transform(T)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_treat_input_signals_and_provide_output(K)"/>
+        <Class IRI="#capability_to_treat_input_signals_and_provide_output(K)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_treat_or_process_matter(H)"/>
+        <Class IRI="#capability_to_treat_or_process_matter(H)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_controlling(Q)"/>
+        <Class IRI="#object_controlling(Q)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_covering(N)"/>
+        <Class IRI="#object_covering(N)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_driving(M)"/>
+        <Class IRI="#object_driving(M)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_emitting(E)"/>
+        <Class IRI="#object_emitting(E)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#object_generating(G)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#object_guiding(W)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#object_holding(U)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_human_interaction(S)"/>
+        <Class IRI="#object_human_interaction(S)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_information_processing(K)"/>
+        <Class IRI="#object_information_processing(K)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_interfacing(X)"/>
+        <Class IRI="#object_interfacing(X)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_matter_processing(H)"/>
+        <Class IRI="#object_matter_processing(H)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_presenting(P)"/>
+        <Class IRI="#object_presenting(P)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)"/>
+        <Class IRI="#object_protecting(F)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#object_restricting(R)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#object_sensing(B)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_storing(C)"/>
+        <Class IRI="#object_storing(C)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#object_transforming(T)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_density(BD)"/>
+        <Class IRI="#sense_density(BD)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_electric_current(BC)"/>
+        <Class IRI="#sense_electric_current(BC)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_electric_potential(BA)"/>
+        <Class IRI="#sense_electric_potential(BA)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_energy(BH)"/>
+        <Class IRI="#sense_energy(BH)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_field(BE)"/>
+        <Class IRI="#sense_field(BE)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_flow(BF)"/>
+        <Class IRI="#sense_flow(BF)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_humidity(BM)"/>
+        <Class IRI="#sense_humidity(BM)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_incidents_or_amounts(BZ)"/>
+        <Class IRI="#sense_incidents_or_amounts(BZ)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_level(BL)"/>
+        <Class IRI="#sense_level(BL)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_multiple_quantities(BU)"/>
+        <Class IRI="#sense_multiple_quantities(BU)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_power(BJ)"/>
+        <Class IRI="#sense_power(BJ)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_pressure(BP)"/>
+        <Class IRI="#sense_pressure(BP)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_radiation(BR)"/>
+        <Class IRI="#sense_radiation(BR)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_resistivity_or_conductivity(BB)"/>
+        <Class IRI="#sense_resistivity_or_conductivity(BB)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_sound_or_visual_appearance(BX)"/>
+        <Class IRI="#sense_sound_or_visual_appearance(BX)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_spatial_dimension_or_position(BG)"/>
+        <Class IRI="#sense_spatial_dimension_or_position(BG)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_stored_information(BY)"/>
+        <Class IRI="#sense_stored_information(BY)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_substrate_concentration(BQ)"/>
+        <Class IRI="#sense_substrate_concentration(BQ)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_temperature(BT)"/>
+        <Class IRI="#sense_temperature(BT)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_time(BK)"/>
+        <Class IRI="#sense_time(BK)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_time_rate(BS)"/>
+        <Class IRI="#sense_time_rate(BS)"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_weight_force_or_torque(BW)"/>
+        <Class IRI="#sense_weight_force_or_torque(BW)"/>
     </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#ancillaryPartOfAtSomeTime"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#functionalPartAtSomeTime"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#isInstalledAs"/>
-    </Declaration>
+
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#drum_pulley"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#bearing"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#drum_pulley"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pulley_lagging"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#drum_pulley"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#shaft"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#flowmeter"/>
+        <Class IRI="#object_controlling(Q)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_flow(BF)"/>
+            <Class IRI="#capability_to_control_access_or_flow(Q)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_controlling(Q)"/>
+        <Class IRI="#object_covering(N)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_control_access_or_flow(Q)"/>
+            <Class IRI="#capability_to_enclose_or_partially_enclose_another_object(N)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_covering(N)"/>
+        <Class IRI="#object_driving(M)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_enclose_or_partially_enclose_another_object(N)"/>
+            <Class IRI="#capability_to_provide_mechanical_movement_or_force(M)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_driving(M)"/>
+        <Class IRI="#object_emitting(E)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_provide_mechanical_movement_or_force(M)"/>
+            <Class IRI="#capability_to_emit(E)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_emitting(E)"/>
+        <Class IRI="#object_generating(G)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_emit(E)"/>
+            <Class IRI="#capability_to_provide_controllable_flow(G)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#object_guiding(W)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_provide_controllable_flow(G)"/>
+            <Class IRI="#capability_to_guide_from_one_place_to-another(W)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#object_holding(U)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_guide_from_one_place_to-another(W)"/>
+            <Class IRI="#capability_to_localise(U)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#object_human_interaction(S)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_localise(U)"/>
+            <Class IRI="#capability_to_detect_human_action_and_provide_response(S)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_human_interaction(S)"/>
+        <Class IRI="#object_information_processing(K)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_detect_human_action_and_provide_response(S)"/>
+            <Class IRI="#capability_to_treat_input_signals_and_provide_output(K)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_information_processing(K)"/>
+        <Class IRI="#object_interfacing(X)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_treat_input_signals_and_provide_output(K)"/>
+            <Class IRI="#capability_to_interface(X)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_interfacing(X)"/>
+        <Class IRI="#object_matter_processing(H)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_interface(X)"/>
+            <Class IRI="#capability_to_treat_or_process_matter(H)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_matter_processing(H)"/>
+        <Class IRI="#object_presenting(P)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_treat_or_process_matter(H)"/>
+            <Class IRI="#capability_to_provide_perceptible_information(P)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_presenting(P)"/>
+        <Class IRI="#object_protecting(F)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_provide_perceptible_information(P)"/>
+            <Class IRI="#capability_to_protect_against_undesirable_conditions(F)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)"/>
+        <Class IRI="#object_restricting(R)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_protect_against_undesirable_conditions(F)"/>
+            <Class IRI="#capability_to_restrict_or_stabilise(R)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#object_sensing(B)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_restrict_or_stabilise(R)"/>
+            <Class IRI="#capability_to_sense(B)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#object_storing(C)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+            <Class IRI="#capability_to_store(C)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_storing(C)"/>
+        <Class IRI="#object_transforming(T)"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_store(C)"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
-            <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_transform(T)"/>
+            <Class IRI="#capability_to_transform(T)"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CPU"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_information_processing(K)"/>
+        <Class IRI="#CPU"/>
+        <Class IRI="#object_information_processing(K)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#PLC"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_information_processing(K)"/>
+        <Class IRI="#PLC"/>
+        <Class IRI="#object_information_processing(K)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#RTU"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_information_processing(K)"/>
+        <Class IRI="#RTU"/>
+        <Class IRI="#object_information_processing(K)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#UPS"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#UPS"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#air_intake"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#air_intake"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#alarm"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_presenting(P)"/>
+        <Class IRI="#alarm"/>
+        <Class IRI="#object_presenting(P)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#analyser"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#analyser"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#baseplate"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#baseplate"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#battery"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#battery"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#bearing"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#bearing"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#bearing"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#bearing"/>
+        <Class IRI="#object_transforming(T)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#belt_for_a_conveyor"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#belt_for_a_conveyor"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#blade"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#blade"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#bolt"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#bolt"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#bracket"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#bracket"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#brake"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_controlling(Q)"/>
+        <Class IRI="#brake"/>
+        <Class IRI="#object_controlling(Q)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#brake"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#brake"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#bucket_elevator"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_storing(C)"/>
+        <Class IRI="#bucket_elevator"/>
+        <Class IRI="#object_storing(C)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#cabinet"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_storing(C)"/>
+        <Class IRI="#cabinet"/>
+        <Class IRI="#object_storing(C)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#cable"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#cable"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capacitor"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_storing(C)"/>
+        <Class IRI="#capacitor"/>
+        <Class IRI="#object_storing(C)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#chute"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#chute"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#clamp"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#clamp"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#clamp"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_interfacing(X)"/>
+        <Class IRI="#clamp"/>
+        <Class IRI="#object_interfacing(X)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#clutch"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_interfacing(X)"/>
+        <Class IRI="#clutch"/>
+        <Class IRI="#object_interfacing(X)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#compressor"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#compressor"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#computer"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_information_processing(K)"/>
+        <Class IRI="#computer"/>
+        <Class IRI="#object_information_processing(K)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conduit"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)"/>
+        <Class IRI="#conduit"/>
+        <Class IRI="#object_protecting(F)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#cooler"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_emitting(E)"/>
+        <Class IRI="#cooler"/>
+        <Class IRI="#object_emitting(E)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#counterweight"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_storing(C)"/>
+        <Class IRI="#counterweight"/>
+        <Class IRI="#object_storing(C)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#coupling"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_interfacing(X)"/>
+        <Class IRI="#coupling"/>
+        <Class IRI="#object_interfacing(X)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#coupling"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#coupling"/>
+        <Class IRI="#object_transforming(T)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#coupling_fluid"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#coupling_fluid"/>
+        <Class IRI="#object_transforming(T)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#crane"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#crane"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#crusher"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_matter_processing(H)"/>
+        <Class IRI="#crusher"/>
+        <Class IRI="#object_matter_processing(H)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#cyclone"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_matter_processing(H)"/>
+        <Class IRI="#cyclone"/>
+        <Class IRI="#object_matter_processing(H)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#deflector"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#deflector"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#diode"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#diode"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#door"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_covering(N)"/>
+        <Class IRI="#door"/>
+        <Class IRI="#object_covering(N)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#drum_pulley"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#drum_pulley"/>
+        <Class IRI="#object_transforming(T)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#dust_suppression_system"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_emitting(E)"/>
+        <Class IRI="#dust_suppression_system"/>
+        <Class IRI="#object_emitting(E)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#emergency_stop"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_controlling(Q)"/>
+        <Class IRI="#emergency_stop"/>
+        <Class IRI="#object_controlling(Q)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#fan"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#fan"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#filter"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_matter_processing(H)"/>
+        <Class IRI="#filter"/>
+        <Class IRI="#object_matter_processing(H)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#fitting"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#fitting"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#flowmeter"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#flowmeter"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#flywheel"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_storing(C)"/>
+        <Class IRI="#flywheel"/>
+        <Class IRI="#object_storing(C)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#frame"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#frame"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#gas_cyliner"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_storing(C)"/>
+        <Class IRI="#gas_cyliner"/>
+        <Class IRI="#object_storing(C)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#gate"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#gate"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#gearbox"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#gearbox"/>
+        <Class IRI="#object_transforming(T)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#generator"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#generator"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#grease_line"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#grease_line"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#guard"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)"/>
+        <Class IRI="#guard"/>
+        <Class IRI="#object_protecting(F)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#guide"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#guide"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hoist"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#hoist"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hose"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#hose"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#idler_roller"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#idler_roller"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#impeller"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#impeller"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#instrumentation"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#instrumentation"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#insulation"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#insulation"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#junction_box"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_interfacing(X)"/>
+        <Class IRI="#junction_box"/>
+        <Class IRI="#object_interfacing(X)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#laser"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#laser"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#lighting"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_emitting(E)"/>
+        <Class IRI="#lighting"/>
+        <Class IRI="#object_emitting(E)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#liner"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)"/>
+        <Class IRI="#liner"/>
+        <Class IRI="#object_protecting(F)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#load_cell"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#load_cell"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#lubrication_system"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)"/>
+        <Class IRI="#lubrication_system"/>
+        <Class IRI="#object_protecting(F)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#mechanical_seal"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#mechanical_seal"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#motor"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_driving(M)"/>
+        <Class IRI="#motor"/>
+        <Class IRI="#object_driving(M)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#noise_barrier"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#noise_barrier"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#nozzle"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#nozzle"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#orifice_plate"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#orifice_plate"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pads"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)"/>
+        <Class IRI="#pads"/>
+        <Class IRI="#object_protecting(F)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pipe"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#pipe"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#plate"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)"/>
+        <Class IRI="#plate"/>
+        <Class IRI="#object_protecting(F)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#plough"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#plough"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pull_handle"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_human_interaction(S)"/>
+        <Class IRI="#pull_handle"/>
+        <Class IRI="#object_human_interaction(S)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pull_wire"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_human_interaction(S)"/>
+        <Class IRI="#pull_wire"/>
+        <Class IRI="#object_human_interaction(S)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pulley_lagging"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)"/>
+        <Class IRI="#pulley_lagging"/>
+        <Class IRI="#object_protecting(F)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#pump"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_centrifugal"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#pump_centrifugal"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_gear"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#pump_gear"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_packing"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#pump_packing"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_piston"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#pump_piston"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_positive_displacement"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#pump_positive_displacement"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_screw"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#pump_screw"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_volute"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#pump_volute"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pushbutton_switch"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_human_interaction(S)"/>
+        <Class IRI="#pushbutton_switch"/>
+        <Class IRI="#object_human_interaction(S)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#reactor"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_matter_processing(H)"/>
+        <Class IRI="#reactor"/>
+        <Class IRI="#object_matter_processing(H)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#relay"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_information_processing(K)"/>
+        <Class IRI="#relay"/>
+        <Class IRI="#object_information_processing(K)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sample_point"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#sample_point"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#scaffold"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#scaffold"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#scraper"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#scraper"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sensor"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#sensor"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sensor_metal_detector"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#sensor_metal_detector"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#settling_tank"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_matter_processing(H)"/>
+        <Class IRI="#settling_tank"/>
+        <Class IRI="#object_matter_processing(H)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#shaft"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#shaft"/>
+        <Class IRI="#object_transforming(T)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#shutter"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#shutter"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#signal_generator"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#signal_generator"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#skirt"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#skirt"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#solenoid"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#solenoid"/>
+        <Class IRI="#object_transforming(T)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#splice"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_interfacing(X)"/>
+        <Class IRI="#splice"/>
+        <Class IRI="#object_interfacing(X)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#spraybar"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#spraybar"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#structure"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#structure"/>
+        <Class IRI="#object_holding(U)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#switch"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#switch"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#switch_drift"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#switch_drift"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#switch_flow"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#switch_flow"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#switch_speed"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#switch_speed"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#switch_tilt"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#switch_tilt"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#tachometer"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#tachometer"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#tripper"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#tripper"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#trolley"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#trolley"/>
+        <Class IRI="#object_guiding(W)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#valve"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_controlling(Q)"/>
+        <Class IRI="#valve"/>
+        <Class IRI="#object_controlling(Q)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#valve_non_return"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#valve_non_return"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#valve_regulation"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#valve_regulation"/>
+        <Class IRI="#object_restricting(R)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#vibrating_feeder"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#vibrating_feeder"/>
+        <Class IRI="#object_generating(G)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#vsd"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#vsd"/>
+        <Class IRI="#object_transforming(T)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#weightometer"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#weightometer"/>
+        <Class IRI="#object_sensing(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#welding_machine"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_matter_processing(H)"/>
+        <Class IRI="#welding_machine"/>
+        <Class IRI="#object_matter_processing(H)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#winch"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#winch"/>
+        <Class IRI="#object_transforming(T)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_control_access_or_flow(Q)"/>
+        <Class IRI="#capability_to_control_access_or_flow(Q)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_detect_human_action_and_provide_response(S)"/>
+        <Class IRI="#capability_to_detect_human_action_and_provide_response(S)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_emit(E)"/>
+        <Class IRI="#capability_to_emit(E)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_enclose_or_partially_enclose_another_object(N)"/>
+        <Class IRI="#capability_to_enclose_or_partially_enclose_another_object(N)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_guide_from_one_place_to-another(W)"/>
+        <Class IRI="#capability_to_guide_from_one_place_to-another(W)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_interface(X)"/>
+        <Class IRI="#capability_to_interface(X)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_localise(U)"/>
+        <Class IRI="#capability_to_localise(U)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_protect_against_undesirable_conditions(F)"/>
+        <Class IRI="#capability_to_protect_against_undesirable_conditions(F)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_provide_controllable_flow(G)"/>
+        <Class IRI="#capability_to_provide_controllable_flow(G)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_provide_mechanical_movement_or_force(M)"/>
+        <Class IRI="#capability_to_provide_mechanical_movement_or_force(M)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_provide_perceptible_information(P)"/>
+        <Class IRI="#capability_to_provide_perceptible_information(P)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_restrict_or_stabilise(R)"/>
+        <Class IRI="#capability_to_restrict_or_stabilise(R)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#capability_to_sense(B)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_store(C)"/>
+        <Class IRI="#capability_to_store(C)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_transform(T)"/>
+        <Class IRI="#capability_to_transform(T)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_treat_input_signals_and_provide_output(K)"/>
+        <Class IRI="#capability_to_treat_input_signals_and_provide_output(K)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_treat_or_process_matter(H)"/>
+        <Class IRI="#capability_to_treat_or_process_matter(H)"/>
         <Class IRI="http://www.industrialontologies.org/core/Capability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_controlling(Q)"/>
+        <Class IRI="#object_controlling(Q)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_covering(N)"/>
+        <Class IRI="#object_covering(N)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_driving(M)"/>
+        <Class IRI="#object_driving(M)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_emitting(E)"/>
+        <Class IRI="#object_emitting(E)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)"/>
+        <Class IRI="#object_generating(G)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)"/>
+        <Class IRI="#object_guiding(W)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)"/>
+        <Class IRI="#object_holding(U)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_human_interaction(S)"/>
+        <Class IRI="#object_human_interaction(S)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_information_processing(K)"/>
+        <Class IRI="#object_information_processing(K)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_interfacing(X)"/>
+        <Class IRI="#object_interfacing(X)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_matter_processing(H)"/>
+        <Class IRI="#object_matter_processing(H)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_presenting(P)"/>
+        <Class IRI="#object_presenting(P)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)"/>
+        <Class IRI="#object_protecting(F)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)"/>
+        <Class IRI="#object_restricting(R)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)"/>
+        <Class IRI="#object_sensing(B)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_storing(C)"/>
+        <Class IRI="#object_storing(C)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)"/>
+        <Class IRI="#object_transforming(T)"/>
         <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_density(BD)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_density(BD)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_electric_current(BC)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_electric_current(BC)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_electric_potential(BA)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_electric_potential(BA)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_energy(BH)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_energy(BH)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_field(BE)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_field(BE)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_flow(BF)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_flow(BF)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_humidity(BM)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_humidity(BM)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_incidents_or_amounts(BZ)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_incidents_or_amounts(BZ)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_level(BL)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_level(BL)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_multiple_quantities(BU)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_multiple_quantities(BU)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_power(BJ)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_power(BJ)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_pressure(BP)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_pressure(BP)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_radiation(BR)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_radiation(BR)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_resistivity_or_conductivity(BB)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_resistivity_or_conductivity(BB)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_sound_or_visual_appearance(BX)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_sound_or_visual_appearance(BX)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_spatial_dimension_or_position(BG)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_spatial_dimension_or_position(BG)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_stored_information(BY)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_stored_information(BY)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_substrate_concentration(BQ)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_substrate_concentration(BQ)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_temperature(BT)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_temperature(BT)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_time(BK)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_time(BK)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_time_rate(BS)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_time_rate(BS)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_weight_force_or_torque(BW)"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#capability_to_sense(B)"/>
+        <Class IRI="#sense_weight_force_or_torque(BW)"/>
+        <Class IRI="#capability_to_sense(B)"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#belt_for_a_conveyor"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#drum_pulley"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#gearbox"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#idler_roller"/>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#motor"/>
+        <Class IRI="#belt_for_a_conveyor"/>
+        <Class IRI="#drum_pulley"/>
+        <Class IRI="#gearbox"/>
+        <Class IRI="#idler_roller"/>
+        <Class IRI="#motor"/>
     </DisjointClasses>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#ancillaryPartOfAtSomeTime"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000176"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#functionalPartAtSomeTime"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000176"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#isInstalledAs"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
-    </SubObjectPropertyOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#ancillaryPartOfAtSomeTime"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#functionalPartAtSomeTime"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
-    </InverseObjectProperties>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#ancillaryPartOfAtSomeTime"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#functionalPartAtSomeTime"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#isInstalledAs"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#ancillaryPartOfAtSomeTime"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#functionalPartAtSomeTime"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </ObjectPropertyRange>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
-    </DisjointObjectProperties>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#ancillaryPartOfAtSomeTime</IRI>
-        <Literal>ancillary part of at some time</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#functionalPartAtSomeTime</IRI>
-        <Literal>functional part of at some time</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#functionalPartAtSomeTime</IRI>
-        <Literal>under development</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime</IRI>
-        <Literal>has ancillary part at some time</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime</IRI>
-        <Literal>has functional part at some time</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime</IRI>
-        <Literal>under development</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#idler_roller</IRI>
-        <Literal>idler</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#idler_roller</IRI>
-        <Literal>roller</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#isInstalledAs</IRI>
-        <Literal>is installed as</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#isInstalledAs</IRI>
-        <Literal>under development</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#skirt</IRI>
-        <Literal>skirting</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#winch</IRI>
-        <Literal>hoist</Literal>
-    </AnnotationAssertion>
+ 
+
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/excerptedFrom"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_controlling(Q)</IRI>
+        <IRI>#object_controlling(Q)</IRI>
         <Literal>ISO 81346-2:2019</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_controlling(Q)</IRI>
+        <IRI>#object_controlling(Q)</IRI>
         <Literal>object for controlling access or flow</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/excerptedFrom"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_covering(N)</IRI>
+        <IRI>#object_covering(N)</IRI>
         <Literal>ISO 81346-2:2019</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_covering(N)</IRI>
+        <IRI>#object_covering(N)</IRI>
         <Literal>object for enclosing partly or fully another object</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_driving(M)</IRI>
+        <IRI>#object_driving(M)</IRI>
         <Literal>object for providing mechanical movement or force</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_emitting(E)</IRI>
+        <IRI>#object_emitting(E)</IRI>
         <Literal>object for emitting</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_generating(G)</IRI>
+        <IRI>#object_generating(G)</IRI>
         <Literal>object for providing a controllable flow</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_guiding(W)</IRI>
+        <IRI>#object_guiding(W)</IRI>
         <Literal>object for leading from one place to another</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_holding(U)</IRI>
+        <IRI>#object_holding(U)</IRI>
         <Literal>object for localising of other objects</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_human_interaction(S)</IRI>
+        <IRI>#object_human_interaction(S)</IRI>
         <Literal>object for detecting a human action and providing an appropriate response</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_information_processing(K)</IRI>
+        <IRI>#object_information_processing(K)</IRI>
         <Literal>object for treating input signals and providing an appropriate output</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_interfacing(X)</IRI>
+        <IRI>#object_interfacing(X)</IRI>
         <Literal>object for interfacing an object</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_matter_processing(H)</IRI>
+        <IRI>#object_matter_processing(H)</IRI>
         <Literal>object for treating matter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_presenting(P)</IRI>
+        <IRI>#object_presenting(P)</IRI>
         <Literal>object for providing perceptoble information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_protecting(F)</IRI>
+        <IRI>#object_protecting(F)</IRI>
         <Literal>object for protecting against the effects of dangerous or undesirable conditions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_restricting(R)</IRI>
+        <IRI>#object_restricting(R)</IRI>
         <Literal>object for restricting or stabilising</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_sensing(B)</IRI>
+        <IRI>#object_sensing(B)</IRI>
         <Literal>object for picking up information and providing a representation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_storing(C)</IRI>
+        <IRI>#object_storing(C)</IRI>
         <Literal>object for storing and subsequent retrieval</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#object_transforming(T)</IRI>
+        <IRI>#object_transforming(T)</IRI>
         <Literal>object for transforming</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_stored_information(BY)</IRI>
+        <IRI>#sense_stored_information(BY)</IRI>
         <Literal>the capability to detect or measure a physical property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.semanticweb.org/funcitonal-breakdown-conveyor#sense_stored_information(BY)</IRI>
+        <IRI>#sense_stored_information(BY)</IRI>
         <Literal>aligned to Class Code B in ISO 81346</Literal>
     </AnnotationAssertion>
 </Ontology>
