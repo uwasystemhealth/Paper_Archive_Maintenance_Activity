@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/IEC_81346_ontology">
-    <Prefix name="" IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor"/>
+    <Prefix name="" IRI=""http://www.semanticweb.org/IEC_81346_ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -14,28 +14,28 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.industrialontologies.org/core/</Import>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CPU"/>
+        <Class IRI="#CPU"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#PLC"/>
+        <Class IRI="#PLC"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#RTU"/>
+        <Class IRI="#RTU"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#UPS"/>
+        <Class IRI="#UPS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#air_intake"/>
+        <Class IRI="#air_intake"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#alarm"/>
+        <Class IRI="#alarm"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#analyser"/>
+        <Class IRI="#analyser"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#baseplate"/>
+        <Class IRI="#baseplate"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor#battery"/>
