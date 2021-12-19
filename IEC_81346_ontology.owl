@@ -1,0 +1,1635 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/funcitonal-breakdown-conveyor"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor">
+    <Prefix name="" IRI="http://www.semanticweb.org/funcitonal-breakdown-conveyor"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.industrialontologies.org/core/</Import>
+    <Declaration>
+        <Class IRI="#CPU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PLC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RTU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UPS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#air_intake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#alarm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#analyser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#baseplate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#battery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#belt_for_a_conveyor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#blade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bolt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bracket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#brake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bucket_elevator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cabinet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capacitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clutch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#compressor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#conduit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cooler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#counterweight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coupling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coupling_fluid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#crane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#crusher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cyclone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deflector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#door"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#drum_pulley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dust_suppression_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#emergency_stop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#filter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flowmeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flywheel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#frame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gas_cyliner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gearbox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#generator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grease_line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#guard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#guide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hoist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#idler_roller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#impeller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instrumentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#insulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#junction_box"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#laser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lighting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#liner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#load_cell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lubrication_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mechanical_seal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#motor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#noise_barrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nozzle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#orifice_plate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pads"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plough"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pull_handle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pull_wire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pulley_lagging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump_centrifugal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump_gear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump_packing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump_piston"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump_positive_displacement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump_screw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump_volute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pushbutton_switch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#reactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#relay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sample_point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scaffold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scraper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sensor_metal_detector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#settling_tank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shaft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shutter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#signal_generator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#skirt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#solenoid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#splice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#spraybar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#switch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#switch_drift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#switch_flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#switch_speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#switch_tilt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tachometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tripper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trolley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#valve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#valve_non_return"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#valve_regulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vibrating_feeder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vsd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weightometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#welding_machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#winch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_control_access_or_flow(Q)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_detect_human_action_and_provide_response(S)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_emit(E)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_enclose_or_partially_enclose_another_object(N)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_guide_from_one_place_to-another(W)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_interface(X)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_localise(U)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_protect_against_undesirable_conditions(F)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_provide_controllable_flow(G)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_provide_mechanical_movement_or_force(M)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_provide_perceptible_information(P)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_restrict_or_stabilise(R)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_sense(B)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_store(C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_transform(T)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_treat_input_signals_and_provide_output(K)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#capability_to_treat_or_process_matter(H)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_controlling(Q)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_covering(N)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_driving(M)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_emitting(E)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_generating(G)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_guiding(W)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_holding(U)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_human_interaction(S)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_information_processing(K)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_interfacing(X)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_matter_processing(H)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_presenting(P)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_protecting(F)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_restricting(R)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_sensing(B)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_storing(C)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object_transforming(T)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_density(BD)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_electric_current(BC)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_electric_potential(BA)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_energy(BH)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_field(BE)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_flow(BF)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_humidity(BM)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_incidents_or_amounts(BZ)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_level(BL)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_multiple_quantities(BU)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_power(BJ)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_pressure(BP)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_radiation(BR)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_resistivity_or_conductivity(BB)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_sound_or_visual_appearance(BX)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_spatial_dimension_or_position(BG)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_stored_information(BY)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_substrate_concentration(BQ)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_temperature(BT)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_time(BK)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_time_rate(BS)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sense_weight_force_or_torque(BW)"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#functionalPartAtSomeTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInstalledAs"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#drum_pulley"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="#bearing"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#drum_pulley"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="#pulley_lagging"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#drum_pulley"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="#shaft"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#flowmeter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#sense_flow(BF)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_controlling(Q)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_control_access_or_flow(Q)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_covering(N)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_enclose_or_partially_enclose_another_object(N)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_driving(M)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_provide_mechanical_movement_or_force(M)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_emitting(E)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_emit(E)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_generating(G)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_provide_controllable_flow(G)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_guiding(W)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_guide_from_one_place_to-another(W)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_holding(U)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_localise(U)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_human_interaction(S)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_detect_human_action_and_provide_response(S)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_information_processing(K)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_treat_input_signals_and_provide_output(K)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_interfacing(X)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_interface(X)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_matter_processing(H)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_treat_or_process_matter(H)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_presenting(P)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_provide_perceptible_information(P)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_protecting(F)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_protect_against_undesirable_conditions(F)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_restricting(R)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_restrict_or_stabilise(R)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_sensing(B)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_sense(B)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_storing(C)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_store(C)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#object_transforming(T)"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.industrialontologies.org/core/RO_0000085"/>
+            <Class IRI="#capability_to_transform(T)"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#CPU"/>
+        <Class IRI="#object_information_processing(K)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PLC"/>
+        <Class IRI="#object_information_processing(K)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RTU"/>
+        <Class IRI="#object_information_processing(K)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UPS"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#air_intake"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#alarm"/>
+        <Class IRI="#object_presenting(P)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#analyser"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#baseplate"/>
+        <Class IRI="#object_holding(U)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#battery"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bearing"/>
+        <Class IRI="#object_holding(U)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bearing"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#belt_for_a_conveyor"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#blade"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bolt"/>
+        <Class IRI="#object_holding(U)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bracket"/>
+        <Class IRI="#object_holding(U)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#brake"/>
+        <Class IRI="#object_controlling(Q)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#brake"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bucket_elevator"/>
+        <Class IRI="#object_storing(C)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cabinet"/>
+        <Class IRI="#object_storing(C)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cable"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capacitor"/>
+        <Class IRI="#object_storing(C)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chute"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clamp"/>
+        <Class IRI="#object_holding(U)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clamp"/>
+        <Class IRI="#object_interfacing(X)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clutch"/>
+        <Class IRI="#object_interfacing(X)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#compressor"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#computer"/>
+        <Class IRI="#object_information_processing(K)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#conduit"/>
+        <Class IRI="#object_protecting(F)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cooler"/>
+        <Class IRI="#object_emitting(E)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#counterweight"/>
+        <Class IRI="#object_storing(C)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coupling"/>
+        <Class IRI="#object_interfacing(X)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coupling"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coupling_fluid"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#crane"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#crusher"/>
+        <Class IRI="#object_matter_processing(H)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cyclone"/>
+        <Class IRI="#object_matter_processing(H)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deflector"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diode"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#door"/>
+        <Class IRI="#object_covering(N)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#drum_pulley"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dust_suppression_system"/>
+        <Class IRI="#object_emitting(E)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#emergency_stop"/>
+        <Class IRI="#object_controlling(Q)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fan"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#filter"/>
+        <Class IRI="#object_matter_processing(H)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fitting"/>
+        <Class IRI="#object_holding(U)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flowmeter"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flywheel"/>
+        <Class IRI="#object_storing(C)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#frame"/>
+        <Class IRI="#object_holding(U)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gas_cyliner"/>
+        <Class IRI="#object_storing(C)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gate"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gearbox"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#generator"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grease_line"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#guard"/>
+        <Class IRI="#object_protecting(F)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#guide"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hoist"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hose"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#idler_roller"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#impeller"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#instrumentation"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#insulation"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#junction_box"/>
+        <Class IRI="#object_interfacing(X)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laser"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lighting"/>
+        <Class IRI="#object_emitting(E)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#liner"/>
+        <Class IRI="#object_protecting(F)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#load_cell"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lubrication_system"/>
+        <Class IRI="#object_protecting(F)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mechanical_seal"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#motor"/>
+        <Class IRI="#object_driving(M)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#noise_barrier"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nozzle"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#orifice_plate"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pads"/>
+        <Class IRI="#object_protecting(F)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pipe"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plate"/>
+        <Class IRI="#object_protecting(F)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plough"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pull_handle"/>
+        <Class IRI="#object_human_interaction(S)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pull_wire"/>
+        <Class IRI="#object_human_interaction(S)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pulley_lagging"/>
+        <Class IRI="#object_protecting(F)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump_centrifugal"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump_gear"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump_packing"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump_piston"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump_positive_displacement"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump_screw"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump_volute"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pushbutton_switch"/>
+        <Class IRI="#object_human_interaction(S)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reactor"/>
+        <Class IRI="#object_matter_processing(H)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#relay"/>
+        <Class IRI="#object_information_processing(K)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sample_point"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scaffold"/>
+        <Class IRI="#object_holding(U)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scraper"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sensor"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sensor_metal_detector"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#settling_tank"/>
+        <Class IRI="#object_matter_processing(H)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shaft"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shutter"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#signal_generator"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#skirt"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#solenoid"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#splice"/>
+        <Class IRI="#object_interfacing(X)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spraybar"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#structure"/>
+        <Class IRI="#object_holding(U)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#switch"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#switch_drift"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#switch_flow"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#switch_speed"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#switch_tilt"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tachometer"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tripper"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trolley"/>
+        <Class IRI="#object_guiding(W)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#valve"/>
+        <Class IRI="#object_controlling(Q)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#valve_non_return"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#valve_regulation"/>
+        <Class IRI="#object_restricting(R)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vibrating_feeder"/>
+        <Class IRI="#object_generating(G)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vsd"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weightometer"/>
+        <Class IRI="#object_sensing(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#welding_machine"/>
+        <Class IRI="#object_matter_processing(H)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#winch"/>
+        <Class IRI="#object_transforming(T)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_control_access_or_flow(Q)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_detect_human_action_and_provide_response(S)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_emit(E)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_enclose_or_partially_enclose_another_object(N)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_guide_from_one_place_to-another(W)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_interface(X)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_localise(U)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_protect_against_undesirable_conditions(F)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_provide_controllable_flow(G)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_provide_mechanical_movement_or_force(M)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_provide_perceptible_information(P)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_restrict_or_stabilise(R)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_sense(B)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_store(C)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_transform(T)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_treat_input_signals_and_provide_output(K)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#capability_to_treat_or_process_matter(H)"/>
+        <Class IRI="http://www.industrialontologies.org/core/Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_controlling(Q)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_covering(N)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_driving(M)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_emitting(E)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_generating(G)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_guiding(W)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_holding(U)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_human_interaction(S)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_information_processing(K)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_interfacing(X)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_matter_processing(H)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_presenting(P)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_protecting(F)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_restricting(R)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_sensing(B)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_storing(C)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#object_transforming(T)"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_density(BD)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_electric_current(BC)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_electric_potential(BA)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_energy(BH)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_field(BE)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_flow(BF)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_humidity(BM)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_incidents_or_amounts(BZ)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_level(BL)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_multiple_quantities(BU)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_power(BJ)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_pressure(BP)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_radiation(BR)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_resistivity_or_conductivity(BB)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_sound_or_visual_appearance(BX)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_spatial_dimension_or_position(BG)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_stored_information(BY)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_substrate_concentration(BQ)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_temperature(BT)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_time(BK)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_time_rate(BS)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sense_weight_force_or_torque(BW)"/>
+        <Class IRI="#capability_to_sense(B)"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#belt_for_a_conveyor"/>
+        <Class IRI="#drum_pulley"/>
+        <Class IRI="#gearbox"/>
+        <Class IRI="#idler_roller"/>
+        <Class IRI="#motor"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000176"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#functionalPartAtSomeTime"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000176"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInstalledAs"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
+        <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#functionalPartAtSomeTime"/>
+        <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#functionalPartAtSomeTime"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInstalledAs"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#functionalPartAtSomeTime"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
+        <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+    </DisjointObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ancillaryPartOfAtSomeTime</IRI>
+        <Literal>ancillary part of at some time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#functionalPartAtSomeTime</IRI>
+        <Literal>functional part of at some time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#functionalPartAtSomeTime</IRI>
+        <Literal>under development</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAncillaryPartAtSomeTime</IRI>
+        <Literal>has ancillary part at some time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFunctionalPartAtSomeTime</IRI>
+        <Literal>has functional part at some time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#hasFunctionalPartAtSomeTime</IRI>
+        <Literal>under development</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#idler_roller</IRI>
+        <Literal>idler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#idler_roller</IRI>
+        <Literal>roller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInstalledAs</IRI>
+        <Literal>is installed as</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#isInstalledAs</IRI>
+        <Literal>under development</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#skirt</IRI>
+        <Literal>skirting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#winch</IRI>
+        <Literal>hoist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/excerptedFrom"/>
+        <IRI>#object_controlling(Q)</IRI>
+        <Literal>ISO 81346-2:2019</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_controlling(Q)</IRI>
+        <Literal>object for controlling access or flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/excerptedFrom"/>
+        <IRI>#object_covering(N)</IRI>
+        <Literal>ISO 81346-2:2019</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_covering(N)</IRI>
+        <Literal>object for enclosing partly or fully another object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_driving(M)</IRI>
+        <Literal>object for providing mechanical movement or force</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_emitting(E)</IRI>
+        <Literal>object for emitting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_generating(G)</IRI>
+        <Literal>object for providing a controllable flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_guiding(W)</IRI>
+        <Literal>object for leading from one place to another</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_holding(U)</IRI>
+        <Literal>object for localising of other objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_human_interaction(S)</IRI>
+        <Literal>object for detecting a human action and providing an appropriate response</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_information_processing(K)</IRI>
+        <Literal>object for treating input signals and providing an appropriate output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_interfacing(X)</IRI>
+        <Literal>object for interfacing an object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_matter_processing(H)</IRI>
+        <Literal>object for treating matter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_presenting(P)</IRI>
+        <Literal>object for providing perceptoble information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_protecting(F)</IRI>
+        <Literal>object for protecting against the effects of dangerous or undesirable conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_restricting(R)</IRI>
+        <Literal>object for restricting or stabilising</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_sensing(B)</IRI>
+        <Literal>object for picking up information and providing a representation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_storing(C)</IRI>
+        <Literal>object for storing and subsequent retrieval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#object_transforming(T)</IRI>
+        <Literal>object for transforming</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition"/>
+        <IRI>#sense_stored_information(BY)</IRI>
+        <Literal>the capability to detect or measure a physical property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sense_stored_information(BY)</IRI>
+        <Literal>aligned to Class Code B in ISO 81346</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
