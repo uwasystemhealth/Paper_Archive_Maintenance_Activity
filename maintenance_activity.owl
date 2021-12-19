@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://www.industrialontologies.org/core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5">
+        <owl:imports rdf:resource="http://www.industrialontologies.org/core/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#adjust_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#adjust_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#assemble_or_disassemble_or_rebuild_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#assemble_or_disassemble_or_rebuild_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#diagnose_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#diagnose_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#fabricate_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#fabricate_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#inspect_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#inspect_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#isolate_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#isolate_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#measure_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#measure_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_adjusted -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_adjusted">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_assembled_and_disassembled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_assembled_and_disassembled">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_diagnosed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_diagnosed">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_fabricated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_fabricated">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_inspected -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_inspected">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_isolated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_isolated">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_measured -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_measured">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_repaired -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_repaired">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_replaced -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_replaced">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_serviced_or_cleaned -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_serviced_or_cleaned">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_tested -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_tested">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_troubleshooted -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#object_designed_to_be_troubleshooted">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#repair_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#repair_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#replace_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#replace_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#service_or_clean_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#service_or_clean_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#test_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#test_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#troubleshoot_object_task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#troubleshoot_object_task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5#maintenance_task_on_object"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
