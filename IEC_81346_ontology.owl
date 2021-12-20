@@ -419,6 +419,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#flange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#flange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#object_holding(U)"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/IEC-81346-ontology#flowmeter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#flowmeter">
