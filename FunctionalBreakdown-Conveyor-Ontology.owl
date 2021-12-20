@@ -12,6 +12,13 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/IEC-81346-ontology/1.0</Import>
+    <Declaration>
+        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.industrialontologies.org/core/MechanicalSystem"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#conveyor_control_and_monitoring_system"/>
     </Declaration>
@@ -31,6 +38,12 @@
         <Class IRI="#pump_centrifugal_and_motor_assembly"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000176"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
     </Declaration>
     <Declaration>
@@ -47,18 +60,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.industrialontologies.org/core/MechanicalSystem"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.industrialontologies.org/core/MaterialArtifact"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000176"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#conveyor_control_and_monitoring_system"/>
