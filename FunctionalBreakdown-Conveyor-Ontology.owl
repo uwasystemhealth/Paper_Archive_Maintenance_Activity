@@ -35,6 +35,9 @@
         <Class IRI="#conveyor_system"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#pulley_unit"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#pump_centrifugal_and_motor_assembly"/>
     </Declaration>
     <Declaration>
@@ -59,32 +62,389 @@
         <ObjectProperty IRI="#isInstalledAs"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CV-001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV-001-MTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV-001-SKIRTING"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV-001-STRUCTURE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-CONVBELT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-CPLG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-DUSTSUPP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-GBOX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-IDLER-001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-IDLER-010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-IDLER-020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-IDLER-030"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-IDLER-FRAME-001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-IDLER-FRAME-010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-IDLER-FRAME-020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-IDLER-FRAME-030"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-MTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-PULLEY-HEAD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-PULLEY-TAIL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV001-WEIGHTOMETER"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_control_and_monitoring_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#sensor_metal_detector"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_control_and_monitoring_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#switch_drift"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_control_and_monitoring_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#switch_speed"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_control_and_monitoring_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#weightometer"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_dynamic_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#belt_for_a_conveyor"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_dynamic_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#gearbox"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_dynamic_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#motor"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_dynamic_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="#pulley_unit"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_safety_and_environmental_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#deflector"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_safety_and_environmental_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#guard"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_safety_and_environmental_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#plough"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_safety_and_environmental_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#scraper"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_safety_and_environmental_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#skirt"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_safety_and_environmental_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#spraybar"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_structural_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#frame"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_structural_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#idler_roller"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_structural_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#structure"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_structural_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#tripper"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
+            <Class IRI="#conveyor_control_and_monitoring_system"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
+            <Class IRI="#conveyor_safety_and_environmental_system"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
+            <Class IRI="#conveyor_structural_system"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#conveyor_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="#conveyor_dynamic_system"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pulley_unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#bearing"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pulley_unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#drum_pulley"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pulley_unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#pulley_lagging"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pulley_unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#shaft"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pump_centrifugal_and_motor_assembly"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAncillaryPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#baseplate"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pump_centrifugal_and_motor_assembly"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#coupling"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pump_centrifugal_and_motor_assembly"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#motor"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pump_centrifugal_and_motor_assembly"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#pump_centrifugal"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pump_centrifugal_and_motor_assembly"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFunctionalPartAtSomeTime"/>
+            <Class IRI="http://www.semanticweb.org/IEC-81346-ontology#pump_volute"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#conveyor_control_and_monitoring_system"/>
-        <Class IRI="#conveyor_system"/>
+        <Class IRI="http://www.industrialontologies.org/core/MechanicalSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conveyor_dynamic_system"/>
-        <Class IRI="#conveyor_system"/>
+        <Class IRI="http://www.industrialontologies.org/core/MechanicalSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conveyor_safety_and_environmental_system"/>
-        <Class IRI="#conveyor_system"/>
+        <Class IRI="http://www.industrialontologies.org/core/MechanicalSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conveyor_structural_system"/>
-        <Class IRI="#conveyor_system"/>
+        <Class IRI="http://www.industrialontologies.org/core/MechanicalSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#conveyor_system"/>
+        <Class IRI="http://www.industrialontologies.org/core/MechanicalSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pulley_unit"/>
         <Class IRI="http://www.industrialontologies.org/core/MechanicalSystem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#pump_centrifugal_and_motor_assembly"/>
         <Class IRI="http://www.industrialontologies.org/core/MechanicalSystem"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#conveyor_system"/>
+        <NamedIndividual IRI="#CV-001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_safety_and_environmental_system"/>
+        <NamedIndividual IRI="#CV-001-SKIRTING"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_structural_system"/>
+        <NamedIndividual IRI="#CV-001-STRUCTURE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_dynamic_system"/>
+        <NamedIndividual IRI="#CV001-CONVBELT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_dynamic_system"/>
+        <NamedIndividual IRI="#CV001-CPLG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_safety_and_environmental_system"/>
+        <NamedIndividual IRI="#CV001-DUSTSUPP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_dynamic_system"/>
+        <NamedIndividual IRI="#CV001-GBOX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_structural_system"/>
+        <NamedIndividual IRI="#CV001-IDLER-001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_structural_system"/>
+        <NamedIndividual IRI="#CV001-IDLER-010"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_structural_system"/>
+        <NamedIndividual IRI="#CV001-IDLER-020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_structural_system"/>
+        <NamedIndividual IRI="#CV001-IDLER-030"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_structural_system"/>
+        <NamedIndividual IRI="#CV001-IDLER-FRAME-001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_structural_system"/>
+        <NamedIndividual IRI="#CV001-IDLER-FRAME-010"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_structural_system"/>
+        <NamedIndividual IRI="#CV001-IDLER-FRAME-020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_structural_system"/>
+        <NamedIndividual IRI="#CV001-IDLER-FRAME-030"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_dynamic_system"/>
+        <NamedIndividual IRI="#CV001-MTR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_dynamic_system"/>
+        <NamedIndividual IRI="#CV001-PULLEY-HEAD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_dynamic_system"/>
+        <NamedIndividual IRI="#CV001-PULLEY-TAIL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conveyor_control_and_monitoring_system"/>
+        <NamedIndividual IRI="#CV001-WEIGHTOMETER"/>
+    </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#ancillaryPartOfAtSomeTime"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000176"/>
