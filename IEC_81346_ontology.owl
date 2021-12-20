@@ -13,6 +13,7 @@
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/IEC-81346-ontology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/IEC-81346-ontology/1.0"/>
+        <owl:imports rdf:resource="http://www.industrialontologies.org/core/"/>
     </owl:Ontology>
     
 
