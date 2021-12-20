@@ -11,9 +11,30 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5">
-        <owl:imports rdf:resource="http://www.industrialontologies.org/core/"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057"/>
     
 
 
@@ -25,6 +46,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.industrialontologies.org/core/Capability -->
+
+    <owl:Class rdf:about="http://www.industrialontologies.org/core/Capability"/>
+    
+
+
+    <!-- http://www.industrialontologies.org/core/MaterialArtifact -->
+
+    <owl:Class rdf:about="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    
+
+
+    <!-- http://www.industrialontologies.org/core/Task -->
+
+    <owl:Class rdf:about="http://www.industrialontologies.org/core/Task"/>
     
 
 
