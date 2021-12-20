@@ -5,8 +5,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/IEC_81346_ontology">
-    <Prefix name="" IRI=""http://www.semanticweb.org/IEC_81346_ontology"/>
+     ontologyIRI="http://www.semanticweb.org/IEC_81346_ontology"
+     versionIRI="http://www.semanticweb.org/IEC_81346_ontology/1.0">
+    <Prefix name="" IRI="http://www.semanticweb.org/IEC_81346_ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -248,9 +249,6 @@
         <Class IRI="#pump_gear"/>
     </Declaration>
     <Declaration>
-        <Class IRI="r#pump_packing"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#pump_piston"/>
     </Declaration>
     <Declaration>
@@ -342,9 +340,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#valve_non_return"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="r#valve_regulation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#vibrating_feeder"/>
@@ -529,7 +524,18 @@
     <Declaration>
         <Class IRI="#sense_weight_force_or_torque(BW)"/>
     </Declaration>
-
+    <Declaration>
+        <Class IRI="r#pump_packing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="r#valve_regulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#valve_regulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump_packing"/>
+    </Declaration>
     <EquivalentClasses>
         <Class IRI="#object_controlling(Q)"/>
         <ObjectSomeValuesFrom>
@@ -1360,8 +1366,6 @@
         <Class IRI="#idler_roller"/>
         <Class IRI="#motor"/>
     </DisjointClasses>
- 
-
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.industrialontologies.org/IOFAnnotationVocabulary/excerptedFrom"/>
         <IRI>#object_controlling(Q)</IRI>
