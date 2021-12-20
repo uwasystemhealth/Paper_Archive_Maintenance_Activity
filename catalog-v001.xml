@@ -7,12 +7,11 @@
     <uri id="Imports Wizard Entry" name="http://www.industrialontologies.org/core/" uri="file:////uniwa.uwa.edu.au/userhome/Staff8/00040628/My%20Documents/GitHub/Paper_Archive_Maintenance_Activity/imports/IOF.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/funcitonal-breakdown-conveyor" uri="FunctionalBreakdown-Conveyor-Ontology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1639976959494" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="imports/bfo-2020.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1639976959494" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="imports/bfo-v2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1639976959494" name="http://www.industrialontologies.org/IOFAnnotationVocabulary/" uri="imports/IOF_AnnotationsVocabulary.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1639976959494" name="http://www.industrialontologies.org/core/" uri="imports/IOF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1639976959494" name="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5" uri="maintenance_activity.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1639976959494" name="http://www.semanticweb.org/IEC_81346_ontology" uri="IEC_81346_ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1639976959494" name="http://www.semanticweb.org/funcitonal-breakdown-conveyor" uri="FunctionalBreakdown-Conveyor-Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1639997725018" name="http://purl.obolibrary.org/obo/bfo.owl" uri="imports/bfo-v2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1639997725018" name="http://www.industrialontologies.org/IOFAnnotationVocabulary/" uri="imports/IOF_AnnotationsVocabulary.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1639997725018" name="http://www.industrialontologies.org/core/" uri="imports/IOF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1639997725018" name="http://www.semanticweb.org/00040628/ontologies/2021/11/untitled-ontology-5" uri="maintenance_activity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1639997725018" name="http://www.semanticweb.org/IEC_81346_ontology" uri="IEC_81346_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1639997725018" name="http://www.semanticweb.org/funcitonal-breakdown-conveyor" uri="FunctionalBreakdown-Conveyor-Ontology.owl"/>
     </group>
 </catalog>
