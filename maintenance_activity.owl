@@ -209,6 +209,23 @@
     
 
 
+    <!-- http://www.semanticweb.org/maintenance-activity#end-of-life_event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#end-of-life_event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#event"/>
+        <IOFAnnotationVocabulary:naturalLanguageDefinition>a event associated with the removal of an asset from its assigned engineering system whether the asset is considered failed, healthy or degraded.</IOFAnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#event">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/maintenance-activity#fabricate_object_task -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#fabricate_object_task">
@@ -306,6 +323,21 @@
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#troubleshoot_object_task">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#maintenance_task_on_object"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV-001-MTR">
+        <IOFAnnotationVocabulary:naturalLanguageDefinition>Not yet approved: a process in which an entity participates for some time (MH definition)</IOFAnnotationVocabulary:naturalLanguageDefinition>
+        <rdfs:comment>new class - not yet approved by IOF but under discussion.</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
 
