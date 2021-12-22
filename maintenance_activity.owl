@@ -13,6 +13,7 @@
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/maintenance-activity">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/maintenance-activity/1.0"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor"/>
         <rdfs:comment></rdfs:comment>
     </owl:Ontology>
     
