@@ -297,6 +297,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#replace_object_task -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#replace_object_task">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/triggers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/maintenance-activity#end-of-life_event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#maintenance_task_on_object"/>
     </owl:Class>
     
