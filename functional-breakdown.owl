@@ -1,0 +1,554 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/funcitonal-breakdown-conveyor"
+     xml:base="http://www.semanticweb.org/funcitonal-breakdown-conveyor"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://www.industrialontologies.org/core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor">
+        <owl:imports rdf:resource="http://www.semanticweb.org/IEC-81346-ontology/1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000176"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000178 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#ancillaryPartOfAtSomeTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#ancillaryPartOfAtSomeTime">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
+        <rdfs:domain rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:range rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:label>ancillary part of at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#functionalPartAtSomeTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#functionalPartAtSomeTime">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+        <rdfs:domain rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:range rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:label>functional part of at some time</rdfs:label>
+        <skos:definition>under development</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <rdfs:domain rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:range rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+        <rdfs:label>has ancillary part at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <rdfs:label>has functional part at some time</rdfs:label>
+        <skos:definition>under development</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#isInstalledAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#isInstalledAs">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+        <rdfs:domain rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:label>is installed as</rdfs:label>
+        <skos:definition>under development</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.industrialontologies.org/core/MaterialArtifact -->
+
+    <owl:Class rdf:about="http://www.industrialontologies.org/core/MaterialArtifact"/>
+    
+
+
+    <!-- http://www.industrialontologies.org/core/MechanicalSystem -->
+
+    <owl:Class rdf:about="http://www.industrialontologies.org/core/MechanicalSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_control_and_monitoring_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_control_and_monitoring_system">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#sensor_metal_detector"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#switch_drift"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#switch_speed"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#weightometer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MechanicalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_dynamic_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_dynamic_system">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#belt_for_a_conveyor"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#gearbox"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#motor"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pulley_unit"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MechanicalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_safety_and_environmental_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_safety_and_environmental_system">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#deflector"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#guard"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#plough"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#scraper"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#skirt"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#spraybar"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MechanicalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#frame"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#idler_roller"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#structure"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#tripper"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MechanicalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_system">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_control_and_monitoring_system"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_safety_and_environmental_system"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_dynamic_system"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MechanicalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#pulley_unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pulley_unit">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#bearing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#drum_pulley"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#pulley_lagging"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#shaft"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MechanicalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_centrifugal_and_motor_assembly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#pump_centrifugal_and_motor_assembly">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasAncillaryPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#baseplate"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#coupling"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#motor"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#pump_centrifugal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#hasFunctionalPartAtSomeTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#pump_volute"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MechanicalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV-001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV-001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV-001-MTR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV-001-MTR"/>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV-001-SKIRTING -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV-001-SKIRTING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_safety_and_environmental_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV-001-STRUCTURE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV-001-STRUCTURE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-CONVBELT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-CONVBELT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_dynamic_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-CPLG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-CPLG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_dynamic_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-DUSTSUPP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-DUSTSUPP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_safety_and_environmental_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-GBOX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-GBOX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_dynamic_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-030 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-030">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-FRAME-001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-FRAME-001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-FRAME-010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-FRAME-010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-FRAME-020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-FRAME-020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-FRAME-030 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-IDLER-FRAME-030">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_structural_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-MTR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-MTR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_dynamic_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-PULLEY-HEAD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-PULLEY-HEAD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_dynamic_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-PULLEY-TAIL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-PULLEY-TAIL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_dynamic_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-WEIGHTOMETER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/funcitonal-breakdown-conveyor#CV001-WEIGHTOMETER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/funcitonal-breakdown-conveyor#conveyor_control_and_monitoring_system"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
