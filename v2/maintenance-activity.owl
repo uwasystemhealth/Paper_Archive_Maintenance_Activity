@@ -1,0 +1,2467 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/maintenance-activity#"
+     xml:base="http://www.semanticweb.org/maintenance-activity"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://www.industrialontologies.org/core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/maintenance-activity">
+        <owl:imports rdf:resource="http://www.industrialontologies.org/core/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#MaintenanceActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label>Maintenance Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#SupportingActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#SupportingActivity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label>Supporting Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Describes a maintenance or supporting activity where we are not sure of its classification</rdfs:comment>
+        <rdfs:label>Unspecified Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#access -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#access">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#activate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#activate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#add -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#add">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#adjust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#adjust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#adr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#adr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#ait -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#ait">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#align -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#align">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#amend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#amend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#analyse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#analyse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#apply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#apply">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#approve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#approve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#artt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#artt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#assemble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#assemble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#assess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#assess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#assist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#assist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#attach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#attach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#install"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#attend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#attend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#attention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#attention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#audit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#audit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#buff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#buff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#build -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#build">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#build_up_off -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#build_up_off">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#bypass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#bypass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#calibrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#calibrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#call -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#call">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#call_out -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#call_out">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#carry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#carry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#carry_back -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#carry_back">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#carry_out -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#carry_out">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#cc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#cc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#ceased -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#ceased">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#centralise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#centralise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#change -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#change">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#replace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#change_out -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#change_out">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#replace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#charge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#charge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#check -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#check">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#clean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#clean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#clip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#clip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#cut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#close -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#close">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#coil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#coil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#collect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#collect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#commission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#commission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#communications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#communications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#compile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#compile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#collect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#complete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#complete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#condition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#condition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#conduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#conduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#confirm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#confirm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#connect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#connect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#correct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#correct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#improve"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#create -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#create">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#make"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#create_review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#create_review">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#csi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#csi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#cut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#cut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#cut_off -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#cut_off">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#cut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#decount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#decount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#deflect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#deflect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#deisolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#deisolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#isolate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#demobilise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#demobilise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#description -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#description">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#detect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#detect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#diagnose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#detension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#detension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#tension_NEW"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#develop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#develop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#make"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#diagnose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#disable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#disable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#discharge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#discharge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#disconnect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#disconnect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#connect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#dn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#dn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#dont -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#dont">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#drain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#drain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#dribble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#dribble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#drive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#drive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#drive_test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#drive_test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#drop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#drop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#drop_down -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#drop_down">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#drop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#duplicate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#duplicate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#eli -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#eli">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#energize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#energize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#erect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#erect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#extend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#extend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#fabricate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#fabricate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#make"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#face -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#face">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#fasten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#fasten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#fault -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#fault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#fault_find -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#fault_find">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#diagnose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#fill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#fill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#fit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#fit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#install"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#fix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#fix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#repair"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#follow_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#follow_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#free_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#free_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#function_test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#function_test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#generate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#generate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#grease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#grease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#guide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#guide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#heat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#heat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#hold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#hold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#hop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#hop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#hose_otu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#hose_otu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#identify -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#identify">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#diagnose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#improve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#improve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#increase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#increase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#info -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#info">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#ingress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#ingress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#insert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#insert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#install"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#inspect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#inspect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#install -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#install">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#instrument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#instrument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#invert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#invert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#inverted -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#inverted">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#investigate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#investigate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#diagnose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#irt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#irt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#isolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#isolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#j -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#j">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#jr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#jr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#label -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#label">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#laminate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#laminate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#launch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#launch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#launder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#launder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#lift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#lift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#load -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#load">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#locate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#locate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#look -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#look">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#lubricate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#lubricate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#grease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#lump -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#lump">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#maintain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#maintain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#make -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#make">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#make_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#make_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#fabricate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#manufacture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#manufacture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#make"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#measure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#measure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#mobilise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#mobilise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#modify -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#modify">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#moisture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#moisture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#monitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#monitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#move -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#move">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#multiple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#multiple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#obtain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#obtain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#open -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#open">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#operate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#operate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#operation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#operation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#opportune -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#opportune">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#overhaul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#overhaul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#overload -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#overload">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#pack_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#pack_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#pair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#pair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#patch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#patch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#repair"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#patch_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#patch_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#fix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#perform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#perform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#photos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#photos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#plate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#plate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#pop_out -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#pop_out">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#position">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#pre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#pre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#pre-fabricate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#pre-fabricate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#fabricate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#pre-shut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#pre-shut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#prepare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#prepare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#prim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#prim">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#print -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#print">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#programmed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#programmed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#project">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#projects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#projects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#provide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#provide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#pull -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#pull">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#pulled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#pulled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#purge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#purge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#push -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#push">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#put -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#put">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#quote -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#quote">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#raise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#raise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#lift"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#re -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#re">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#re-run -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#re-run">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#run"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reactivate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reactivate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#readjust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#readjust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#realign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#realign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#rearrange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#rearrange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reattach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reattach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#attach"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#rebuild -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#rebuild">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#build"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#rec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#rec">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#recalibrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#recalibrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reclaim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reclaim">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reclaimer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reclaimer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reclamp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reclamp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reconnect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reconnect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#rectify -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#rectify">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#fix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#redesign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#redesign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reengage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reengage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#refill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#refill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#fill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#refit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#refit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#fit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#refix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#refix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#refurbish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#refurbish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reinforce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reinforce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#fix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reinstall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reinstall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#install"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reinstate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reinstate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#install"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#rejects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#rejects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#release -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#release">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#relocate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#relocate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#remount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#remount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#remove -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#remove">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reopen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reopen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#open"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#repair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#repair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#replace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#replace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#report -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#report">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#request -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#request">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#required -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#required">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reroute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reroute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#resample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#resample">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#sample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#rescd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#rescd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reschedule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reschedule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reseal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reseal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#repair"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reseat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reseat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#resecure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#resecure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#secure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#resplice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#resplice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#ret -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#ret">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#retension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#retension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#tension_NEW"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reterminate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reterminate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#retest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#retest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#retorque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#retorque">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#retrack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#retrack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#return -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#return">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#review">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#reweld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reweld">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#weld"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#rework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#rework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#rip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#rip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#ris -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#ris">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#rot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#rot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#rotate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#rotate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#run -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#run">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#sample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#sample">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#measure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#scan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#scan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#scope -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#scope">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#scrap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#scrap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#sect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#sect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#secure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#secure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#sequence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#sequence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#set -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#set">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#set_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#set_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#settings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#settings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#shutdown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#shutdown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#sign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#sign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#snub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#snub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#span -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#span">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#spare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#spare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#spillage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#spillage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#spray -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#spray">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#stage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#stage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#startup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#startup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#step_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#step_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#straighten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#straighten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#struct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#struct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#supply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#supply">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#survey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#survey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#suspect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#suspect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#suspend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#suspend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#swap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#swap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#replace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#switch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#switch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#replace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#take_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#take_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#teamwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#teamwork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#tension_NEW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#tension_NEW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#thermography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#thermography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#thickness_test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#thickness_test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#tighten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#tighten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#tilt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#tilt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#top_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#top_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#fill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#track -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#track">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#tramp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#tramp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#transfer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#transfer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#transition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#transition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#trial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#trial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#trim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#trim">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#cut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#trip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#trip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#troubleshoot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#troubleshoot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#diagnose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#tune -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#tune">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#unable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#unable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#unblock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#unblock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#unbog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#unbog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#underspeed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#underspeed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#unload -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#unload">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#load"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#untecod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#untecod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#upgrade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#upgrade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#verify -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#verify">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#weld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#weld">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#wit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#wit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#i/o -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#i/o">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#In_Tagged_Set_But_Not_Sure"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
