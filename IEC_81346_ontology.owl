@@ -1027,138 +1027,138 @@
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_control_access_or_flow(Q) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_control_access_or_flow(Q) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_control_access_or_flow(Q)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_control_access_or_flow(Q)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_detect_human_action_and_provide_response(S) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_detect_human_action_and_provide_response(S) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_detect_human_action_and_provide_response(S)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_detect_human_action_and_provide_response(S)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_emit(E) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_emit(E) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_emit(E)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_emit(E)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_enclose_or_partially_enclose_another_object(N) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_enclose_or_partially_enclose_another_object(N) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_enclose_or_partially_enclose_another_object(N)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_enclose_or_partially_enclose_another_object(N)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_guide_from_one_place_to-another(W) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_guide_from_one_place_to-another(W) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_guide_from_one_place_to-another(W)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_guide_from_one_place_to-another(W)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_interface(X) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_interface(X) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_interface(X)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_interface(X)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_localise(U) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_localise(U) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_localise(U)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_localise(U)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_protect_against_undesirable_conditions(F) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_protect_against_undesirable_conditions(F) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_protect_against_undesirable_conditions(F)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_protect_against_undesirable_conditions(F)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_provide_controllable_flow(G) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_provide_controllable_flow(G) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_provide_controllable_flow(G)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_provide_controllable_flow(G)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_provide_mechanical_movement_or_force(M) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_provide_mechanical_movement_or_force(M) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_provide_mechanical_movement_or_force(M)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_provide_mechanical_movement_or_force(M)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_provide_perceptible_information(P) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_provide_perceptible_information(P) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_provide_perceptible_information(P)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_provide_perceptible_information(P)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_restrict_or_stabilise(R) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_restrict_or_stabilise(R) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_restrict_or_stabilise(R)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_restrict_or_stabilise(R)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_store(C) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_store(C) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_store(C)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_store(C)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_transform(T) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_transform(T) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_transform(T)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_transform(T)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_treat_input_signals_and_provide_output(K) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_treat_input_signals_and_provide_output(K) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_treat_input_signals_and_provide_output(K)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_treat_input_signals_and_provide_output(K)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/IEC-81346-ontology#capability_to_treat_or_process_matter(H) -->
+    <!-- http://www.semanticweb.org/IEC-81346-ontology#function_to_treat_or_process_matter(H) -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#capability_to_treat_or_process_matter(H)">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Capability"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#function_to_treat_or_process_matter(H)">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
 
@@ -1169,7 +1169,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_control_access_or_flow(Q)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_control_access_or_flow(Q)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1185,7 +1185,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_enclose_or_partially_enclose_another_object(N)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_enclose_or_partially_enclose_another_object(N)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1201,7 +1201,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_provide_mechanical_movement_or_force(M)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_provide_mechanical_movement_or_force(M)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1216,7 +1216,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_emit(E)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_emit(E)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1231,7 +1231,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_provide_controllable_flow(G)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_provide_controllable_flow(G)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1246,7 +1246,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_guide_from_one_place_to-another(W)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_guide_from_one_place_to-another(W)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1261,7 +1261,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_localise(U)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_localise(U)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1276,7 +1276,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_detect_human_action_and_provide_response(S)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_detect_human_action_and_provide_response(S)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1291,7 +1291,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_treat_input_signals_and_provide_output(K)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_treat_input_signals_and_provide_output(K)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1306,7 +1306,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_interface(X)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_interface(X)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1321,7 +1321,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_treat_or_process_matter(H)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_treat_or_process_matter(H)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1336,7 +1336,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_provide_perceptible_information(P)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_provide_perceptible_information(P)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1351,7 +1351,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_protect_against_undesirable_conditions(F)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_protect_against_undesirable_conditions(F)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1366,7 +1366,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_restrict_or_stabilise(R)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_restrict_or_stabilise(R)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1381,7 +1381,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1396,7 +1396,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_store(C)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_store(C)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1411,7 +1411,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000085"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_transform(T)"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_transform(T)"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
@@ -1423,7 +1423,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_density(BD) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_density(BD)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1431,7 +1431,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_electric_current(BC) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_electric_current(BC)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1439,7 +1439,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_electric_potential(BA) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_electric_potential(BA)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1447,7 +1447,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_energy(BH) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_energy(BH)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1455,7 +1455,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_field(BE) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_field(BE)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1463,7 +1463,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_flow(BF) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_flow(BF)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1471,7 +1471,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_humidity(BM) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_humidity(BM)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1479,7 +1479,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_incidents_or_amounts(BZ) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_incidents_or_amounts(BZ)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1487,7 +1487,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_level(BL) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_level(BL)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1495,7 +1495,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_multiple_quantities(BU) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_multiple_quantities(BU)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1503,7 +1503,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_power(BJ) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_power(BJ)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1511,7 +1511,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_pressure(BP) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_pressure(BP)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1519,7 +1519,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_radiation(BR) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_radiation(BR)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1527,7 +1527,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_resistivity_or_conductivity(BB) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_resistivity_or_conductivity(BB)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1535,7 +1535,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_sound_or_visual_appearance(BX) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_sound_or_visual_appearance(BX)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1543,7 +1543,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_spatial_dimension_or_position(BG) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_spatial_dimension_or_position(BG)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1551,7 +1551,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_stored_information(BY) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_stored_information(BY)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
         <IOFAnnotationVocabulary:naturalLanguageDefinition>the capability to detect or measure a physical property</IOFAnnotationVocabulary:naturalLanguageDefinition>
         <rdfs:comment>aligned to Class Code B in ISO 81346</rdfs:comment>
     </owl:Class>
@@ -1561,7 +1561,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_substrate_concentration(BQ) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_substrate_concentration(BQ)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1569,7 +1569,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_temperature(BT) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_temperature(BT)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1577,7 +1577,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_time(BK) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_time(BK)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1585,7 +1585,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_time_rate(BS) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_time_rate(BS)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
@@ -1593,7 +1593,7 @@
     <!-- http://www.semanticweb.org/IEC-81346-ontology#sense_weight_force_or_torque(BW) -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/IEC-81346-ontology#sense_weight_force_or_torque(BW)">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#capability_to_sense(B)"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#function_to_sense(B)"/>
     </owl:Class>
     
 
