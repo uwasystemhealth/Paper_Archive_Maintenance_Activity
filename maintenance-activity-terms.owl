@@ -369,7 +369,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#check -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#check">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#inspect"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#diagnose"/>
     </owl:Class>
     
 
@@ -1505,7 +1505,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#reactivate -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#reactivate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#operate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#diagnose"/>
     </owl:Class>
     
 
@@ -1849,7 +1849,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#reset -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#reset">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#operate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#diagnose"/>
     </owl:Class>
     
 
@@ -1865,7 +1865,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#restart -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#restart">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#operate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#diagnose"/>
     </owl:Class>
     
 
