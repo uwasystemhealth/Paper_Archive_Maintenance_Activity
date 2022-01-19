@@ -377,7 +377,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity#clean -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#clean">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#service"/>
     </owl:Class>
     
 
@@ -489,7 +489,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity#create -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#create">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#make"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
     </owl:Class>
     
 
@@ -593,7 +593,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity#develop -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#develop">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#make"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
     </owl:Class>
     
 
@@ -737,7 +737,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity#fabricate -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#fabricate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#make"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
     </owl:Class>
     
 
@@ -1113,7 +1113,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity#make -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#make">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
     </owl:Class>
     
 
@@ -1129,7 +1129,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity#manufacture -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#manufacture">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#make"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
     </owl:Class>
     
 
