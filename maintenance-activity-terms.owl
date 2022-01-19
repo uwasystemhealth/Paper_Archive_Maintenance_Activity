@@ -145,7 +145,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#analyse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#analyse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#inspect"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#diagnose"/>
     </owl:Class>
     
 
@@ -370,6 +370,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#check">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-terms#clamp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#clamp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
     </owl:Class>
     
 
@@ -718,6 +726,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/maintenance-activity-terms#engage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#engage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/maintenance-activity-terms#erect -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#erect">
@@ -777,7 +793,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#fill -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#fill">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#service"/>
     </owl:Class>
     
 
@@ -841,7 +857,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#grease -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#grease">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#service"/>
     </owl:Class>
     
 
@@ -1513,7 +1529,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#realign -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#realign">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#align"/>
     </owl:Class>
     
 
@@ -1553,7 +1569,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#recalibrate -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#recalibrate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#calibrate"/>
     </owl:Class>
     
 
@@ -1577,7 +1593,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#reclamp -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#reclamp">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#clamp"/>
     </owl:Class>
     
 
@@ -1585,7 +1601,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#reconnect -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#reconnect">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#connect"/>
     </owl:Class>
     
 
@@ -1609,7 +1625,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#reengage -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#reengage">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#engage"/>
     </owl:Class>
     
 
@@ -1842,6 +1858,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#resplice">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#modify"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-terms#restart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#restart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#operate"/>
     </owl:Class>
     
 
@@ -2105,7 +2129,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#spray -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#spray">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#service"/>
     </owl:Class>
     
 
@@ -2233,7 +2257,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-terms#tension_NEW -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#tension_NEW">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#adjust"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#service"/>
     </owl:Class>
     
 
@@ -2426,6 +2450,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#verify">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#inspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-terms#vibration_test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-terms#vibration_test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#test"/>
     </owl:Class>
     
 
