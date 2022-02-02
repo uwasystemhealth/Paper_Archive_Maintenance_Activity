@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/maintenance-activity-classification-rules#"
+     xml:base="http://www.semanticweb.org/maintenance-activity-classification-rules"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mat="http://www.semanticweb.org/maintenance-activity-terms#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://www.industrialontologies.org/core/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:macr="http://www.semanticweb.org/maintenance-activity-classification-rules#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/maintenance-activity-terms"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/IEC-81346-ontology/1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#maintenance_work_order_annotation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#maintenance_work_order_annotation">
+        <rdfs:label xml:lang="en">Maintenance Work Order Annotation</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#nlp_identified_activity -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#nlp_identified_activity">
+        <rdfs:label xml:lang="en">NLP Identified Activity</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#maintenance_work_order_annotation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#nlp_identified_item -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#nlp_identified_item">
+        <rdfs:label xml:lang="en">NLP Identified Item</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#maintenance_work_order_annotation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of"/>
+        <rdfs:comment xml:lang="en">Convenience property to describe the &apos;proper continuant parthood at all times&apos; relationship between a data record and its individual data items.</rdfs:comment>
+        <rdfs:label xml:lang="en">has field</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+        <rdfs:comment xml:lang="en">Convenience property to describe the &apos;proper continuant parthood at all times&apos; relationship between a data record and its individual data items.</rdfs:comment>
+        <rdfs:label xml:lang="en">is field of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdfs:comment xml:lang="en">A property allowing the assignment of concrete values to the Maintenance Work Order Record data items that require them. Allows reasoning about numbers, for instance. Aims to be compatible with IAO or similar, but specific to our information content classes for the moment. We also do not restrict the type of value to any particular literal type; whether or not there is value in specialising the data property is not yet determined.</rdfs:comment>
+        <rdfs:label xml:lang="en">has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MaintenanceGenericBreakdownSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MaintenanceGenericBreakdownSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DirectiveInformationContentEntity"/>
+        <rdfs:comment xml:lang="en">A specification of an asset breakdown structure defined in a generic fashion for an entire class of asset for the purposes of maintenance: according to ISO 14224.</rdfs:comment>
+        <rdfs:label xml:lang="en">Maintenance Generic Asset Breakdown Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/describes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#MaintenanceActivity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/isInputOfAtSomeTime"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/maintenance-activity-terms#MaintenanceActivity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_created_date"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdfs:label xml:lang="en">Maintenance Work Order record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Intermediate class for the different data items (or fields) of the Maintenance Work Order record. If using the IAO, would be some subclass of &apos;IAO:data item&apos;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Maintenance Work Order record data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#PumpSystemGenericBreakdownSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#PumpSystemGenericBreakdownSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MaintenanceGenericBreakdownSpecification"/>
+        <rdfs:comment xml:lang="en">A generic specification of a Pump System asset breakdown structure. For example, the ISO 14224 Pump System breakdown structure.</rdfs:comment>
+        <rdfs:comment xml:lang="en">XXX: Should this actually be an instance? Set up an seeAlso to the ISO14224 Pump Ssytem breakdown structure individual</rdfs:comment>
+        <rdfs:label xml:lang="en">Pump System Generic Breakdown Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+        <rdfs:comment xml:lang="en">non-rigid</rdfs:comment>
+        <rdfs:label xml:lang="en">Corrective Maintenance Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_created_date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_created_date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Work Order Created At (Date)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdfs:label xml:lang="en">Work Order Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdfs:comment xml:lang="en">Not shown in the table in the paper as the datatable in the paper shows only a subset of entries for a single functional location, hence, this field is implicit.</rdfs:comment>
+        <rdfs:label xml:lang="en">Functional Location Tag</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Labour Cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdfs:comment xml:lang="en">rigid</rdfs:comment>
+        <rdfs:label xml:lang="en">Maintenance Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Material Cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
+        <rdfs:comment xml:lang="en">non-rigid</rdfs:comment>
+        <rdfs:label xml:lang="en">Preventative Maintenance Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#ISO14224-Pump_Breakdown_Specification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#ISO14224-Pump_Breakdown_Specification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#PumpSystemGenericBreakdownSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+        <core:describes rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_activity"/>
+        <core:isInputOfAtSomeTime rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_activity"/>
+        <has_data_field rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_created_date"/>
+        <has_data_field rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_description"/>
+        <has_data_field rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_functional_location_tag"/>
+        <has_data_field rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_labour_cost"/>
+        <has_data_field rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_maintenance_type"/>
+        <has_data_field rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_material_cost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_activity">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-terms#MaintenanceActivity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-terms#SupportingActivity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <core:hasInputAtSomeTime rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_created_date -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_created_date">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_created_date"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-02-14T00:00:00</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_description -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_description">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+        <hasValue xml:lang="en">remove pressure switch</hasValue>
+        <nlp_identified_item rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#maintainable_item_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_functional_location_tag -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_functional_location_tag">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag"/>
+        <hasValue>TBD</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_labour_cost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_labour_cost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1292</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_maintenance_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_maintenance_type">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_material_cost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_material_cost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">711</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#maintainable_item_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#maintainable_item_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/IEC-81346-ontology#switch"/>
+        <rdfs:label xml:lang="en">Pressure Switch 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_created_date"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_activity"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
