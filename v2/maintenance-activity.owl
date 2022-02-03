@@ -159,12 +159,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/maintenance-activity#detension -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#detension"/>
-    
-
-
     <!-- http://www.semanticweb.org/maintenance-activity#diagnose -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose">
@@ -176,12 +170,6 @@
         <IOFAnnotationVocabulary:synonym>investigate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>troubleshooot</IOFAnnotationVocabulary:synonym>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/maintenance-activity#disconnect -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#disconnect"/>
     
 
 
@@ -226,12 +214,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
         <IOFAnnotationVocabulary:synonym>deisolate</IOFAnnotationVocabulary:synonym>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/maintenance-activity#lubricate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#lubricate"/>
     
 
 
@@ -335,18 +317,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/maintenance-activity#refill -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#refill"/>
-    
-
-
-    <!-- http://www.semanticweb.org/maintenance-activity#reopen -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#reopen"/>
-    
-
-
     <!-- http://www.semanticweb.org/maintenance-activity#repair -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#repair">
@@ -372,18 +342,6 @@
         <IOFAnnotationVocabulary:synonym>swap</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>switch</IOFAnnotationVocabulary:synonym>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/maintenance-activity#resecure -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#resecure"/>
-    
-
-
-    <!-- http://www.semanticweb.org/maintenance-activity#retension -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#retension"/>
     
 
 
@@ -426,12 +384,6 @@
         <IOFAnnotationVocabulary:synonym>thickness test</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>trial</IOFAnnotationVocabulary:synonym>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/maintenance-activity#top_up -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#top_up"/>
 </rdf:RDF>
 
 
