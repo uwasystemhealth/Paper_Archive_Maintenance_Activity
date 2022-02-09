@@ -196,7 +196,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity#install -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#install">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
         <IOFAnnotationVocabulary:synonym>attach</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fit</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>insert</IOFAnnotationVocabulary:synonym>

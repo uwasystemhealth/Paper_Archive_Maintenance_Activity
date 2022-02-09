@@ -159,6 +159,26 @@
         <rdfs:comment>Fhe role that a material artifact bears if it is a critial part of the larger system. For example, a pump cannot operate without a motor. Therefore, the motor will play a critical component role in the pump system.</rdfs:comment>
         <rdfs:label>Functional Component Role</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/functional-breakdown-pump-ontology#MaintenanceGenericBreakdownSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#MaintenanceGenericBreakdownSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DirectiveInformationContentEntity"/>
+        <rdfs:comment xml:lang="en">A specification of an asset breakdown structure defined in a generic fashion for an entire class of asset for the purposes of maintenance: e.g., according to ISO 14224.</rdfs:comment>
+        <rdfs:label xml:lang="en">Maintenance Generic Asset Breakdown Specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpSystemGenericBreakdownSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpSystemGenericBreakdownSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#MaintenanceGenericBreakdownSpecification"/>
+        <rdfs:comment xml:lang="en">A generic specification of a Pump System asset breakdown structure. For example, the ISO 14224 Pump System breakdown structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pump System Generic Breakdown Specification</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 

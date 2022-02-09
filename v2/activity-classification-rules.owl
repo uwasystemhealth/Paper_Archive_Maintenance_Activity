@@ -1,0 +1,937 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/maintenance-activity-classification-rules#"
+     xml:base="http://www.semanticweb.org/maintenance-activity-classification-rules"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mat="http://www.semanticweb.org/maintenance-activity-terms#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://www.industrialontologies.org/core/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:macr="http://www.semanticweb.org/maintenance-activity-classification-rules#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules">
+        <owl:imports rdf:resource="http://www.semanticweb.org/work-order-ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.industrialontologies.org/core/hasInputAtSomeTime -->
+
+    <owl:AnnotationProperty rdf:about="http://www.industrialontologies.org/core/hasInputAtSomeTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#maintenanceWorkOrderAnnotation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#maintenanceWorkOrderAnnotation">
+        <rdfs:label xml:lang="en">Maintenance Work Order Annotation</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedActivity -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedActivity">
+        <rdfs:label xml:lang="en">NLP Identified Activity</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#maintenanceWorkOrderAnnotation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedItem -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedItem">
+        <rdfs:label xml:lang="en">NLP Identified Item</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#maintenanceWorkOrderAnnotation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedSubunit -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedSubunit">
+        <rdfs:label xml:lang="en">NLP Identified Subunit</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#maintenanceWorkOrderAnnotation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000137 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000137"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000174 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000174"/>
+    
+
+
+    <!-- http://www.industrialontologies.org/core/describes -->
+
+    <owl:ObjectProperty rdf:about="http://www.industrialontologies.org/core/describes"/>
+    
+
+
+    <!-- http://www.industrialontologies.org/core/isInputOfAtSomeTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.industrialontologies.org/core/isInputOfAtSomeTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of"/>
+        <rdfs:comment xml:lang="en">Convenience property to describe the &apos;proper continuant parthood at all times&apos; relationship between a data record and its individual data items.</rdfs:comment>
+        <rdfs:label xml:lang="en">has field</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+        <rdfs:comment xml:lang="en">Convenience property to describe the &apos;proper continuant parthood at all times&apos; relationship between a data record and its individual data items.</rdfs:comment>
+        <rdfs:label xml:lang="en">is field of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#reasoningSupport"/>
+        <rdfs:comment xml:lang="en">Inferred (and occasionally asserted) abox relation from an individual to a punned class, indicating that the individual is of the specified type. Effectively equivalent to rdfs:type, but inferred through OWL for specific situations where the class info needs to be queried if used in rules.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#reasoningSupport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#reasoningSupport">
+        <rdfs:comment xml:lang="en">This is the root of an extra-ontological relationship hierarchy which is used in reasoning and inferencing tasks.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdfs:comment xml:lang="en">A property allowing the assignment of concrete values to the Maintenance Work Order Record data items that require them. Allows reasoning about numbers, for instance. Aims to be compatible with IAO or similar, but specific to our information content classes for the moment. We also do not restrict the type of value to any particular literal type; whether or not there is value in specialising the data property is not yet determined.</rdfs:comment>
+        <rdfs:label xml:lang="en">has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.industrialontologies.org/core/DescriptiveInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
+    
+
+
+    <!-- http://www.industrialontologies.org/core/DirectiveInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.industrialontologies.org/core/DirectiveInformationContentEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Flowmeter -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Flowmeter">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Flowmeter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Motor -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Motor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Oil -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Oil">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Oil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#PressureSwitch -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Pump -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Seal -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Seal">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Seal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Valve -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Valve">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Valve"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#adjust -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#adjust">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#admin -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#admin">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#assemble -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#assemble">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#diagnose -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#diagnose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#inspect -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#inspect">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#install -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#install">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#install"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#isolate -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#isolate">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#isolate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#measure -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#measure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#measure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#modify -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#modify">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#move -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#move">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#operate -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#operate">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#perform -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#perform">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#repair -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#repair">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#repair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#replace -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#replace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#replace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#service -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#service">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#teamwork -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#teamwork">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#test -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#test">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#GenericMaintenanceBreakdown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#GenericMaintenanceBreakdown">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:comment xml:lang="en">A specification of an asset breakdown structure defined in a generic fashion for an entire class of asset for the purposes of maintenance: according to ISO 14224.</rdfs:comment>
+        <rdfs:label xml:lang="en">Generic Maintenance Asset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#GenericPumpSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#GenericPumpSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#GenericMaintenanceBreakdown"/>
+        <rdfs:comment xml:lang="en">A generic specification of a Pump System asset breakdown structure. For example, the ISO 14224 Pump System breakdown structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Generic Pump System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#ISO14224_PumpSystemBreakdown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#ISO14224_PumpSystemBreakdown">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Flowmeter"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#GenericPumpSystem"/>
+        <rdfs:label xml:lang="en">ISO 14224 Pump System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Flowmeter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asset-list-ontology#Flowmeter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Motor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asset-list-ontology#Motor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asset-list-ontology#Oil"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#PressureSwitch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Pump -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Seal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asset-list-ontology#Seal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#Valve -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asset-list-ontology#Valve"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#adjust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#admin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#admin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#assemble -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#assemble"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#diagnose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#inspect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#install -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#install"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#isolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#isolate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#measure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#measure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#modify -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#modify"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#move -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#move"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#operate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#operate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#perform -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#perform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#repair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#repair"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#replace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#replace"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#service -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#teamwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#test -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#test"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#adjust">
+        <IOFAnnotationVocabulary:synonym>extend</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>disconnect</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>retorque</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reopen</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>tilt</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>lubricate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>unload</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>retension</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>detension</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>tension</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>unblock</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reengage</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>take up</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>secure</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reclamp</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:elucidation>Under Development</IOFAnnotationVocabulary:elucidation>
+        <IOFAnnotationVocabulary:synonym>connect</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>resecure</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>tine</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>set</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>fill</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>fasten</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>align</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>load</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>tighten</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>release</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>calibrate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>close</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reseat</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>drain</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>grease</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>ammend</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>heat</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>realign</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>charge</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>recalibrate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>refill</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reconnect</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>open</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>purge</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>spray</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>add</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>readjust</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>refix</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>energize</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>straighten</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>remount</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>top up</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#admin">
+        <IOFAnnotationVocabulary:synonym>reschedule</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>commission</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>approve</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>print</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>order</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>redesign</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>audit</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>quote</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>sign</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>design</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>scope</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>label</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>report</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#assemble">
+        <IOFAnnotationVocabulary:synonym>make</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>build</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>fabricate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>make up</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>develop</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>create</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>rebuild</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>manufacture</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>pre fabricate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>set up</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose">
+        <IOFAnnotationVocabulary:synonym>detect</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:elucidation>under development</IOFAnnotationVocabulary:elucidation>
+        <IOFAnnotationVocabulary:synonym>troubleshooot</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>investigate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>identify</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>fault find</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#inspect">
+        <IOFAnnotationVocabulary:synonym>scan</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>confirm</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>look</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>survey</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>monitor</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>verify</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>track</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:elucidation>Under Development</IOFAnnotationVocabulary:elucidation>
+        <IOFAnnotationVocabulary:synonym>review</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>check</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>assess</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>analyse</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#install">
+        <IOFAnnotationVocabulary:synonym>reattach</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reinstall</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>insert</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reinstate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>attach</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>refit</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>fit</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#isolate">
+        <IOFAnnotationVocabulary:synonym>deisolate</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#measure">
+        <IOFAnnotationVocabulary:synonym>resample</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>sample</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#modify">
+        <IOFAnnotationVocabulary:synonym>clip</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>resplice</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>buff</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>cut off</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>improve</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>laminate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>upgrade</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reweld</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>cut</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>trim</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>weld</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>refurbish</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>correct</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#move">
+        <IOFAnnotationVocabulary:synonym>drop</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>drop down</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>locate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>transfer</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>position</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>pop out</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>unbog</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reposition</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>demobilise</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>push</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>put</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>return</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>pull</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>relocate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>raise</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>erect</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>remove</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>pack up</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>mobilise</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reroute</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>rotate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>life</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>suspend</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>guide</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>rearrange</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#operate">
+        <IOFAnnotationVocabulary:synonym>re-run</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>launch</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>activate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>startup</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reset</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reterminate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>disable</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>run</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>trip</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reactivate</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#perform">
+        <IOFAnnotationVocabulary:synonym>prepare</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>rework</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>conduct</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>generate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>collect</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>carry</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>complete</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>carry out</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>compile</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>work</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#repair">
+        <IOFAnnotationVocabulary:synonym>patch</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>rectify</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>fix</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:elucidation>Under development</IOFAnnotationVocabulary:elucidation>
+        <IOFAnnotationVocabulary:synonym>patch up</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reinforce</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reseal</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#replace">
+        <IOFAnnotationVocabulary:synonym>switch</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>swap</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>change</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:elucidation>Under development</IOFAnnotationVocabulary:elucidation>
+        <IOFAnnotationVocabulary:synonym>change out</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#service">
+        <IOFAnnotationVocabulary:elucidation>Under development</IOFAnnotationVocabulary:elucidation>
+        <IOFAnnotationVocabulary:synonym>clean</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#teamwork">
+        <IOFAnnotationVocabulary:synonym>call</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>call out</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>attend</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>follow up</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>assist</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>train</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>provide</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>supply</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>support</IOFAnnotationVocabulary:synonym>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#test">
+        <IOFAnnotationVocabulary:synonym>drive test</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>trial</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>retest</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>function test</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>thickness test</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>thermography</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:elucidation>Under development</IOFAnnotationVocabulary:elucidation>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
