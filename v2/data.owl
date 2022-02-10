@@ -131,20 +131,30 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/data#pump_001">
         <rdf:type rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+        <obo:BFO_0000111 rdf:resource="http://www.semanticweb.org/data#pump_001_control_system"/>
+        <obo:BFO_0000111 rdf:resource="http://www.semanticweb.org/data#pump_001_lub_system"/>
         <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#flow_meter_001"/>
         <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#motor_001"/>
-        <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#oil_001"/>
-        <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#pressure_switch_001"/>
         <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#seal_001"/>
         <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#valve_001"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/data#replace_activity -->
+    <!-- http://www.semanticweb.org/data#pump_001_control_system -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/data#replace_activity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity#replace"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/data#pump_001_control_system">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem"/>
+        <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#pressure_switch_001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/data#pump_001_lub_system -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/data#pump_001_lub_system">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asset-list-ontology#LubricationSystem"/>
+        <obo:BFO_0000178 rdf:resource="http://www.semanticweb.org/data#oil_001"/>
     </owl:NamedIndividual>
     
 
@@ -169,8 +179,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/data#work_order_execution_event_17_jan">
         <rdf:type rdf:resource="http://www.semanticweb.org/eol-ontology#WorkOrderExecutionProcess"/>
-        <obo:BFO_0000057 rdf:resource="http://www.semanticweb.org/data#flow_meter_001"/>
-        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/data#replace_activity"/>
+        <obo:BFO_0000057 rdf:resource="http://www.semanticweb.org/data#pump_001"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_activity"/>
     </owl:NamedIndividual>
     
 
@@ -179,8 +189,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2">
         <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+        <core:describes rdf:resource="http://www.semanticweb.org/data#work_order_execution_event_17_jan"/>
         <core:describes rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_activity"/>
-        <core:isInputOfAtSomeTime rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_activity"/>
+        <core:isInputOfAtSomeTime rdf:resource="http://www.semanticweb.org/data#work_order_execution_event_17_jan"/>
         <maintenance-activity-classification-rules:has_data_field rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_created_date"/>
         <maintenance-activity-classification-rules:has_data_field rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_description"/>
         <maintenance-activity-classification-rules:has_data_field rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_functional_location_tag"/>
@@ -197,12 +208,11 @@
         <rdf:type>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-terms#MaintenanceActivity"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-terms#SupportingActivity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdf:type>
-        <core:hasInputAtSomeTime rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2"/>
     </owl:NamedIndividual>
     
 
@@ -221,7 +231,9 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_description">
         <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
         <maintenance-activity-classification-rules:hasValue xml:lang="en">remove pressure switch</maintenance-activity-classification-rules:hasValue>
-        <maintenance-activity-classification-rules:nlp_identified_item rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
+        <maintenance-activity-classification-rules:nlpIdentifiedActivity>replace</maintenance-activity-classification-rules:nlpIdentifiedActivity>
+        <maintenance-activity-classification-rules:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
+        <maintenance-activity-classification-rules:nlpIdentifiedSubunit rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem"/>
     </owl:NamedIndividual>
     
 
@@ -230,6 +242,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_functional_location_tag">
         <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag"/>
+        <maintenance-activity-classification-rules:refers_to rdf:resource="http://www.semanticweb.org/data#pump_001"/>
         <maintenance-activity-classification-rules:hasValue>TBD</maintenance-activity-classification-rules:hasValue>
     </owl:NamedIndividual>
     
@@ -282,4 +295,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-

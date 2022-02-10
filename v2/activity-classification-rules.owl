@@ -173,7 +173,14 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.industrialontologies.org/core/DesignativeInformationContentEntity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:comment xml:lang="en">A property allowing the assignment of concrete values to the Maintenance Work Order Record data items that require them. Allows reasoning about numbers, for instance. Aims to be compatible with IAO or similar, but specific to our information content classes for the moment. We also do not restrict the type of value to any particular literal type; whether or not there is value in specialising the data property is not yet determined.</rdfs:comment>
         <rdfs:label xml:lang="en">has value</rdfs:label>
     </owl:DatatypeProperty>
@@ -327,6 +334,19 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#calibrate -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#calibrate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#calibrate"/>
             </owl:Restriction>
         </owl:equivalentClass>
     </rdf:Description>
@@ -502,16 +522,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/maintenance-activity#test -->
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#test">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#test"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-    </rdf:Description>
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+    </owl:Class>
     
 
 
@@ -572,6 +588,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/asset-list-ontology#LubricationSystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asset-list-ontology#LubricationSystem"/>
+    
+
+
     <!-- http://www.semanticweb.org/asset-list-ontology#Motor -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asset-list-ontology#Motor"/>
@@ -623,6 +645,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#assemble -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#assemble"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity#calibrate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#calibrate"/>
     
 
 
@@ -704,9 +732,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/maintenance-activity#test -->
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity#test"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem"/>
     
 
 
@@ -721,34 +749,34 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#adjust">
         <IOFAnnotationVocabulary:synonym>extend</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>disconnect</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>retorque</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>reopen</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>tilt</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>lubricate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reopen</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>retorque</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>unload</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>lubricate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>retension</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>detension</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>tension</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>unblock</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>reengage</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>take up</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reengage</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>unblock</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>secure</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reclamp</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:elucidation>Under Development</IOFAnnotationVocabulary:elucidation>
-        <IOFAnnotationVocabulary:synonym>connect</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>resecure</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>connect</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:elucidation>Under Development</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:synonym>tine</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>set</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fill</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>fasten</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>align</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>fasten</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>load</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>tighten</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>release</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>calibrate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>release</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>close</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>reseat</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>drain</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reseat</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>grease</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>ammend</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>heat</IOFAnnotationVocabulary:synonym>
@@ -765,8 +793,8 @@
         <IOFAnnotationVocabulary:synonym>refix</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>energize</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>straighten</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>remount</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>top up</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>remount</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#admin">
         <IOFAnnotationVocabulary:synonym>reschedule</IOFAnnotationVocabulary:synonym>
@@ -779,16 +807,16 @@
         <IOFAnnotationVocabulary:synonym>quote</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>sign</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>design</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>scope</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>label</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>report</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>scope</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#assemble">
-        <IOFAnnotationVocabulary:synonym>make</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>build</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>make</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>develop</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fabricate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>make up</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>develop</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>create</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>rebuild</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>manufacture</IOFAnnotationVocabulary:synonym>
@@ -807,8 +835,8 @@
         <IOFAnnotationVocabulary:synonym>scan</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>confirm</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>look</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>survey</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>monitor</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>survey</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>verify</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>track</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:elucidation>Under Development</IOFAnnotationVocabulary:elucidation>
@@ -818,8 +846,8 @@
         <IOFAnnotationVocabulary:synonym>analyse</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#install">
-        <IOFAnnotationVocabulary:synonym>reattach</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reinstall</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reattach</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>insert</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reinstate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>attach</IOFAnnotationVocabulary:synonym>
@@ -842,8 +870,8 @@
         <IOFAnnotationVocabulary:synonym>laminate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>upgrade</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reweld</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>cut</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>trim</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>cut</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>weld</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>refurbish</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>correct</IOFAnnotationVocabulary:synonym>
@@ -861,8 +889,8 @@
         <IOFAnnotationVocabulary:synonym>push</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>put</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>return</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>pull</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>relocate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>pull</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>raise</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>erect</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>remove</IOFAnnotationVocabulary:synonym>
@@ -870,9 +898,9 @@
         <IOFAnnotationVocabulary:synonym>mobilise</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reroute</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>rotate</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>life</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>suspend</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>guide</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>life</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>rearrange</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#operate">
@@ -889,13 +917,13 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#perform">
         <IOFAnnotationVocabulary:synonym>prepare</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>rework</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>conduct</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>rework</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>generate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>collect</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>carry</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>complete</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>carry out</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>complete</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>compile</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>work</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
@@ -904,8 +932,8 @@
         <IOFAnnotationVocabulary:synonym>rectify</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fix</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:elucidation>Under development</IOFAnnotationVocabulary:elucidation>
-        <IOFAnnotationVocabulary:synonym>patch up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reinforce</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>patch up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reseal</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#replace">
@@ -927,17 +955,11 @@
         <IOFAnnotationVocabulary:synonym>assist</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>train</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>provide</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>supply</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>support</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>supply</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#test">
-        <IOFAnnotationVocabulary:synonym>drive test</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>trial</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>retest</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>function test</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>thickness test</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>thermography</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:elucidation>Under development</IOFAnnotationVocabulary:elucidation>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem">
+        <rdfs:label xml:lang="en">Control and Monitoring System</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
