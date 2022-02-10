@@ -152,6 +152,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure switch undersize</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-1_functional_location_tag">
@@ -186,6 +187,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-1_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-1_description"/>
+  <main:has_data_field rdf:resource="#MWO-1_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-1_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-1_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-1_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-1_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-2_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-02-14T00:00:00</main:hasValue>
@@ -196,6 +208,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remove pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remove</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-2_functional_location_tag">
@@ -230,6 +243,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-2_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-2_description"/>
+  <main:has_data_field rdf:resource="#MWO-2_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-2_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-2_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-2_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-2_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-3_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-03-19T00:00:00</main:hasValue>
@@ -240,6 +264,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibrate pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibrate</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-3_functional_location_tag">
@@ -274,6 +299,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-3_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-3_description"/>
+  <main:has_data_field rdf:resource="#MWO-3_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-3_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-3_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-3_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-3_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-4_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-29T00:00:00</main:hasValue>
@@ -284,6 +320,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pump not pumping wekk</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Pump</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-4_functional_location_tag">
@@ -318,6 +355,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-4_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-4_description"/>
+  <main:has_data_field rdf:resource="#MWO-4_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-4_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-4_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-4_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-4_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-5_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-05-21T00:00:00</main:hasValue>
@@ -328,6 +376,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure switch leaking</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-5_functional_location_tag">
@@ -362,6 +411,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-5_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-5_description"/>
+  <main:has_data_field rdf:resource="#MWO-5_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-5_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-5_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-5_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-5_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-6_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-06-03T00:00:00</main:hasValue>
@@ -372,6 +432,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibrate pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibrate</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-6_functional_location_tag">
@@ -406,6 +467,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-6_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-6_description"/>
+  <main:has_data_field rdf:resource="#MWO-6_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-6_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-6_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-6_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-6_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-7_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-06-18T00:00:00</main:hasValue>
@@ -416,6 +488,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18M electrical service motor</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Motor</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-7_functional_location_tag">
@@ -450,6 +523,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-7_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-7_description"/>
+  <main:has_data_field rdf:resource="#MWO-7_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-7_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-7_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-7_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-7_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-8_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-06-28T00:00:00</main:hasValue>
@@ -460,6 +544,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibrate pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibrate</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-8_functional_location_tag">
@@ -494,6 +579,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-8_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-8_description"/>
+  <main:has_data_field rdf:resource="#MWO-8_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-8_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-8_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-8_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-8_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-9_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-08-07T00:00:00</main:hasValue>
@@ -504,6 +600,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibrate pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibrate</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-9_functional_location_tag">
@@ -538,6 +635,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-9_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-9_description"/>
+  <main:has_data_field rdf:resource="#MWO-9_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-9_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-9_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-9_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-9_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-10_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-10-06T00:00:00</main:hasValue>
@@ -548,6 +656,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibrate pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calibrate</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-10_functional_location_tag">
@@ -582,6 +691,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-10_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-10_description"/>
+  <main:has_data_field rdf:resource="#MWO-10_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-10_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-10_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-10_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-10_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-11_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-10-06T00:00:00</main:hasValue>
@@ -592,6 +712,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">valbe needs replacing</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">remove</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Valve</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-11_functional_location_tag">
@@ -626,6 +747,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-11_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-11_description"/>
+  <main:has_data_field rdf:resource="#MWO-11_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-11_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-11_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-11_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-11_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-12_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-12-23T00:00:00</main:hasValue>
@@ -636,6 +768,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Investigate oil leak</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">investigate</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Oil</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-12_functional_location_tag">
@@ -670,6 +803,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-12_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-12_description"/>
+  <main:has_data_field rdf:resource="#MWO-12_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-12_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-12_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-12_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-12_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-13_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-02-10T00:00:00</main:hasValue>
@@ -680,6 +824,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seal leaking</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#MechanicalSeal</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-13_functional_location_tag">
@@ -714,6 +859,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-13_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-13_description"/>
+  <main:has_data_field rdf:resource="#MWO-13_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-13_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-13_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-13_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-13_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-14_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-20T00:00:00</main:hasValue>
@@ -724,6 +880,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure switch unserviceable</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-14_functional_location_tag">
@@ -758,6 +915,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-14_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-14_description"/>
+  <main:has_data_field rdf:resource="#MWO-14_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-14_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-14_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-14_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-14_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-15_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-05-31T00:00:00</main:hasValue>
@@ -768,6 +936,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">check pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">check</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-15_functional_location_tag">
@@ -802,6 +971,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-15_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-15_description"/>
+  <main:has_data_field rdf:resource="#MWO-15_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-15_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-15_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-15_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-15_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-16_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-07-01T00:00:00</main:hasValue>
@@ -812,6 +992,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pump not pumping</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Pump</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-16_functional_location_tag">
@@ -846,6 +1027,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-16_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-16_description"/>
+  <main:has_data_field rdf:resource="#MWO-16_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-16_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-16_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-16_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-16_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-17_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-11-04T00:00:00</main:hasValue>
@@ -856,6 +1048,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">install new pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">install</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-17_functional_location_tag">
@@ -890,6 +1083,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-17_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-17_description"/>
+  <main:has_data_field rdf:resource="#MWO-17_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-17_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-17_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-17_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-17_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-18_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-12-16T00:00:00</main:hasValue>
@@ -900,6 +1104,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">78W electrical service motor</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Motor</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-18_functional_location_tag">
@@ -934,6 +1139,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-18_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-18_description"/>
+  <main:has_data_field rdf:resource="#MWO-18_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-18_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-18_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-18_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-18_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-19_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-12-31T00:00:00</main:hasValue>
@@ -944,6 +1160,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26W mechanical service pump</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Pump</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-19_functional_location_tag">
@@ -978,6 +1195,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-19_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-19_description"/>
+  <main:has_data_field rdf:resource="#MWO-19_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-19_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-19_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-19_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-19_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-20_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-03-25T00:00:00</main:hasValue>
@@ -988,6 +1216,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure switch failure</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-20_functional_location_tag">
@@ -1022,6 +1251,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-20_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-20_description"/>
+  <main:has_data_field rdf:resource="#MWO-20_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-20_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-20_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-20_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-20_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-21_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-04-20T00:00:00</main:hasValue>
@@ -1032,6 +1272,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replace pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replace</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-21_functional_location_tag">
@@ -1066,6 +1307,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-21_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-21_description"/>
+  <main:has_data_field rdf:resource="#MWO-21_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-21_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-21_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-21_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-21_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-22_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-16T00:00:00</main:hasValue>
@@ -1076,6 +1328,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motor tripping on high amps</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Motor</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-22_functional_location_tag">
@@ -1110,6 +1363,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-22_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-22_description"/>
+  <main:has_data_field rdf:resource="#MWO-22_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-22_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-22_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-22_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-22_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-23_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-19T00:00:00</main:hasValue>
@@ -1120,6 +1384,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">repair pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">repair</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-23_functional_location_tag">
@@ -1154,6 +1419,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-23_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-23_description"/>
+  <main:has_data_field rdf:resource="#MWO-23_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-23_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-23_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-23_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-23_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-24_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-06-05T00:00:00</main:hasValue>
@@ -1164,6 +1440,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26W mech service pump</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Pump</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-24_functional_location_tag">
@@ -1198,6 +1475,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-24_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-24_description"/>
+  <main:has_data_field rdf:resource="#MWO-24_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-24_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-24_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-24_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-24_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-25_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-11-24T00:00:00</main:hasValue>
@@ -1208,6 +1496,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26W mech service pump</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Pump</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-25_functional_location_tag">
@@ -1242,6 +1531,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-25_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-25_description"/>
+  <main:has_data_field rdf:resource="#MWO-25_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-25_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-25_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-25_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-25_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-26_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-06-17T00:00:00</main:hasValue>
@@ -1252,6 +1552,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">78W electrical service motor</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Motor</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-26_functional_location_tag">
@@ -1286,6 +1587,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-26_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-26_description"/>
+  <main:has_data_field rdf:resource="#MWO-26_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-26_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-26_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-26_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-26_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-27_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-06-04T00:00:00</main:hasValue>
@@ -1296,6 +1608,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replace pump</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replace</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Pump</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-27_functional_location_tag">
@@ -1330,6 +1643,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-27_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-27_description"/>
+  <main:has_data_field rdf:resource="#MWO-27_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-27_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-27_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-27_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-27_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-28_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-06-12T00:00:00</main:hasValue>
@@ -1340,6 +1664,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">78W electrical service motor</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Motor</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-28_functional_location_tag">
@@ -1374,6 +1699,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-28_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-28_description"/>
+  <main:has_data_field rdf:resource="#MWO-28_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-28_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-28_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-28_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-28_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-29_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-06-15T00:00:00</main:hasValue>
@@ -1384,6 +1720,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">change oil</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">change</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Oil</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-29_functional_location_tag">
@@ -1418,6 +1755,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-29_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-29_description"/>
+  <main:has_data_field rdf:resource="#MWO-29_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-29_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-29_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-29_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-29_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-30_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-07-03T00:00:00</main:hasValue>
@@ -1428,6 +1776,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oil leak from housing seal</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#MechanicalSeal</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-30_functional_location_tag">
@@ -1462,6 +1811,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-30_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-30_description"/>
+  <main:has_data_field rdf:resource="#MWO-30_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-30_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-30_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-30_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-30_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-31_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-01-06T00:00:00</main:hasValue>
@@ -1472,6 +1832,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pump is tripping</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Pump</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-31_functional_location_tag">
@@ -1506,6 +1867,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-31">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-31_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-31_description"/>
+  <main:has_data_field rdf:resource="#MWO-31_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-31_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-31_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-31_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-31_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-32_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-06-06T00:00:00</main:hasValue>
@@ -1516,6 +1888,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">78W electrical service motor</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Motor</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-32_functional_location_tag">
@@ -1550,6 +1923,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-32">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-32_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-32_description"/>
+  <main:has_data_field rdf:resource="#MWO-32_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-32_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-32_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-32_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-32_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-33_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-11-26T00:00:00</main:hasValue>
@@ -1560,6 +1944,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">faulty flowmeter</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Flowmeter</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-33_functional_location_tag">
@@ -1594,6 +1979,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-33">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-33_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-33_description"/>
+  <main:has_data_field rdf:resource="#MWO-33_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-33_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-33_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-33_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-33_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-34_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-02-19T00:00:00</main:hasValue>
@@ -1604,6 +2000,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">repair pump</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">repair</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#Pump</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-34_functional_location_tag">
@@ -1638,6 +2035,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-34">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-34_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-34_description"/>
+  <main:has_data_field rdf:resource="#MWO-34_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-34_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-34_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-34_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-34_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-35_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-04-14T00:00:00</main:hasValue>
@@ -1648,6 +2056,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure switch faulty</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-35_functional_location_tag">
@@ -1682,6 +2091,17 @@
   </rdf:type>
 </rdf:Description>
 
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-35">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-35_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-35_description"/>
+  <main:has_data_field rdf:resource="#MWO-35_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-35_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-35_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-35_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-35_activity"/>
+</main:Maintenance_Work_Order_Record>
+
 <main:work_order_created_date rdf:about="#MWO-36_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-04-22T00:00:00</main:hasValue>
@@ -1692,6 +2112,7 @@
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replace pressure switch</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replace</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.semanticweb.org/asset-list-ontology#PressureSwitch</main:nlpIdentifiedItem>
 </main:work_order_description_text>
 
 <main:work_order_functional_location_tag rdf:about="#MWO-36_functional_location_tag">
@@ -1725,6 +2146,485 @@
     </owl:Class>
   </rdf:type>
 </rdf:Description>
+
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-36">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:has_data_field rdf:resource="#MWO-36_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-36_description"/>
+  <main:has_data_field rdf:resource="#MWO-36_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-36_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-36_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-36_maintenance_type"/>
+  <main:has_data_field rdf:resource="#MWO-36_activity"/>
+</main:Maintenance_Work_Order_Record>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-36"/>
+    <rdf:Description rdf:about="#MWO-36_created_date"/>
+    <rdf:Description rdf:about="#MWO-36_description"/>
+    <rdf:Description rdf:about="#MWO-36_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-36_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-36_material_cost"/>
+    <rdf:Description rdf:about="#MWO-36_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-36_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-35"/>
+    <rdf:Description rdf:about="#MWO-35_created_date"/>
+    <rdf:Description rdf:about="#MWO-35_description"/>
+    <rdf:Description rdf:about="#MWO-35_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-35_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-35_material_cost"/>
+    <rdf:Description rdf:about="#MWO-35_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-35_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-34"/>
+    <rdf:Description rdf:about="#MWO-34_created_date"/>
+    <rdf:Description rdf:about="#MWO-34_description"/>
+    <rdf:Description rdf:about="#MWO-34_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-34_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-34_material_cost"/>
+    <rdf:Description rdf:about="#MWO-34_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-34_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-33"/>
+    <rdf:Description rdf:about="#MWO-33_created_date"/>
+    <rdf:Description rdf:about="#MWO-33_description"/>
+    <rdf:Description rdf:about="#MWO-33_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-33_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-33_material_cost"/>
+    <rdf:Description rdf:about="#MWO-33_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-33_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-32"/>
+    <rdf:Description rdf:about="#MWO-32_created_date"/>
+    <rdf:Description rdf:about="#MWO-32_description"/>
+    <rdf:Description rdf:about="#MWO-32_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-32_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-32_material_cost"/>
+    <rdf:Description rdf:about="#MWO-32_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-32_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-31"/>
+    <rdf:Description rdf:about="#MWO-31_created_date"/>
+    <rdf:Description rdf:about="#MWO-31_description"/>
+    <rdf:Description rdf:about="#MWO-31_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-31_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-31_material_cost"/>
+    <rdf:Description rdf:about="#MWO-31_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-31_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-30"/>
+    <rdf:Description rdf:about="#MWO-30_created_date"/>
+    <rdf:Description rdf:about="#MWO-30_description"/>
+    <rdf:Description rdf:about="#MWO-30_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-30_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-30_material_cost"/>
+    <rdf:Description rdf:about="#MWO-30_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-30_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-29"/>
+    <rdf:Description rdf:about="#MWO-29_created_date"/>
+    <rdf:Description rdf:about="#MWO-29_description"/>
+    <rdf:Description rdf:about="#MWO-29_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-29_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-29_material_cost"/>
+    <rdf:Description rdf:about="#MWO-29_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-29_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-28"/>
+    <rdf:Description rdf:about="#MWO-28_created_date"/>
+    <rdf:Description rdf:about="#MWO-28_description"/>
+    <rdf:Description rdf:about="#MWO-28_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-28_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-28_material_cost"/>
+    <rdf:Description rdf:about="#MWO-28_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-28_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-27"/>
+    <rdf:Description rdf:about="#MWO-27_created_date"/>
+    <rdf:Description rdf:about="#MWO-27_description"/>
+    <rdf:Description rdf:about="#MWO-27_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-27_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-27_material_cost"/>
+    <rdf:Description rdf:about="#MWO-27_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-27_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-26"/>
+    <rdf:Description rdf:about="#MWO-26_created_date"/>
+    <rdf:Description rdf:about="#MWO-26_description"/>
+    <rdf:Description rdf:about="#MWO-26_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-26_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-26_material_cost"/>
+    <rdf:Description rdf:about="#MWO-26_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-26_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-25"/>
+    <rdf:Description rdf:about="#MWO-25_created_date"/>
+    <rdf:Description rdf:about="#MWO-25_description"/>
+    <rdf:Description rdf:about="#MWO-25_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-25_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-25_material_cost"/>
+    <rdf:Description rdf:about="#MWO-25_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-25_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-24"/>
+    <rdf:Description rdf:about="#MWO-24_created_date"/>
+    <rdf:Description rdf:about="#MWO-24_description"/>
+    <rdf:Description rdf:about="#MWO-24_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-24_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-24_material_cost"/>
+    <rdf:Description rdf:about="#MWO-24_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-24_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-23"/>
+    <rdf:Description rdf:about="#MWO-23_created_date"/>
+    <rdf:Description rdf:about="#MWO-23_description"/>
+    <rdf:Description rdf:about="#MWO-23_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-23_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-23_material_cost"/>
+    <rdf:Description rdf:about="#MWO-23_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-23_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-22"/>
+    <rdf:Description rdf:about="#MWO-22_created_date"/>
+    <rdf:Description rdf:about="#MWO-22_description"/>
+    <rdf:Description rdf:about="#MWO-22_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-22_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-22_material_cost"/>
+    <rdf:Description rdf:about="#MWO-22_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-22_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-21"/>
+    <rdf:Description rdf:about="#MWO-21_created_date"/>
+    <rdf:Description rdf:about="#MWO-21_description"/>
+    <rdf:Description rdf:about="#MWO-21_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-21_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-21_material_cost"/>
+    <rdf:Description rdf:about="#MWO-21_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-21_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-20"/>
+    <rdf:Description rdf:about="#MWO-20_created_date"/>
+    <rdf:Description rdf:about="#MWO-20_description"/>
+    <rdf:Description rdf:about="#MWO-20_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-20_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-20_material_cost"/>
+    <rdf:Description rdf:about="#MWO-20_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-20_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-19"/>
+    <rdf:Description rdf:about="#MWO-19_created_date"/>
+    <rdf:Description rdf:about="#MWO-19_description"/>
+    <rdf:Description rdf:about="#MWO-19_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-19_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-19_material_cost"/>
+    <rdf:Description rdf:about="#MWO-19_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-19_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-18"/>
+    <rdf:Description rdf:about="#MWO-18_created_date"/>
+    <rdf:Description rdf:about="#MWO-18_description"/>
+    <rdf:Description rdf:about="#MWO-18_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-18_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-18_material_cost"/>
+    <rdf:Description rdf:about="#MWO-18_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-18_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-17"/>
+    <rdf:Description rdf:about="#MWO-17_created_date"/>
+    <rdf:Description rdf:about="#MWO-17_description"/>
+    <rdf:Description rdf:about="#MWO-17_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-17_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-17_material_cost"/>
+    <rdf:Description rdf:about="#MWO-17_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-17_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-16"/>
+    <rdf:Description rdf:about="#MWO-16_created_date"/>
+    <rdf:Description rdf:about="#MWO-16_description"/>
+    <rdf:Description rdf:about="#MWO-16_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-16_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-16_material_cost"/>
+    <rdf:Description rdf:about="#MWO-16_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-16_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-15"/>
+    <rdf:Description rdf:about="#MWO-15_created_date"/>
+    <rdf:Description rdf:about="#MWO-15_description"/>
+    <rdf:Description rdf:about="#MWO-15_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-15_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-15_material_cost"/>
+    <rdf:Description rdf:about="#MWO-15_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-15_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-14"/>
+    <rdf:Description rdf:about="#MWO-14_created_date"/>
+    <rdf:Description rdf:about="#MWO-14_description"/>
+    <rdf:Description rdf:about="#MWO-14_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-14_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-14_material_cost"/>
+    <rdf:Description rdf:about="#MWO-14_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-14_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-13"/>
+    <rdf:Description rdf:about="#MWO-13_created_date"/>
+    <rdf:Description rdf:about="#MWO-13_description"/>
+    <rdf:Description rdf:about="#MWO-13_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-13_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-13_material_cost"/>
+    <rdf:Description rdf:about="#MWO-13_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-13_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-12"/>
+    <rdf:Description rdf:about="#MWO-12_created_date"/>
+    <rdf:Description rdf:about="#MWO-12_description"/>
+    <rdf:Description rdf:about="#MWO-12_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-12_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-12_material_cost"/>
+    <rdf:Description rdf:about="#MWO-12_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-12_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-11"/>
+    <rdf:Description rdf:about="#MWO-11_created_date"/>
+    <rdf:Description rdf:about="#MWO-11_description"/>
+    <rdf:Description rdf:about="#MWO-11_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-11_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-11_material_cost"/>
+    <rdf:Description rdf:about="#MWO-11_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-11_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-10"/>
+    <rdf:Description rdf:about="#MWO-10_created_date"/>
+    <rdf:Description rdf:about="#MWO-10_description"/>
+    <rdf:Description rdf:about="#MWO-10_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-10_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-10_material_cost"/>
+    <rdf:Description rdf:about="#MWO-10_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-10_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-9"/>
+    <rdf:Description rdf:about="#MWO-9_created_date"/>
+    <rdf:Description rdf:about="#MWO-9_description"/>
+    <rdf:Description rdf:about="#MWO-9_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-9_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-9_material_cost"/>
+    <rdf:Description rdf:about="#MWO-9_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-9_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-8"/>
+    <rdf:Description rdf:about="#MWO-8_created_date"/>
+    <rdf:Description rdf:about="#MWO-8_description"/>
+    <rdf:Description rdf:about="#MWO-8_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-8_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-8_material_cost"/>
+    <rdf:Description rdf:about="#MWO-8_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-8_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-7"/>
+    <rdf:Description rdf:about="#MWO-7_created_date"/>
+    <rdf:Description rdf:about="#MWO-7_description"/>
+    <rdf:Description rdf:about="#MWO-7_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-7_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-7_material_cost"/>
+    <rdf:Description rdf:about="#MWO-7_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-7_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-6"/>
+    <rdf:Description rdf:about="#MWO-6_created_date"/>
+    <rdf:Description rdf:about="#MWO-6_description"/>
+    <rdf:Description rdf:about="#MWO-6_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-6_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-6_material_cost"/>
+    <rdf:Description rdf:about="#MWO-6_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-6_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-5"/>
+    <rdf:Description rdf:about="#MWO-5_created_date"/>
+    <rdf:Description rdf:about="#MWO-5_description"/>
+    <rdf:Description rdf:about="#MWO-5_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-5_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-5_material_cost"/>
+    <rdf:Description rdf:about="#MWO-5_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-5_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-4"/>
+    <rdf:Description rdf:about="#MWO-4_created_date"/>
+    <rdf:Description rdf:about="#MWO-4_description"/>
+    <rdf:Description rdf:about="#MWO-4_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-4_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-4_material_cost"/>
+    <rdf:Description rdf:about="#MWO-4_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-4_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-3"/>
+    <rdf:Description rdf:about="#MWO-3_created_date"/>
+    <rdf:Description rdf:about="#MWO-3_description"/>
+    <rdf:Description rdf:about="#MWO-3_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-3_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-3_material_cost"/>
+    <rdf:Description rdf:about="#MWO-3_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-3_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-2"/>
+    <rdf:Description rdf:about="#MWO-2_created_date"/>
+    <rdf:Description rdf:about="#MWO-2_description"/>
+    <rdf:Description rdf:about="#MWO-2_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-2_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-2_material_cost"/>
+    <rdf:Description rdf:about="#MWO-2_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-2_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-1"/>
+    <rdf:Description rdf:about="#MWO-1_created_date"/>
+    <rdf:Description rdf:about="#MWO-1_description"/>
+    <rdf:Description rdf:about="#MWO-1_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-1_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-1_material_cost"/>
+    <rdf:Description rdf:about="#MWO-1_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-1_activity"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
 
 <owl:AllDifferent>
   <owl:distinctMembers rdf:parseType="Collection">

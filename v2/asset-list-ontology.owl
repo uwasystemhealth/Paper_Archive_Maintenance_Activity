@@ -79,6 +79,10 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#MechanicalSeal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
                     </owl:Restriction>
                     <owl:Restriction>
@@ -88,10 +92,6 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Seal"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
@@ -105,6 +105,15 @@
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Lubrication System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#MechanicalSeal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#MechanicalSeal">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:label>Seal</rdfs:label>
     </owl:Class>
     
 
@@ -144,15 +153,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump">
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
         <rdfs:label>Pump</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/asset-list-ontology#Seal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Seal">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
-        <rdfs:label>Seal</rdfs:label>
     </owl:Class>
     
 
