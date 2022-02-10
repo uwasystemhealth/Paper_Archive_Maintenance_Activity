@@ -148,6 +148,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.industrialontologies.org/core/isAbout"/>
+        <IOFAnnotationVocabulary:elucidation xml:lang="en">If an ICE &apos;refers to&apos; an entity then it uses, evokes, or references the entity or concept in some way that is not necessarily descriptive, designative, nor prescriptive.</IOFAnnotationVocabulary:elucidation>
+        <rdfs:label xml:lang="en">refers to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -196,12 +206,12 @@
     <!-- http://www.semanticweb.org/asset-list-ontology#Flowmeter -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Flowmeter">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Flowmeter"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -209,12 +219,12 @@
     <!-- http://www.semanticweb.org/asset-list-ontology#Motor -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Motor">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -222,12 +232,12 @@
     <!-- http://www.semanticweb.org/asset-list-ontology#Oil -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Oil">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Oil"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -235,12 +245,12 @@
     <!-- http://www.semanticweb.org/asset-list-ontology#PressureSwitch -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -248,12 +258,12 @@
     <!-- http://www.semanticweb.org/asset-list-ontology#Pump -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -261,12 +271,12 @@
     <!-- http://www.semanticweb.org/asset-list-ontology#Seal -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Seal">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Seal"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -274,12 +284,12 @@
     <!-- http://www.semanticweb.org/asset-list-ontology#Valve -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Valve">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Valve"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -287,12 +297,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#adjust -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#adjust">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -300,12 +310,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#admin -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#admin">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -313,12 +323,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#assemble -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#assemble">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -326,12 +336,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#diagnose -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#diagnose"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -339,12 +349,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#inspect -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#inspect">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -352,12 +362,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#install -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#install">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#install"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -365,12 +375,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#isolate -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#isolate">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#isolate"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -378,12 +388,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#measure -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#measure">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#measure"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -391,12 +401,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#modify -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#modify">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -404,12 +414,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#move -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#move">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -417,12 +427,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#operate -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#operate">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -430,12 +440,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#perform -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#perform">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -443,12 +453,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#repair -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#repair">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#repair"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -456,12 +466,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#replace -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#replace">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#replace"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -469,12 +479,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#service -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#service">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#service"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -482,12 +492,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#teamwork -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#teamwork">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -495,12 +505,12 @@
     <!-- http://www.semanticweb.org/maintenance-activity#test -->
 
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#test">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#test"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
