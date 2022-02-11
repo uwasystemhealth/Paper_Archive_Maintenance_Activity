@@ -76,6 +76,21 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/describes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/isInputOfAtSomeTime"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -133,8 +148,13 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
         <rdfs:label xml:lang="en">Maintenance Work Order record</rdfs:label>
     </owl:Class>
@@ -262,12 +282,6 @@
     <!-- http://www.semanticweb.org/work-order-ontology#WorkOrderDocument -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDocument">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/describes"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DirectiveInformationContentEntity"/>
         <rdfs:comment>A document that describes some Work Order Execution Process.</rdfs:comment>
         <rdfs:label>Work Order Document</rdfs:label>
@@ -278,36 +292,6 @@
     <!-- http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://www.industrialontologies.org/core/Component"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/describedBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDocument"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:comment>A process that is initiated by a work order document. Work order executions will always contain an activity (maintenance or supporting) and will have a functional part as a participant.</rdfs:comment>
         <rdfs:label>Work Order Execution Process</rdfs:label>
