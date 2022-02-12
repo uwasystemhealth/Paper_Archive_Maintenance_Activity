@@ -1150,13 +1150,13 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#assetType">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#description">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#field">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#indv">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#description">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#type">
@@ -1647,6 +1647,1089 @@
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asterisk is the referred activity type checked against the record (no OR in rules)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corrective adjust or calibrate (unknown activity)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#cost_value"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#cost_value"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
+                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_value"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemCost"/>
+                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item_cost"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#material_value"/>
+                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#item_cost"/>
+                                                                                                                                        </swrl:arguments>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                        <rdf:first>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.industrialontologies.org/core/isInputOfAtSomeTime"/>
+                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#execution_process"/>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:first>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                <rdf:first>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess"/>
+                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#execution_process"/>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:first>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                        <rdf:first>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#execution_process"/>
+                                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:first>
+                                                                                                                                                        <rdf:rest>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                <rdf:first>
+                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                                                                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#participant"/>
+                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                </rdf:first>
+                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                        <rdf:first>
+                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                                                <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+                                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#participant"/>
+                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                        </rdf:first>
+                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                <rdf:first>
+                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                                                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#participant"/>
+                                                                                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#unitType"/>
+                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                </rdf:first>
+                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                        <rdf:first>
+                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
+                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                        </rdf:first>
+                                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                                <rdf:first>
+                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+                                                                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
+                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                </rdf:first>
+                                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                                        <rdf:first>
+                                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedSubunit"/>
+                                                                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
+                                                                                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#unitType"/>
+                                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                                        </rdf:first>
+                                                                                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                </rdf:rest>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:rest>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:rest>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#UncertainActivity"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity#calibrate"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asterisk is the referred activity type checked against the record (no OR in rules)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corrective adjust* or calibrate</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#cost_value"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#cost_value"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
+                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_value"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemCost"/>
+                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item_cost"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#material_value"/>
+                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#item_cost"/>
+                                                                                                                                        </swrl:arguments>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                        <rdf:first>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.industrialontologies.org/core/isInputOfAtSomeTime"/>
+                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#execution_process"/>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:first>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                <rdf:first>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess"/>
+                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#execution_process"/>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:first>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                        <rdf:first>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#execution_process"/>
+                                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:first>
+                                                                                                                                                        <rdf:rest>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                <rdf:first>
+                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                                                                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#participant"/>
+                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                </rdf:first>
+                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                        <rdf:first>
+                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                                                <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+                                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#participant"/>
+                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                        </rdf:first>
+                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                <rdf:first>
+                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                                                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#participant"/>
+                                                                                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#unitType"/>
+                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                </rdf:first>
+                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                        <rdf:first>
+                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
+                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                        </rdf:first>
+                                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                                <rdf:first>
+                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+                                                                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
+                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                </rdf:first>
+                                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                                        <rdf:first>
+                                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedSubunit"/>
+                                                                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
+                                                                                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#unitType"/>
+                                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                                        </rdf:first>
+                                                                                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                </rdf:rest>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:rest>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:rest>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#UncertainActivity"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity#calibrate"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asterisk is the referred activity type checked against the record (no OR in rules)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corrective adjust or calibrate*</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#cost_value"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#cost_value"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity#calibrate"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
+                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_value"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemCost"/>
+                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item_cost"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#material_value"/>
+                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#item_cost"/>
+                                                                                                                                        </swrl:arguments>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                        <rdf:first>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.industrialontologies.org/core/isInputOfAtSomeTime"/>
+                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#execution_process"/>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:first>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                <rdf:first>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess"/>
+                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#execution_process"/>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:first>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                        <rdf:first>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#execution_process"/>
+                                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:first>
+                                                                                                                                                        <rdf:rest>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                <rdf:first>
+                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                                                                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#participant"/>
+                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                </rdf:first>
+                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                        <rdf:first>
+                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                                                <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+                                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#participant"/>
+                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                        </rdf:first>
+                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                <rdf:first>
+                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                                                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#participant"/>
+                                                                                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#unitType"/>
+                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                </rdf:first>
+                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                        <rdf:first>
+                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
+                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                        </rdf:first>
+                                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                                <rdf:first>
+                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                                                                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+                                                                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
+                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                </rdf:first>
+                                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                                                                        <rdf:first>
+                                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedSubunit"/>
+                                                                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
+                                                                                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#unitType"/>
+                                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                                        </rdf:first>
+                                                                                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                </rdf:rest>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:rest>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:rest>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#UncertainActivity"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity#calibrate"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asterisk is the referred activity type checked against the record (no OR in rules)</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corrective replace or repair (unknown type)</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -1926,6 +3009,191 @@
                         </rdf:rest>
                     </rdf:Description>
                 </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This really only identifies the possible participants as opposed to the real participants</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subunit components participate in described activity</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.industrialontologies.org/core/describes"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MaintenanceSupportingOrUnspecifiedActivity"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/Component"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunitType"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunitType"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemType"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemType"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
             </rdf:Description>
         </swrl:head>
     </rdf:Description>
@@ -2932,191 +4200,6 @@
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This really only identifies the possible participants as opposed to the real participants</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subunit components participate in described activity</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.industrialontologies.org/core/describes"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MaintenanceSupportingOrUnspecifiedActivity"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                        <rdf:first>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
-                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
-                                                            </rdf:Description>
-                                                        </rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                <rdf:first>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                        <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
-                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
-                                                                    </rdf:Description>
-                                                                </rdf:first>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                        <rdf:first>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                                <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/Component"/>
-                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
-                                                                            </rdf:Description>
-                                                                        </rdf:first>
-                                                                        <rdf:rest>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                <rdf:first>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
-                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunitType"/>
-                                                                                    </rdf:Description>
-                                                                                </rdf:first>
-                                                                                <rdf:rest>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                        <rdf:first>
-                                                                                            <rdf:Description>
-                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
-                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
-                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunitType"/>
-                                                                                            </rdf:Description>
-                                                                                        </rdf:first>
-                                                                                        <rdf:rest>
-                                                                                            <rdf:Description>
-                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                                <rdf:first>
-                                                                                                    <rdf:Description>
-                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
-                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
-                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
-                                                                                                    </rdf:Description>
-                                                                                                </rdf:first>
-                                                                                                <rdf:rest>
-                                                                                                    <rdf:Description>
-                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                                        <rdf:first>
-                                                                                                            <rdf:Description>
-                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
-                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemType"/>
-                                                                                                            </rdf:Description>
-                                                                                                        </rdf:first>
-                                                                                                        <rdf:rest>
-                                                                                                            <rdf:Description>
-                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                                                <rdf:first>
-                                                                                                                    <rdf:Description>
-                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#refers_to"/>
-                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
-                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemType"/>
-                                                                                                                    </rdf:Description>
-                                                                                                                </rdf:first>
-                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                                                            </rdf:Description>
-                                                                                                        </rdf:rest>
-                                                                                                    </rdf:Description>
-                                                                                                </rdf:rest>
-                                                                                            </rdf:Description>
-                                                                                        </rdf:rest>
-                                                                                    </rdf:Description>
-                                                                                </rdf:rest>
-                                                                            </rdf:Description>
-                                                                        </rdf:rest>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
