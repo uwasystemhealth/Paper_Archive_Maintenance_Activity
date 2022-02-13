@@ -10,7 +10,9 @@
      xmlns:core="http://www.industrialontologies.org/core/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/"
      xmlns:maintenance-activity-classification-rules="http://www.semanticweb.org/maintenance-activity-classification-rules#">
@@ -121,6 +123,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/data#pump_001">
         <rdf:type rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
         <obo:BFO_0000111 rdf:resource="http://www.semanticweb.org/data#pump_001_control_system"/>
+        <obo:BFO_0000111 rdf:resource="http://www.semanticweb.org/data#pump_001_driver_system"/>
         <obo:BFO_0000111 rdf:resource="http://www.semanticweb.org/data#pump_001_lub_system"/>
         <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#flow_meter_001"/>
         <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#motor_001"/>
@@ -134,7 +137,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/data#pump_001_control_system">
         <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem"/>
+        <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#flow_meter_001"/>
         <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#pressure_switch_001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/data#pump_001_driver_system -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/data#pump_001_driver_system">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#DriverAndElectricalSystem"/>
+        <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#motor_001"/>
     </owl:NamedIndividual>
     
 
@@ -143,7 +156,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/data#pump_001_lub_system">
         <rdf:type rdf:resource="http://www.semanticweb.org/asset-list-ontology#LubricationSystem"/>
-        <obo:BFO_0000178 rdf:resource="http://www.semanticweb.org/data#oil_001"/>
+        <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#oil_001"/>
     </owl:NamedIndividual>
     
 
@@ -221,8 +234,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
         <maintenance-activity-classification-rules:hasValue xml:lang="en">remove pressure switch</maintenance-activity-classification-rules:hasValue>
         <maintenance-activity-classification-rules:nlpIdentifiedActivity>replace</maintenance-activity-classification-rules:nlpIdentifiedActivity>
-        <maintenance-activity-classification-rules:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
-        <maintenance-activity-classification-rules:nlpIdentifiedSubunit rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem"/>
+        <maintenance-activity-classification-rules:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Oil"/>
+        <maintenance-activity-classification-rules:nlpIdentifiedSubunit rdf:resource="http://www.semanticweb.org/asset-list-ontology#LubricationSystem"/>
     </owl:NamedIndividual>
     
 
@@ -249,8 +262,8 @@
     <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_maintenance_type -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_maintenance_type">
-        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
     </owl:NamedIndividual>
     
 
