@@ -727,6 +727,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#GenericPumpSystem -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#GenericPumpSystem">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#ISO14224_PumpSystemBreakdown"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#GenericMaintenanceBreakdown"/>
         <rdfs:comment xml:lang="en">A generic specification of a Pump System asset breakdown structure. For example, the ISO 14224 Pump System breakdown structure.</rdfs:comment>
         <rdfs:label xml:lang="en">Generic Pump System</rdfs:label>
@@ -748,7 +749,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#GenericPumpSystem"/>
         <rdfs:label xml:lang="en">ISO 14224 Pump System</rdfs:label>
     </owl:Class>
     
@@ -871,6 +871,20 @@ Flags an indidividual as having been classified differently to what the NLP extr
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#PumpUnitSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#PumpUnitSystem">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#PumpUnitSystem"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
     </owl:Class>
     
 
@@ -1097,6 +1111,12 @@ Used to flag individuals where the classified maintenance activity type is unsur
     
 
 
+    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#PumpUnitSystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#PumpUnitSystem"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1112,21 +1132,21 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <IOFAnnotationVocabulary:synonym>extend</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>disconnect</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reopen</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>retorque</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>tilt</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>retorque</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>lubricate</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>retension</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>unload</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>retension</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>detension</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>tension</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>unblock</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>take up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reengage</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>take up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>secure</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reclamp</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>connect</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>resecure</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:elucidation>Under Development</IOFAnnotationVocabulary:elucidation>
+        <IOFAnnotationVocabulary:synonym>connect</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>tine</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>set</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fill</IOFAnnotationVocabulary:synonym>
@@ -1136,15 +1156,15 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <IOFAnnotationVocabulary:synonym>release</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>tighten</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>calibrate</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>reseat</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>close</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>drain</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reseat</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>grease</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>ammend</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>heat</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>realign</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>charge</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>recalibrate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>charge</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>refill</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reconnect</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>open</IOFAnnotationVocabulary:synonym>
@@ -1153,16 +1173,16 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <IOFAnnotationVocabulary:synonym>add</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>refix</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>readjust</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>energize</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>straighten</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>energize</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>remount</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>top up</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#admin">
         <IOFAnnotationVocabulary:synonym>reschedule</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>commission</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>approve</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>print</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>approve</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>order</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>redesign</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>audit</IOFAnnotationVocabulary:synonym>
@@ -1170,15 +1190,15 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <IOFAnnotationVocabulary:synonym>sign</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>design</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>label</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>report</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>scope</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>report</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#assemble">
-        <IOFAnnotationVocabulary:synonym>make</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>build</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>make</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>make up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>develop</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fabricate</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>make up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>create</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>rebuild</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>manufacture</IOFAnnotationVocabulary:synonym>
@@ -1197,8 +1217,8 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <IOFAnnotationVocabulary:synonym>scan</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>confirm</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>look</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>monitor</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>survey</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>monitor</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>verify</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>track</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:elucidation>Under Development</IOFAnnotationVocabulary:elucidation>
@@ -1251,8 +1271,8 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <IOFAnnotationVocabulary:synonym>push</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>put</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>return</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>pull</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>relocate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>pull</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>raise</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>erect</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>remove</IOFAnnotationVocabulary:synonym>
@@ -1260,15 +1280,15 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <IOFAnnotationVocabulary:synonym>mobilise</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reroute</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>rotate</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>guide</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>life</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>suspend</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>guide</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>rearrange</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#operate">
         <IOFAnnotationVocabulary:synonym>re-run</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>activate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>launch</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>activate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>startup</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reset</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reterminate</IOFAnnotationVocabulary:synonym>
@@ -1279,13 +1299,13 @@ Used to flag individuals where the classified maintenance activity type is unsur
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#perform">
         <IOFAnnotationVocabulary:synonym>prepare</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>conduct</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>rework</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>conduct</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>generate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>collect</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>carry</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>carry out</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>complete</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>carry out</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>compile</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>work</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
@@ -1294,8 +1314,8 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <IOFAnnotationVocabulary:synonym>rectify</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fix</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:elucidation>Under development</IOFAnnotationVocabulary:elucidation>
-        <IOFAnnotationVocabulary:synonym>reinforce</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>patch up</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>reinforce</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reseal</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#replace">
@@ -1317,8 +1337,8 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <IOFAnnotationVocabulary:synonym>assist</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>train</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>provide</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>support</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>supply</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>support</IOFAnnotationVocabulary:synonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem">
         <rdfs:label xml:lang="en">Control and Monitoring System</rdfs:label>
@@ -1328,6 +1348,9 @@ Used to flag individuals where the classified maintenance activity type is unsur
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#PipingAndValvesSystem">
         <rdfs:label>Piping and Valves System</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#PumpUnitSystem">
+        <rdfs:label>Pump Unit System</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedActivity">
         <rdfs:label xml:lang="en">NLP Identified Activity</rdfs:label>

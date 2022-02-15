@@ -1,4 +1,5 @@
 from datetime import date
+from numpy import place
 from owlready2 import *
 
 import pandas as pd
@@ -20,10 +21,14 @@ mar = None
 al = None
 ma = None
 owl = None
+wo = None
+core = None
+
+pump_number = '001'
 
 def load_ontology():
     global bfo_onto, iof_annotation_onto, iof_core_onto, functional_breakdown_onto, asset_list_onto, maintenance_activity_onto, work_order_onto, maint_activity_classification_rules_onto, onto
-    global obo, mar, ma, al, owl
+    global obo, mar, ma, al, owl, wo, core
     onto_path.append('../v2')
     bfo_onto = get_ontology("bfo-v2.owl").load()
     iof_annotation_onto = get_ontology("iof_AnnotationsVocabulary.rdf").load()
@@ -40,6 +45,8 @@ def load_ontology():
     al = asset_list_onto.get_namespace('http://www.semanticweb.org/asset-list-ontology#')
     ma = maintenance_activity_onto.get_namespace('http://www.semanticweb.org/maintenance-activity#')
     owl = onto.get_namespace('http://www.w3.org/2002/07/owl#')
+    wo = work_order_onto.get_namespace('http://www.semanticweb.org/work-order-ontology#')
+    core = iof_core_onto.get_namespace('http://www.industrialontologies.org/core/')
     print('loaded')
 
 def load_data(input_data_sheet_path):
@@ -51,32 +58,65 @@ def populate(data_frame):
 
     for index, row in data_frame.iterrows():
 
+        #sub_unit_indiv = select_sub_unit(row['NLP Identified Subunit'])
+        item_indiv = select_item(row['NLP Identified Item'])
+
         mwo_name = "MWO-"+str(row['ID'])
         date = add_work_order_created_date_individual(row, mwo_name)
         work_order = add_work_order_description_individual(row, mwo_name)
-        func_loc = add_functional_location_tag_individual(row, mwo_name)
+        func_loc = add_functional_location_tag_individual(row, mwo_name, item_indiv)
         labor = add_labour_cost(row, mwo_name)
         material = add_material_cost(row, mwo_name)
         maint_type = add_maintenance_type(row, mwo_name)
         activity = add_activity_individual(row, mwo_name)
-        #wo_execution_event = add_wo_execution_event(row, mwo_name, activity)
+        wo_execution_event = add_wo_execution_event(row, mwo_name, activity, item_indiv)
 
         with onto:
             mwo = mar.Maintenance_Work_Order_Record(mwo_name)
-            AllDifferent([mwo, date, work_order, func_loc, labor, material, maint_type, activity])
+            AllDifferent([mwo, date, work_order, func_loc, labor, material, maint_type, activity, wo_execution_event])
             mwo.has_data_field.append(date)
             mwo.has_data_field.append(work_order)
             mwo.has_data_field.append(func_loc)
             mwo.has_data_field.append(labor)
             mwo.has_data_field.append(material)
             mwo.has_data_field.append(maint_type)
-            mwo.has_data_field.append(activity)
+            mwo.describes.append(activity)
+            mwo.describes.append(wo_execution_event)
+            mwo.isInputOfAtSomeTime.append(wo_execution_event)
+
        
-        # todo: figure out why allDifferent is not working
-    
+def select_sub_unit(sub_unit):
+    individual_map = [
+        ['control and monitoring', 'pump_'+pump_number+'_control_and_monitoring'],
+        ['lubrication', 'pump_'+pump_number+'_lub_system'],
+        ['pump unit', 'pump_'+pump_number+'unit'],
+        ['driver and electrical', 'pump_'+pump_number+'_driver_system'],
+        ['power transmission', 'pump_'+pump_number+'_power_transmission'],
+        ['piping and valves', 'pump_'+pump_number+'_piping_system'],
+    ]
+    # get first column from 2d array
+    index = [x[0] for x in individual_map].index(sub_unit)
+    return  individual_map[index][1]
+
+def select_item(item):
+    individual_map = [
+        ['oil', 'oil_'+pump_number],
+        ['flowmeter', 'flow_meter_'+pump_number],
+        ['pump', 'pump_'+pump_number],
+        ['pressure switch', 'pressure_switch_'+pump_number],
+        ['valve', 'valve_'+pump_number],
+        ['motor', 'motor_'+pump_number],
+        ['mechanical seal', 'seal_'+pump_number],
+    ]
+    index = [x[0] for x in individual_map].index(item)
+    return  individual_map[index][1]
+
+
 def add_work_order_created_date_individual(row, mwo_name):
     date_name = mwo_name+"_created_date"
-    date_value =  parser.parse(row['Date']).isoformat()
+    input_date =  parser.parse(row['Date']).isoformat()
+    date_value = ""
+    date_value = datetime.datetime.strptime(input_date, "%Y-%m-%dT%H:%M:%S")
     with onto:
         date = mar.work_order_created_date(date_name)
         date.hasValue.append(date_value) # todo: figure out how to make a date type
@@ -88,21 +128,26 @@ def add_work_order_description_individual(row, mwo_name):
     with onto:
         description = mar.work_order_description_text(description_name)
         description.hasValue.append(description_value)
-        description.nlpIdentifiedItem.append(al.Motor) # todo: complete these
         description.nlpIdentifiedActivity.append(row['NLP Identified Activity'])
         item_string = format_item(row['NLP Identified Item'])
-        description.nlpIdentifiedItem.append('http://www.semanticweb.org/asset-list-ontology#'+item_string)
+        description.nlpIdentifiedItem.append(al[item_string])
+        sub_unit_string = format_item(row['NLP Identified Subunit']) + "System"
+        if (sub_unit_string == "LubricationSystem"):
+            description.nlpIdentifiedSubunit.append(al[sub_unit_string]) # todo: ask Matt about this
+        else:
+            description.nlpIdentifiedSubunit.append(mar[sub_unit_string])
         return description
 
 def format_item(item_string):
         return "".join(x.capitalize() or ' ' for x in item_string.split(" "))
 
-def add_functional_location_tag_individual(row, mwo_name):
+def add_functional_location_tag_individual(row, mwo_name, item):
     functional_location_tag_name = mwo_name+"_functional_location_tag"
     functional_location_tag_value = "TBD" # todo: figure out what's going on here
     with onto:
         functional_location_tag = mar.work_order_functional_location_tag(functional_location_tag_name)
         functional_location_tag.hasValue.append(functional_location_tag_value)
+        functional_location_tag.refers_to.append(onto[item])
         return functional_location_tag
 
 def add_labour_cost(row, mwo_name):
@@ -125,8 +170,9 @@ def add_maintenance_type(row, mwo_name):
     maintenance_type_name = mwo_name+"_maintenance_type"
     maintenance_type_value = row['Work Order Type']
     with onto:
+        maintenance_type_value_string = 'work_order_'+maintenance_type_value+'_maintenance'
         maintenance_type = mar.work_order_maintenance_type(maintenance_type_name)
-        maintenance_type.hasValue.append(maintenance_type_value)
+        maintenance_type = mar[maintenance_type_value_string](maintenance_type_name)
         return maintenance_type
 
 def add_activity_individual(row, mwo_name):
@@ -137,15 +183,15 @@ def add_activity_individual(row, mwo_name):
         activity.is_a.remove(activity.is_a[0]) # hack to create activity without owl:Thing
         return activity
 
-#def add_wo_execution_event(row, mwo_name, activity):
-#    wo_execution_event_name = mwo_name+"_wo_execution_event"
-#    with onto:
-#        wo_execution_event = onto.work_order_execution_event(wo_execution_event_name)
-#        wo_execution_event.BFO_0000057.append(activity)
-#        return wo_execution_event
+def add_wo_execution_event(row, mwo_name, activity, item):
+    wo_execution_event_name = mwo_name+"_wo_execution_event"
+    with onto:
+        wo_execution_event = wo.WorkOrderExecutionProcess(wo_execution_event_name)
+        wo_execution_event.BFO_0000117.append(activity)
+        wo_execution_event.BFO_0000057.append(onto[item])
+        return wo_execution_event
 
 def save_ontology():
-    print("Saving Ontology")
     onto.save(file = "../v2/populated-data.owl", format = "rdfxml")
 
 def main():
@@ -157,3 +203,9 @@ def main():
     save_ontology()
 if __name__ == "__main__":
     main()
+
+
+# notes:
+# - lubrication system in wrong place
+# - pump unit system does not exist under engineered system
+# - what to do with func loc refers to.
