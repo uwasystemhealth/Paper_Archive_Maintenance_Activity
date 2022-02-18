@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/data"
+         xmlns="http://www.semanticweb.org/data#"
+         xmlns:asse="http://www.semanticweb.org/asset-list-ontology#"
+         xmlns:obo="http://purl.obolibrary.org/obo/"
+         xmlns:main="http://www.semanticweb.org/maintenance-activity-classification-rules#"
+         xmlns:work="http://www.semanticweb.org/work-order-ontology#"
+         xmlns:core="http://www.industrialontologies.org/core/">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/data">
+  <owl:imports rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules"/>
+</owl:Ontology>
+
+<owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000111"/>
+
+<owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+
+<owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Flowmeter"/>
+
+<owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Motor"/>
+
+<owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Oil"/>
+
+<owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
+
+<owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Valve"/>
+
+<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#replace"/>
+
+<asse:Flowmeter rdf:about="#flow_meter_001">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</asse:Flowmeter>
+
+<asse:Motor rdf:about="#motor_001">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</asse:Motor>
+
+<asse:Oil rdf:about="#oil_001">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</asse:Oil>
+
+<asse:PressureSwitch rdf:about="#pressure_switch_001">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</asse:PressureSwitch>
+
+<asse:Pump rdf:about="#pump_001">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <obo:BFO_0000111 rdf:resource="#pump_001_control_system"/>
+  <obo:BFO_0000111 rdf:resource="#pump_001_driver_system"/>
+  <obo:BFO_0000111 rdf:resource="#pump_001_lub_system"/>
+  <obo:BFO_0000111 rdf:resource="#pump_001_piping_system"/>
+  <obo:BFO_0000174 rdf:resource="#seal_001"/>
+</asse:Pump>
+
+<asse:MechanicalSeal rdf:about="#seal_001">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</asse:MechanicalSeal>
+
+<main:ControlAndMonitoringSystem rdf:about="#pump_001_control_system">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <obo:BFO_0000174 rdf:resource="#flow_meter_001"/>
+  <obo:BFO_0000174 rdf:resource="#pressure_switch_001"/>
+</main:ControlAndMonitoringSystem>
+
+<main:DriverAndElectricalSystem rdf:about="#pump_001_driver_system">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <obo:BFO_0000174 rdf:resource="#motor_001"/>
+</main:DriverAndElectricalSystem>
+
+<asse:LubricationSystem rdf:about="#pump_001_lub_system">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <obo:BFO_0000174 rdf:resource="#oil_001"/>
+</asse:LubricationSystem>
+
+<main:PipingAndValvesSystem rdf:about="#pump_001_piping_system">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <obo:BFO_0000174 rdf:resource="#valve_001"/>
+</main:PipingAndValvesSystem>
+
+<asse:Valve rdf:about="#valve_001">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</asse:Valve>
+
+<main:PumpUnitSystem rdf:about="#pump_001_unit">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</main:PumpUnitSystem>
+
+<work:WorkOrderExecutionProcess rdf:about="#work_order_execution_event_17_jan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <obo:BFO_0000057 rdf:resource="#pump_001"/>
+</work:WorkOrderExecutionProcess>
+
+<main:work_order_created_date rdf:about="#MWO-7_created_date">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-06-18T00:00:00</main:hasValue>
+</main:work_order_created_date>
+
+<main:work_order_description_text rdf:about="#MWO-7_description">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
+  <main:nlpIdentifiedSubunit rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#DriverAndElectricalSystem"/>
+  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18M electrical service motor</main:hasValue>
+  <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</main:nlpIdentifiedActivity>
+</main:work_order_description_text>
+
+<main:work_order_functional_location_tag rdf:about="#MWO-7_functional_location_tag">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:refers_to rdf:resource="#motor_001"/>
+</main:work_order_functional_location_tag>
+
+<main:work_order_labour_cost rdf:about="#MWO-7_labour_cost">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">258.43</main:hasValue>
+</main:work_order_labour_cost>
+
+<main:work_order_material_cost rdf:about="#MWO-7_material_cost">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</main:hasValue>
+</main:work_order_material_cost>
+
+<main:work_order_maintenance_type rdf:about="#MWO-7_maintenance_type">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+</main:work_order_maintenance_type>
+
+<rdf:Description rdf:about="#MWO-7_activity">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+        <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdf:type>
+</rdf:Description>
+
+<work:WorkOrderExecutionProcess rdf:about="#MWO-7_wo_execution_event">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <obo:BFO_0000057 rdf:resource="#motor_001"/>
+  <obo:BFO_0000117 rdf:resource="#MWO-7_activity"/>
+</work:WorkOrderExecutionProcess>
+
+<main:Maintenance_Work_Order_Record rdf:about="#MWO-7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <core:describes rdf:resource="#MWO-7_activity"/>
+  <core:describes rdf:resource="#MWO-7_wo_execution_event"/>
+  <core:isInputOfAtSomeTime rdf:resource="#MWO-7_wo_execution_event"/>
+  <main:has_data_field rdf:resource="#MWO-7_created_date"/>
+  <main:has_data_field rdf:resource="#MWO-7_description"/>
+  <main:has_data_field rdf:resource="#MWO-7_functional_location_tag"/>
+  <main:has_data_field rdf:resource="#MWO-7_labour_cost"/>
+  <main:has_data_field rdf:resource="#MWO-7_material_cost"/>
+  <main:has_data_field rdf:resource="#MWO-7_maintenance_type"/>
+</main:Maintenance_Work_Order_Record>
+
+<owl:AllDifferent>
+  <owl:distinctMembers rdf:parseType="Collection">
+    <rdf:Description rdf:about="#MWO-7"/>
+    <rdf:Description rdf:about="#MWO-7_created_date"/>
+    <rdf:Description rdf:about="#MWO-7_description"/>
+    <rdf:Description rdf:about="#MWO-7_functional_location_tag"/>
+    <rdf:Description rdf:about="#MWO-7_labour_cost"/>
+    <rdf:Description rdf:about="#MWO-7_material_cost"/>
+    <rdf:Description rdf:about="#MWO-7_maintenance_type"/>
+    <rdf:Description rdf:about="#MWO-7_activity"/>
+    <rdf:Description rdf:about="#MWO-7_wo_execution_event"/>
+  </owl:distinctMembers>
+</owl:AllDifferent>
+
+
+</rdf:RDF>
