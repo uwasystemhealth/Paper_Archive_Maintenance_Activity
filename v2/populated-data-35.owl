@@ -6789,41 +6789,41 @@ Used to flag individuals where the classified maintenance activity type is unsur
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </asse:MechanicalSeal>
 
-<main:work_order_created_date rdf:about="http://www.semanticweb.org/data#MWO-26_created_date">
+<main:work_order_created_date rdf:about="http://www.semanticweb.org/data#MWO-36_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-06-17T00:00:00</main:hasValue>
+  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-22T00:00:00</main:hasValue>
 </main:work_order_created_date>
 
-<main:work_order_description_text rdf:about="http://www.semanticweb.org/data#MWO-26_description">
+<main:work_order_description_text rdf:about="http://www.semanticweb.org/data#MWO-36_description">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Motor"/>
-  <main:nlpIdentifiedSubunit rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#DriverAndElectricalSystem"/>
-  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">78W electrical service motor</main:hasValue>
-  <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</main:nlpIdentifiedActivity>
+  <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
+  <main:nlpIdentifiedSubunit rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#ControlAndMonitoringSystem"/>
+  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replace pressure switch</main:hasValue>
+  <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replace</main:nlpIdentifiedActivity>
 </main:work_order_description_text>
 
-<main:work_order_functional_location_tag rdf:about="http://www.semanticweb.org/data#MWO-26_functional_location_tag">
+<main:work_order_functional_location_tag rdf:about="http://www.semanticweb.org/data#MWO-36_functional_location_tag">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:refers_to rdf:resource="http://www.semanticweb.org/data#pump_001"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PU001</main:hasValue>
 </main:work_order_functional_location_tag>
 
-<main:work_order_labour_cost rdf:about="http://www.semanticweb.org/data#MWO-26_labour_cost">
+<main:work_order_labour_cost rdf:about="http://www.semanticweb.org/data#MWO-36_labour_cost">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91.18</main:hasValue>
+  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">198.72</main:hasValue>
 </main:work_order_labour_cost>
 
-<main:work_order_material_cost rdf:about="http://www.semanticweb.org/data#MWO-26_material_cost">
+<main:work_order_material_cost rdf:about="http://www.semanticweb.org/data#MWO-36_material_cost">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</main:hasValue>
+  <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021.0</main:hasValue>
 </main:work_order_material_cost>
 
-<main:work_order_maintenance_type rdf:about="http://www.semanticweb.org/data#MWO-26_maintenance_type">
+<main:work_order_maintenance_type rdf:about="http://www.semanticweb.org/data#MWO-36_maintenance_type">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+  <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
 </main:work_order_maintenance_type>
 
-<rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-26_activity">
+<rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-36_activity">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type>
     <owl:Class>
@@ -6835,36 +6835,36 @@ Used to flag individuals where the classified maintenance activity type is unsur
   </rdf:type>
 </rdf:Description>
 
-<work:WorkOrderExecutionProcess rdf:about="http://www.semanticweb.org/data#MWO-26_wo_execution_event">
+<work:WorkOrderExecutionProcess rdf:about="http://www.semanticweb.org/data#MWO-36_wo_execution_event">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <obo:BFO_0000057 rdf:resource="http://www.semanticweb.org/data#motor_001"/>
-  <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/data#MWO-26_activity"/>
+  <obo:BFO_0000057 rdf:resource="http://www.semanticweb.org/data#pressure_switch_001"/>
+  <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/data#MWO-36_activity"/>
 </work:WorkOrderExecutionProcess>
 
-<main:Maintenance_Work_Order_Record rdf:about="http://www.semanticweb.org/data#MWO-26">
+<main:Maintenance_Work_Order_Record rdf:about="http://www.semanticweb.org/data#MWO-36">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <core2:describes rdf:resource="http://www.semanticweb.org/data#MWO-26_activity"/>
-  <core2:describes rdf:resource="http://www.semanticweb.org/data#MWO-26_wo_execution_event"/>
-  <core2:isInputOfAtSomeTime rdf:resource="http://www.semanticweb.org/data#MWO-26_wo_execution_event"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-26_created_date"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-26_description"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-26_functional_location_tag"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-26_labour_cost"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-26_material_cost"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-26_maintenance_type"/>
+  <core2:describes rdf:resource="http://www.semanticweb.org/data#MWO-36_activity"/>
+  <core2:describes rdf:resource="http://www.semanticweb.org/data#MWO-36_wo_execution_event"/>
+  <core2:isInputOfAtSomeTime rdf:resource="http://www.semanticweb.org/data#MWO-36_wo_execution_event"/>
+  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-36_created_date"/>
+  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-36_description"/>
+  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-36_functional_location_tag"/>
+  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-36_labour_cost"/>
+  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-36_material_cost"/>
+  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-36_maintenance_type"/>
 </main:Maintenance_Work_Order_Record>
 
 <owl:AllDifferent>
   <owl:distinctMembers rdf:parseType="Collection">
-    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-26"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-26_created_date"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-26_description"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-26_functional_location_tag"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-26_labour_cost"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-26_material_cost"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-26_maintenance_type"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-26_activity"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-26_wo_execution_event"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-36"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-36_created_date"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-36_description"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-36_functional_location_tag"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-36_labour_cost"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-36_material_cost"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-36_maintenance_type"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-36_activity"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-36_wo_execution_event"/>
   </owl:distinctMembers>
 </owl:AllDifferent>
 
