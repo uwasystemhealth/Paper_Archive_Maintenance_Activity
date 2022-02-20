@@ -37,15 +37,15 @@ def load_ontology():
         "IOF_AnnotationsVocabulary.rdf").load()
     iof_core_onto = get_ontology("IOF.owl").load()
     onto_path.append('../v2')
+    asset_list_onto = get_ontology("asset-list-ontology.owl").load()
     functional_breakdown_onto = get_ontology(
         "functional-breakdown-pump-ontology.owl").load()
-    asset_list_onto = get_ontology("asset-list-ontology.owl").load()
     work_order_onto = get_ontology("work-order-ontology.owl").load()
     maintenance_activity_onto = get_ontology("maintenance-activity.owl").load()
     maint_activity_classification_rules_onto = get_ontology(
         "activity-classification-rules.owl").load()
     onto = None
-    onto = get_ontology("data.owl").load()
+    onto = get_ontology("asset-data.owl").load()
 
     obo = bfo_onto.get_namespace("http://purl.obolibrary.org/obo/")
     mar = onto.get_namespace(
@@ -76,7 +76,7 @@ def populate_single(index, row):
     date = add_work_order_created_date_individual(row, mwo_name)
     work_order = add_work_order_description_individual(row, mwo_name)
     func_loc = add_functional_location_tag_individual(
-        row, mwo_name, item_indiv)
+        row, mwo_name, select_item('pump'))
     labor = add_labour_cost(row, mwo_name)
     material = add_material_cost(row, mwo_name)
     maint_type = add_maintenance_type(row, mwo_name)
@@ -111,7 +111,7 @@ def populate(data_frame):
         date = add_work_order_created_date_individual(row, mwo_name)
         work_order = add_work_order_description_individual(row, mwo_name)
         func_loc = add_functional_location_tag_individual(
-            row, mwo_name, item_indiv)
+            row, mwo_name, select_item('pump'))
         labor = add_labour_cost(row, mwo_name)
         material = add_material_cost(row, mwo_name)
         maint_type = add_maintenance_type(row, mwo_name)
@@ -202,6 +202,7 @@ def add_functional_location_tag_individual(row, mwo_name, item):
     with onto:
         functional_location_tag = mar.work_order_functional_location_tag(
             functional_location_tag_name)
+        functional_location_tag.hasValue.append('PU001')
         functional_location_tag.refers_to.append(onto[item])
         return functional_location_tag
 
@@ -258,8 +259,9 @@ def add_wo_execution_event(row, mwo_name, activity, item):
         return wo_execution_event
 
 
-def save_ontology(filename):
-    onto.save(file=filename, format="rdfxml")
+def save_ontology(filename, save_merged=False):
+    ont_to_save = owlready2.default_world if save_merged else onto
+    ont_to_save.save(file=filename, format="rdfxml")
 
 
 def main():
@@ -269,13 +271,14 @@ def main():
     data_frame = load_data(input_data_sheet_path)
 
     i = int(sys.argv[1])  # cannot loop because of owlready caching.
+    save_merged = bool(sys.argv[2]) if len(sys.argv) >= 2  else False
 
     for index, row in data_frame.iterrows():
         if index == i:  # must do one at a time because owlready caching
 
             load_ontology()  # reload ontology each run.
             populate_single(index, row)
-            save_ontology("../v2/populated-data-"+str(index)+".owl")
+            save_ontology("../v2/populated-data-"+str(index)+".owl", save_merged)
 
     # populate(data_frame)
 
