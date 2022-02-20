@@ -126,7 +126,7 @@
         <obo:BFO_0000111 rdf:resource="http://www.semanticweb.org/data#pump_001_driver_system"/>
         <obo:BFO_0000111 rdf:resource="http://www.semanticweb.org/data#pump_001_lub_system"/>
         <obo:BFO_0000111 rdf:resource="http://www.semanticweb.org/data#pump_001_piping_system"/>
-        <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#seal_001"/>
+        <obo:BFO_0000111 rdf:resource="http://www.semanticweb.org/data#pump_001_unit"/>
     </owl:NamedIndividual>
     
 
@@ -172,6 +172,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/data#pump_001_unit">
         <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#PumpUnitSystem"/>
+        <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#seal_001"/>
     </owl:NamedIndividual>
     
 
@@ -247,10 +248,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_description">
         <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
-        <maintenance-activity-classification-rules:hasValue xml:lang="en">remove pressure switch</maintenance-activity-classification-rules:hasValue>
-        <maintenance-activity-classification-rules:nlpIdentifiedActivity>replace</maintenance-activity-classification-rules:nlpIdentifiedActivity>
         <maintenance-activity-classification-rules:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Valve"/>
         <maintenance-activity-classification-rules:nlpIdentifiedSubunit rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#PipingAndValvesSystem"/>
+        <maintenance-activity-classification-rules:hasValue xml:lang="en">remove pressure switch</maintenance-activity-classification-rules:hasValue>
+        <maintenance-activity-classification-rules:nlpIdentifiedActivity>replace</maintenance-activity-classification-rules:nlpIdentifiedActivity>
     </owl:NamedIndividual>
     
 
