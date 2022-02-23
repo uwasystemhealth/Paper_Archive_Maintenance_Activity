@@ -12,5 +12,5 @@ This repository contains the following folders:
 
 The file, __maintenance-activity.owl__, contains the _maintenance activity reference ontology_ presented in the paper.
 
-The files, __maintenance-activity-classification-rules.owl___, __asset-data.owl__, __asset-list-ontology.owl__, __functional-breakdown-pump-ontology.owl__, and __work-order-ontology.owl__, contain data files necesarry for running the _application level ontology for maintenance work order data quality_. 
+The files, __maintenance-activity-classification-rules.owl__, __asset-data.owl__, __asset-list-ontology.owl__, __functional-breakdown-pump-ontology.owl__, and __work-order-ontology.owl__, contain data files necesarry for running the _application level ontology for maintenance work order data quality_. 
 
