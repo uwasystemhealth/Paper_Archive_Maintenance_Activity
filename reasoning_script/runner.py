@@ -53,19 +53,19 @@ def query_records_and_classifications(world):
         ?_tag a work:WorkOrderFunctionalLocationTag ;
             work:refersTo ?tagged_item .
         OPTIONAL {
-            ?_tag work:hasDataField ?tag_name ;
+            ?_tag work:hasValue ?tag_name ;
         }
         ?description a work:WorkOrderDescriptionText ;
-            work:hasDataField ?text ;
+            work:hasValue ?text ;
             macr:nlpIdentifiedActivity ?activity ;
             macr:nlpIdentifiedItem ?item ;
             macr:nlpIdentifiedSubunit ?unit .
         ?labour a work:WorkOrderLabourCost ;
-            work:hasDataField ?labour_cost .
+            work:hasValue ?labour_cost .
         ?material a work:WorkOrderMaterialCost ;
-            work:hasDataField ?material_cost .
+            work:hasValue ?material_cost .
         ?date a work:WorkOrderCreatedDate ;
-            work:hasDataField ?date_time .
+            work:hasValue ?date_time .
         ?_maint_type a work:WorkOrderMaintenanceType ;
             a ?maint_type .
         ?maint_type rdfs:subClassOf work:WorkOrderMaintenanceType .
