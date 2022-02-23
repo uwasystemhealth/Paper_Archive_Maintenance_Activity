@@ -31,13 +31,22 @@
 
     <!-- http://www.semanticweb.org/work-order-ontology#hasDataField -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#hasDataField">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/work-order-ontology#isDataFieldOf"/>
+        <rdfs:comment xml:lang="en">Convenience property to describe the &apos;proper continuant parthood at all times&apos; relationship between a data record and its individual data items.</rdfs:comment>
+        <rdfs:label xml:lang="en">has field</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of -->
+    <!-- http://www.semanticweb.org/work-order-ontology#isDataFieldOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#isDataFieldOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+        <rdfs:comment xml:lang="en">Convenience property to describe the &apos;proper continuant parthood at all times&apos; relationship between a data record and its individual data items.</rdfs:comment>
+        <rdfs:label xml:lang="en">is field of</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -167,7 +176,7 @@
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#isDataFieldOf"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
             </owl:Restriction>
