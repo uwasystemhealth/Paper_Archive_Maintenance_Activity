@@ -61,9 +61,19 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Flowmeter">
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asset-list-ontology#Sensor"/>
         <rdfs:label>Flowmeter</rdfs:label>
         <skos:altLabel>Flow Meter</skos:altLabel>
         <skos:prefLabel>Flowmeter</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asset-list-ontology#MechanicalSeal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#MechanicalSeal">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:label>Seal</rdfs:label>
     </owl:Class>
     
 
@@ -90,6 +100,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch">
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asset-list-ontology#Sensor"/>
         <rdfs:label>Pressure Switch</rdfs:label>
         <skos:altLabel>Switch</skos:altLabel>
         <skos:prefLabel>Pressure Switch</skos:prefLabel>
@@ -101,16 +112,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump">
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
-        <rdfs:label>Pump</rdfs:label>
+        <rdfs:label>Pump, Centrifugal</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/asset-list-ontology#Seal -->
+    <!-- http://www.semanticweb.org/asset-list-ontology#Sensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Seal">
+    <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Sensor">
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
-        <rdfs:label>Seal</rdfs:label>
     </owl:Class>
     
 

@@ -1,1 +1,6 @@
 catalog-v001.xml
+population_script/bin/*
+population_script/lib/*
+population_script/include/*
+population_script/catalog-v001.xml
+**/.DS_Store
