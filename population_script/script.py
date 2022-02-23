@@ -32,12 +32,12 @@ pump_number = '001'
 def load_ontology():
     global bfo_onto, iof_annotation_onto, iof_core_onto, functional_breakdown_onto, asset_list_onto, maintenance_activity_onto, work_order_onto, maint_activity_classification_rules_onto, onto
     global obo, mar, ma, fb, al, owl, wo, core
-    onto_path.append('../v2/imports')
+    onto_path.append('../imports')
     bfo_onto = get_ontology("bfo-v2.owl").load()
     iof_annotation_onto = get_ontology(
         "IOF_AnnotationsVocabulary.rdf").load()
     iof_core_onto = get_ontology("IOF.owl").load()
-    onto_path.append('../v2')
+    onto_path.append('../')
     asset_list_onto = get_ontology("asset-list-ontology.owl").load()
     functional_breakdown_onto = get_ontology(
         "functional-breakdown-pump-ontology.owl").load()
@@ -277,7 +277,7 @@ def main():
 
             load_ontology()  # reload ontology each run.
             populate_single(index, row)
-            save_ontology("../v2/populated-data-"+str(index)+".owl", save_merged)
+            save_ontology("../data/populated-data-"+str(index)+".owl", save_merged)
 
     # populate(data_frame)
 

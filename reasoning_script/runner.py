@@ -93,8 +93,9 @@ def main(first_record=1, last_record=36):
     print('Reasoning over records', first_record, 'to', last_record)
 
     owlready2.reasoning.JAVA_MEMORY = 4000
-    onto_path.append('../v2/imports')
-    onto_path.append('../v2')
+    onto_path.append('../imports')
+    onto_path.append('../data')
+    onto_path.append('../')
 
     classifications = []
     results = []
@@ -103,7 +104,7 @@ def main(first_record=1, last_record=36):
     for i in range(first_record - 1, last_record):
         print('Processing record', i + 1)
         the_world = World()
-        onto = the_world.get_ontology(f"../v2/populated-data-{i}.owl").load(only_local=True)
+        onto = the_world.get_ontology(f"../data/populated-data-{i}.owl").load(only_local=True)
         data = onto.get_namespace('http://www.semanticweb.org/data#')
         rules = onto.get_namespace('http://www.semanticweb.org/maintenance-activity-classification-rules#')
         activity = onto.get_namespace('http://www.semanticweb.org/maintenance-activity#')
