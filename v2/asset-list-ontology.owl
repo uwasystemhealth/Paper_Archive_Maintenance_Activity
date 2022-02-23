@@ -112,7 +112,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump">
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
-        <rdfs:label>Pump</rdfs:label>
+        <rdfs:label>Pump, Centrifugal</rdfs:label>
     </owl:Class>
     
 
