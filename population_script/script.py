@@ -91,12 +91,12 @@ def populate_single(index, row):
         mwo = wo.MaintenanceWorkOrderRecord(mwo_name)
         AllDifferent([mwo, date, work_order, func_loc, labor,
                       material, maint_type, activity, wo_execution_event])
-        mwo.has_data_field.append(date)
-        mwo.has_data_field.append(work_order)
-        mwo.has_data_field.append(func_loc)
-        mwo.has_data_field.append(labor)
-        mwo.has_data_field.append(material)
-        mwo.has_data_field.append(maint_type)
+        mwo.hasDataField.append(date)
+        mwo.hasDataField.append(work_order)
+        mwo.hasDataField.append(func_loc)
+        mwo.hasDataField.append(labor)
+        mwo.hasDataField.append(material)
+        mwo.hasDataField.append(maint_type)
         mwo.describes.append(activity)
         mwo.describes.append(wo_execution_event)
         mwo.isInputOfAtSomeTime.append(wo_execution_event)
@@ -126,12 +126,12 @@ def populate(data_frame):
             mwo = wo.MaintenanceWorkOrderRecord(mwo_name)
             AllDifferent([mwo, date, work_order, func_loc, labor,
                          material, maint_type, activity, wo_execution_event])
-            mwo.has_data_field.append(date)
-            mwo.has_data_field.append(work_order)
-            mwo.has_data_field.append(func_loc)
-            mwo.has_data_field.append(labor)
-            mwo.has_data_field.append(material)
-            mwo.has_data_field.append(maint_type)
+            mwo.hasDataField.append(date)
+            mwo.hasDataField.append(work_order)
+            mwo.hasDataField.append(func_loc)
+            mwo.hasDataField.append(labor)
+            mwo.hasDataField.append(material)
+            mwo.hasDataField.append(maint_type)
             mwo.describes.append(activity)
             mwo.describes.append(wo_execution_event)
             mwo.isInputOfAtSomeTime.append(wo_execution_event)
@@ -171,7 +171,7 @@ def add_work_order_created_date_individual(row, mwo_name):
     date_value = ""
     date_value = datetime.datetime.strptime(input_date, "%Y-%m-%dT%H:%M:%S")
     with onto:
-        date = wo.work_order_created_date(date_name)
+        date = wo.WorkOrderCreatedDate(date_name)
         # todo: figure out how to make a date type
         date.hasValue.append(date_value)
         return date
@@ -181,7 +181,7 @@ def add_work_order_description_individual(row, mwo_name):
     description_name = mwo_name+"_description"
     description_value = row['Unstructured Text']
     with onto:
-        description = wo.work_order_description_text(description_name)
+        description = wo.WorkOrderDescriptionText(description_name)
         description.hasValue.append(description_value)
         description.nlpIdentifiedActivity.append(
             row['NLP Identified Activity'])
@@ -199,10 +199,10 @@ def format_item(item_string):
 def add_functional_location_tag_individual(row, mwo_name, item):
     functional_location_tag_name = mwo_name+"_functional_location_tag"
     with onto:
-        functional_location_tag = wo.work_order_functional_location_tag(
+        functional_location_tag = wo.WorkOrderFunctionalLocationTag(
             functional_location_tag_name)
         functional_location_tag.hasValue.append('PU001')
-        functional_location_tag.refers_to.append(onto[item])
+        functional_location_tag.refersTo.append(onto[item])
         return functional_location_tag
 
 
@@ -210,7 +210,7 @@ def add_labour_cost(row, mwo_name):
     labour_cost_name = mwo_name+"_labour_cost"
     labour_cost_value = row['Labor Cost']
     with onto:
-        labour_cost = wo.work_order_labour_cost(labour_cost_name)
+        labour_cost = wo.WorkOrderLabourCost(labour_cost_name)
         labour_cost.hasValue.append(labour_cost_value)
         return labour_cost
 
@@ -219,7 +219,7 @@ def add_material_cost(row, mwo_name):
     material_cost_name = mwo_name+"_material_cost"
     material_cost_value = row['Material Cost']
     with onto:
-        material_cost = wo.work_order_material_cost(material_cost_name)
+        material_cost = wo.WorkOrderMaterialCost(material_cost_name)
         material_cost.hasValue.append(material_cost_value)
         return material_cost
 
@@ -230,7 +230,7 @@ def add_maintenance_type(row, mwo_name):
     with onto:
         maintenance_type_value_string = 'work_order_' + \
             maintenance_type_value+'_maintenance'
-        maintenance_type = wo.work_order_maintenance_type(
+        maintenance_type = wo.WorkOrderMaintenanceType(
             maintenance_type_name)
         maintenance_type = wo[maintenance_type_value_string](
             maintenance_type_name)

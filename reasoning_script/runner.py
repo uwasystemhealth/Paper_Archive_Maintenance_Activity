@@ -9,6 +9,7 @@ def query_not_matching(world):
     PREFIX bfo:<http://purl.obolibrary.org/obo/>
     PREFIX core:<http://www.industrialontologies.org/core/>
     PREFIX activity:<http://www.semanticweb.org/maintenance-activity#>
+    PREFIX work:<http://www.semanticweb.org/work-order-ontology#>
     PREFIX macr:<http://www.semanticweb.org/maintenance-activity-classification-rules#>
     SELECT DISTINCT ?activity ?clazz ?nlpActivityType
     WHERE {
@@ -20,7 +21,7 @@ def query_not_matching(world):
         FILTER NOT EXISTS { ?activity a/rdfs:subClassOf* macr:InferredActivityTypeMatchesWorkOrderDescription }
         OPTIONAL {
             ?activity core:describedBy|^core:describes ?_record .
-            ?_record macr:refers_to ?nlpActivityType .
+            ?_record work:refersTo ?nlpActivityType .
             ?nlpActivityType rdfs:subClassOf+ activity:MaintenanceActivity . 
                 # a/rdfs:subClassOf* activity:replace .
         }
@@ -38,42 +39,43 @@ def query_records_and_classifications(world):
     PREFIX bfo:<http://purl.obolibrary.org/obo/>
     PREFIX core:<http://www.industrialontologies.org/core/>
     PREFIX activity:<http://www.semanticweb.org/maintenance-activity#>
+    PREFIX work:<http://www.semanticweb.org/work-order-ontology#>
     PREFIX macr:<http://www.semanticweb.org/maintenance-activity-classification-rules#>
     SELECT DISTINCT ?record ?tag_name ?tagged_item ?text ?activity ?item ?unit ?labour_cost ?material_cost ?date_time ?maint_type ?activityType ?nlpActivityRef
     WHERE {
-        ?record a macr:Maintenance_Work_Order_Record ;
-            macr:has_data_field ?_tag ;
-            macr:has_data_field ?description ;
-            macr:has_data_field ?labour ;
-            macr:has_data_field ?material ;
-            macr:has_data_field ?date ;
-            macr:has_data_field ?_maint_type .
-        ?_tag a macr:work_order_functional_location_tag ;
-            macr:refers_to ?tagged_item .
+        ?record a work:MaintenanceWorkOrderRecord ;
+            work:hasDataField ?_tag ;
+            work:hasDataField ?description ;
+            work:hasDataField ?labour ;
+            work:hasDataField ?material ;
+            work:hasDataField ?date ;
+            work:hasDataField ?_maint_type .
+        ?_tag a work:WorkOrderFunctionalLocationTag ;
+            work:refersTo ?tagged_item .
         OPTIONAL {
-            ?_tag macr:hasValue ?tag_name ;
+            ?_tag work:hasDataField ?tag_name ;
         }
-        ?description a macr:work_order_description_text ;
-            macr:hasValue ?text ;
+        ?description a work:WorkOrderDescriptionText ;
+            work:hasDataField ?text ;
             macr:nlpIdentifiedActivity ?activity ;
             macr:nlpIdentifiedItem ?item ;
             macr:nlpIdentifiedSubunit ?unit .
-        ?labour a macr:work_order_labour_cost ;
-            macr:hasValue ?labour_cost .
-        ?material a macr:work_order_material_cost ;
-            macr:hasValue ?material_cost .
-        ?date a macr:work_order_created_date ;
-            macr:hasValue ?date_time .
-        ?_maint_type a macr:work_order_maintenance_type ;
+        ?labour a work:WorkOrderLabourCost ;
+            work:hasDataField ?labour_cost .
+        ?material a work:WorkOrderMaterialCost ;
+            work:hasDataField ?material_cost .
+        ?date a work:WorkOrderCreatedDate ;
+            work:hasDataField ?date_time .
+        ?_maint_type a work:WorkOrderMaintenanceType ;
             a ?maint_type .
-        ?maint_type rdfs:subClassOf macr:work_order_maintenance_type .
+        ?maint_type rdfs:subClassOf work:WorkOrderMaintenanceType .
         OPTIONAL {
             ?record core:describes ?_activity .
             ?_activity a ?activityType .
             ?activityType rdfs:subClassOf+ activity:MaintenanceActivity .
         }
         OPTIONAL {
-            ?description macr:refers_to ?nlpActivityRef .
+            ?description work:refersTo ?nlpActivityRef .
             ?nlpActivityRef rdfs:subClassOf+ activity:MaintenanceActivity .
         }
     }

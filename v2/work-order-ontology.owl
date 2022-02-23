@@ -50,6 +50,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/work-order-ontology#refersTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#refersTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.industrialontologies.org/core/isAbout"/>
+        <IOFAnnotationVocabulary:elucidation xml:lang="en">If an ICE &apos;refers to&apos; an entity then it uses, evokes, or references the entity or concept in some way that is not necessarily descriptive, designative, nor prescriptive.</IOFAnnotationVocabulary:elucidation>
+        <rdfs:label xml:lang="en">refers to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -61,9 +71,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue -->
+    <!-- http://www.semanticweb.org/work-order-ontology#hasValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/work-order-ontology#hasValue">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdfs:domain>
+        <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="http://www.industrialontologies.org/core/DesignativeInformationContentEntity"/>
+                <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
+            </owl:unionOf>
+        </owl:Class>
+    </rdfs:domain>
+    <rdfs:comment xml:lang="en">A property allowing the assignment of concrete values to the Maintenance Work Order Record data items that require them. Allows reasoning about numbers, for instance. Aims to be compatible with IAO or similar, but specific to our information content classes for the moment. We also do not restrict the type of value to any particular literal type; whether or not there is value in specialising the data property is not yet determined.</rdfs:comment>
+    <rdfs:label xml:lang="en">has value</rdfs:label>
+</owl:DatatypeProperty>
     
 
 
@@ -183,7 +205,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasValue"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -210,7 +232,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasValue"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -244,7 +266,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasValue"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -269,7 +291,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasValue"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
