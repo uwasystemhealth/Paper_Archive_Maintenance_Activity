@@ -115,36 +115,6 @@
 
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump">
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#ControlAndMonitoringSystem"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#DriverAndElectricalSystem"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#LubricationSystem"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#PipingAndValvesSystem"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#PowerTransmissionSystem"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpUnitSystem"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
@@ -174,7 +144,7 @@
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -196,7 +166,7 @@
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -243,7 +213,7 @@
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -258,7 +228,7 @@
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -279,7 +249,7 @@
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -300,7 +270,7 @@
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>

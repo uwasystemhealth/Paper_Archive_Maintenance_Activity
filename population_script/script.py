@@ -228,8 +228,8 @@ def add_maintenance_type(row, mwo_name):
     maintenance_type_name = mwo_name+"_maintenance_type"
     maintenance_type_value = row['Work Order Type']
     with onto:
-        maintenance_type_value_string = 'work_order_' + \
-            maintenance_type_value+'_maintenance'
+        maintenance_type_value_string = 'WorkOrder' + \
+            maintenance_type_value.capitalize() + 'Maintenance'
         maintenance_type = wo.WorkOrderMaintenanceType(
             maintenance_type_name)
         maintenance_type = wo[maintenance_type_value_string](

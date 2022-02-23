@@ -12,8 +12,8 @@
          xmlns:core2="http://www.industrialontologies.org/core/"
          xmlns:main="http://www.semanticweb.org/maintenance-activity-classification-rules#"
          xmlns:asse="http://www.semanticweb.org/asset-list-ontology#"
-         xmlns:func="http://www.semanticweb.org/functional-breakdown-pump-ontology#"
          xmlns:obo="http://purl.obolibrary.org/obo/"
+         xmlns:func="http://www.semanticweb.org/functional-breakdown-pump-ontology#"
          xmlns:work="http://www.semanticweb.org/work-order-ontology#">
 
 <owl:Ontology rdf:about="http://anonymous"/>
@@ -2336,6 +2336,13 @@ FOL:  isAvailableTo (x, y) → IndependentContinuant(x) ∧ Agent(y) ∧ ∃p, �
   <rdfs:label xml:lang="en">is field of</rdfs:label>
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#refersTo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.industrialontologies.org/core/isAbout"/>
+  <rdfs:label xml:lang="en">refers to</rdfs:label>
+  <IOFA:elucidation xml:lang="en">If an ICE 'refers to' an entity then it uses, evokes, or references the entity or concept in some way that is not necessarily descriptive, designative, nor prescriptive.</IOFA:elucidation>
+</owl:ObjectProperty>
+
 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf">
   <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#reasoningSupport"/>
   <rdfs:comment xml:lang="en">Inferred (and occasionally asserted) abox relation from an individual to a punned class, indicating that the individual is of the specified type. Effectively equivalent to rdfs:type, but inferred through OWL for specific situations where the class info needs to be queried if used in rules.</rdfs:comment>
@@ -2353,12 +2360,6 @@ FOL:  isAvailableTo (x, y) → IndependentContinuant(x) ∧ Agent(y) ∧ ∃p, �
 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#nlpIdentifiedSubunit">
   <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#reasoningSupport"/>
   <rdfs:label xml:lang="en">NLP Identified Subunit</rdfs:label>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#refersTo">
-  <rdfs:subPropertyOf rdf:resource="http://www.industrialontologies.org/core/isAbout"/>
-  <rdfs:label xml:lang="en">refers to</rdfs:label>
-  <IOFA:elucidation xml:lang="en">If an ICE 'refers to' an entity then it uses, evokes, or references the entity or concept in some way that is not necessarily descriptive, designative, nor prescriptive.</IOFA:elucidation>
 </owl:ObjectProperty>
 
 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/work-order-ontology#hasValue">
@@ -2479,6 +2480,8 @@ FOL:  isAvailableTo (x, y) → IndependentContinuant(x) ∧ Agent(y) ∧ ∃p, �
 </owl:AnnotationProperty>
 
 <owl:AnnotationProperty rdf:about="http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synonym</rdfs:label>
   <core:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an alternative label (designation) used for the resource in some community</core:definition>
@@ -2517,6 +2520,8 @@ They must NOT BE USED as part of identifiers or labels, except where they have b
 </owl:AnnotationProperty>
 
 <owl:AnnotationProperty rdf:about="http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elucidation</rdfs:label>
@@ -2570,6 +2575,8 @@ They must NOT BE USED as part of identifiers or labels, except where they have b
 
 <owl:AnnotationProperty rdf:about="http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Definition</rdfs:label>
   <core:definition xml:lang="en">a definition written in plain text for human understanding</core:definition>
@@ -2594,6 +2601,8 @@ They must NOT BE USED as part of identifiers or labels, except where they have b
 </owl:AnnotationProperty>
 
 <owl:AnnotationProperty rdf:about="http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   <rdfs:subPropertyOf rdf:resource="http://www.industrialontologies.org/IOFAnnotationVocabulary/logicDefinition"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi-Formal Natural Language Definition</rdfs:label>
@@ -2649,6 +2658,8 @@ Units of Measure: Km, Kg, G</core:example>
 </owl:Class>
 
 <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
   <rdfs:subClassOf>
@@ -5016,7 +5027,7 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asset-list-ontology#Sensor"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
     </owl:Restriction>
   </rdfs:subClassOf>
@@ -5046,7 +5057,7 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
     </owl:Restriction>
   </rdfs:subClassOf>
@@ -5064,7 +5075,7 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
     </owl:Restriction>
   </rdfs:subClassOf>
@@ -5088,7 +5099,7 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
     </owl:Restriction>
   </rdfs:subClassOf>
@@ -5107,7 +5118,7 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asset-list-ontology#Sensor"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
     </owl:Restriction>
   </rdfs:subClassOf>
@@ -5143,7 +5154,7 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
       <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
     </owl:Restriction>
   </owl:equivalentClass>
-  <rdfs:label>Pump</rdfs:label>
+  <rdfs:label>Pump, Centrifugal</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Valve">
@@ -5151,7 +5162,7 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
     </owl:Restriction>
   </rdfs:subClassOf>
@@ -5170,6 +5181,58 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:label>Functional Component Role</rdfs:label>
 </owl:Class>
 
+<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#ControlAndMonitoringSystem">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#ControlAndMonitoringSystem"/>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:label xml:lang="en">Control and Monitoring System</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#DriverAndElectricalSystem">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#DriverAndElectricalSystem"/>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:label xml:lang="en">Driver and Electrical System</rdfs:label>
+</owl:Class>
+
 <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponent">
   <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
   <owl:equivalentClass>
@@ -5181,16 +5244,118 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:label>Functional Component</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#MaintenanceGenericBreakdownSpecification">
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DirectiveInformationContentEntity"/>
-  <rdfs:comment xml:lang="en">A specification of an asset breakdown structure defined in a generic fashion for an entire class of asset for the purposes of maintenance: e.g., according to ISO 14224.</rdfs:comment>
-  <rdfs:label xml:lang="en">Maintenance Generic Asset Breakdown Specification</rdfs:label>
+<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#LubricationSystem">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#LubricationSystem"/>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:label xml:lang="en">Lubrication System</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpSystemGenericBreakdownSpecification">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#MaintenanceGenericBreakdownSpecification"/>
-  <rdfs:comment xml:lang="en">A generic specification of a Pump System asset breakdown structure. For example, the ISO 14224 Pump System breakdown structure.</rdfs:comment>
-  <rdfs:label xml:lang="en">Pump System Generic Breakdown Specification</rdfs:label>
+<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PipingAndValvesSystem">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#PipingAndValvesSystem"/>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:label>Piping and Valves System</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PowerTransmissionSystem">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#PowerTransmissionSystem"/>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:label xml:lang="en">Power Transmission System</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpUnitSystem">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpUnitSystem"/>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:label xml:lang="en">Pump Unit System</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem">
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#isDataFieldOf"/>
+      <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
+      <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasValue"/>
+      <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:comment xml:lang="en">Intermediate class for the different data items (or fields) of the Maintenance Work Order record. If using the IAO, would be some subclass of 'IAO:data item'.</rdfs:comment>
+  <rdfs:label xml:lang="en">Maintenance Work Order record data item</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord">
@@ -5307,25 +5472,6 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
   <rdfs:label>Supporting Activity</rdfs:label>
   <rdfs:label>Supporting Activity</rdfs:label>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem">
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#isDataFieldOf"/>
-      <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
-      <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasValue"/>
-      <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:comment xml:lang="en">Intermediate class for the different data items (or fields) of the Maintenance Work Order record. If using the IAO, would be some subclass of 'IAO:data item'.</rdfs:comment>
-  <rdfs:label xml:lang="en">Maintenance Work Order record data item</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate">
@@ -5487,8 +5633,20 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <IOFA:synonym>top-up</IOFA:synonym>
   <IOFA:synonym>track</IOFA:synonym>
   <IOFA:synonym>train</IOFA:synonym>
-  <IOFA:elucidation>Under Development</IOFA:elucidation>
-  <IOFA:elucidation>Under Development</IOFA:elucidation>
+  <IOFA:elucidation>p is an adjust activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some sub-optimal operating state s1 and optimal operating state s2
+- p finishes s1 and p starts s2</IOFA:elucidation>
+  <IOFA:elucidation>p is an adjust activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some sub-optimal operating state s1 and optimal operating state s2
+- p finishes s1 and p starts s2</IOFA:elucidation>
   <IOFA:elucidation>Under Development</IOFA:elucidation>
   <IOFA:naturalLanguageDefinition>Bringing any out of tolerance condition into tolerance.</IOFA:naturalLanguageDefinition>
   <IOFA:naturalLanguageDefinition>Bringing any out of tolerance condition into tolerance.</IOFA:naturalLanguageDefinition>
@@ -5585,20 +5743,26 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:comment>insert</rdfs:comment>
+  <rdfs:comment>insert</rdfs:comment>
+  <IOFA:synonym>attach</IOFA:synonym>
   <IOFA:synonym>build</IOFA:synonym>
   <IOFA:synonym>create</IOFA:synonym>
   <IOFA:synonym>develop</IOFA:synonym>
   <IOFA:synonym>fabricate</IOFA:synonym>
+  <IOFA:synonym>fit</IOFA:synonym>
   <IOFA:synonym>make</IOFA:synonym>
   <IOFA:synonym>make up</IOFA:synonym>
   <IOFA:synonym>manufacture</IOFA:synonym>
   <IOFA:synonym>pre fabricate</IOFA:synonym>
   <IOFA:synonym>rebuild</IOFA:synonym>
   <IOFA:synonym>set up</IOFA:synonym>
+  <IOFA:synonym>attach</IOFA:synonym>
   <IOFA:synonym>build</IOFA:synonym>
   <IOFA:synonym>create</IOFA:synonym>
   <IOFA:synonym>develop</IOFA:synonym>
   <IOFA:synonym>fabricate</IOFA:synonym>
+  <IOFA:synonym>fit</IOFA:synonym>
   <IOFA:synonym>make</IOFA:synonym>
   <IOFA:synonym>make up</IOFA:synonym>
   <IOFA:synonym>manufacture</IOFA:synonym>
@@ -5632,12 +5796,26 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <IOFA:synonym>re-calibrate</IOFA:synonym>
   <IOFA:synonym>calibrate</IOFA:synonym>
   <IOFA:synonym>re-calibrate</IOFA:synonym>
-  <IOFA:elucidation>To come</IOFA:elucidation>
-  <IOFA:elucidation>To come</IOFA:elucidation>
-  <IOFA:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function</IOFA:naturalLanguageDefinition>
-  <IOFA:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function</IOFA:naturalLanguageDefinition>
-  <IOFA:semi-formalNaturalLanguageDefinition>To come</IOFA:semi-formalNaturalLanguageDefinition>
-  <IOFA:semi-formalNaturalLanguageDefinition>To come</IOFA:semi-formalNaturalLanguageDefinition>
+  <IOFA:elucidation>p is a calibrate activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- m is the bearer of a control and monitoring role r
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some failed state or degraded state or operating state s and operating state s2
+- s disables f, p finishes s and p starts s2</IOFA:elucidation>
+  <IOFA:elucidation>p is a calibrate activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- m is the bearer of a control and monitoring role r
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some failed state or degraded state or operating state s and operating state s2
+- s disables f, p finishes s and p starts s2</IOFA:elucidation>
+  <IOFA:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function.</IOFA:naturalLanguageDefinition>
+  <IOFA:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function.</IOFA:naturalLanguageDefinition>
+  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process performed on equipment instrumentation, to estimate the capability of the instrumentation and restore if needed.</IOFA:semi-formalNaturalLanguageDefinition>
+  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process performed on equipment instrumentation, to estimate the capability of the instrumentation and restore if needed.</IOFA:semi-formalNaturalLanguageDefinition>
   <main:synonym>calibrate</main:synonym>
   <main:synonym>re-calibrate</main:synonym>
 </owl:Class>
@@ -5677,13 +5855,25 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <IOFA:synonym>re-test</IOFA:synonym>
   <IOFA:synonym>troubleshooot</IOFA:synonym>
   <IOFA:synonym>verify</IOFA:synonym>
+  <IOFA:elucidation>p is an diagnose activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some degraded state or failed state state s
+- s is observed in some observation process o</IOFA:elucidation>
+  <IOFA:elucidation>p is an diagnose activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some degraded state or failed state state s
+- s is observed in some observation process o</IOFA:elucidation>
   <IOFA:elucidation>under development</IOFA:elucidation>
-  <IOFA:elucidation>under development</IOFA:elucidation>
-  <IOFA:elucidation>under development</IOFA:elucidation>
-  <IOFA:naturalLanguageDefinition>The cause of failure is investigated but no maintenance action performed, or action is deferred. Able to regainfunction by simple actions, e.g.restart or resetting.</IOFA:naturalLanguageDefinition>
-  <IOFA:naturalLanguageDefinition>The cause of failure is investigated but no maintenance action performed, or action is deferred. Able to regainfunction by simple actions, e.g.restart or resetting.</IOFA:naturalLanguageDefinition>
-  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process to estimate the capability of an item to perform its required function</IOFA:semi-formalNaturalLanguageDefinition>
-  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process to estimate the capability of an item to perform its required function</IOFA:semi-formalNaturalLanguageDefinition>
+  <IOFA:naturalLanguageDefinition>The cause of failure is investigated but no maintenance action performed, or action is deferred. Able to regain function by simple actions, e.g.restart or resetting.</IOFA:naturalLanguageDefinition>
+  <IOFA:naturalLanguageDefinition>The cause of failure is investigated but no maintenance action performed, or action is deferred. Able to regain function by simple actions, e.g.restart or resetting.</IOFA:naturalLanguageDefinition>
+  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process, performed on observation of an equipment failure, to estimate the capability of an item to perform its required function.</IOFA:semi-formalNaturalLanguageDefinition>
+  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process, performed on observation of an equipment failure, to estimate the capability of an item to perform its required function.</IOFA:semi-formalNaturalLanguageDefinition>
   <main:synonym>analyse</main:synonym>
   <main:synonym>assess</main:synonym>
   <main:synonym>check</main:synonym>
@@ -5721,53 +5911,33 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <IOFA:synonym>test</IOFA:synonym>
   <IOFA:synonym>thermography</IOFA:synonym>
   <IOFA:synonym>thickness test</IOFA:synonym>
+  <IOFA:elucidation>p is an inspect activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some state s
+- s is observed in some observation process o
+- p is prescribed by some part of a preventative maintenance strategy ps</IOFA:elucidation>
+  <IOFA:elucidation>p is an inspect activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some state s
+- s is observed in some observation process o
+- p is prescribed by some part of a preventative maintenance strategy ps</IOFA:elucidation>
   <IOFA:elucidation>Under Development</IOFA:elucidation>
-  <IOFA:elucidation>Under Development</IOFA:elucidation>
-  <IOFA:elucidation>Under Development</IOFA:elucidation>
-  <IOFA:naturalLanguageDefinition>Periodic, careful scrutiny of an item carried out with or without dismantling,</IOFA:naturalLanguageDefinition>
-  <IOFA:naturalLanguageDefinition>Periodic, careful scrutiny of an item carried out with or without dismantling,</IOFA:naturalLanguageDefinition>
-  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process to estimate the capability of an item to perform its required function</IOFA:semi-formalNaturalLanguageDefinition>
-  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process to estimate the capability of an item to perform its required function</IOFA:semi-formalNaturalLanguageDefinition>
+  <IOFA:naturalLanguageDefinition>Periodic, careful scrutiny of an item carried out with or without dismantling.</IOFA:naturalLanguageDefinition>
+  <IOFA:naturalLanguageDefinition>Periodic, careful scrutiny of an item carried out with or without dismantling.</IOFA:naturalLanguageDefinition>
+  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process, aligned with a preventative maintenance strategy, to estimate the capability of an item to perform its required function.</IOFA:semi-formalNaturalLanguageDefinition>
+  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process, aligned with a preventative maintenance strategy, to estimate the capability of an item to perform its required function.</IOFA:semi-formalNaturalLanguageDefinition>
   <main:synonym>measure</main:synonym>
   <main:synonym>monitor</main:synonym>
   <main:synonym>read</main:synonym>
   <main:synonym>test</main:synonym>
   <main:synonym>thermography</main:synonym>
   <main:synonym>thickness test</main:synonym>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#install">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#assemble"/>
-  <owl:equivalentClass>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-      <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#install"/>
-    </owl:Restriction>
-  </owl:equivalentClass>
-  <IOFA:synonym>attach</IOFA:synonym>
-  <IOFA:synonym>fit</IOFA:synonym>
-  <IOFA:synonym>insert</IOFA:synonym>
-  <IOFA:synonym>reattach</IOFA:synonym>
-  <IOFA:synonym>refit</IOFA:synonym>
-  <IOFA:synonym>reinstall</IOFA:synonym>
-  <IOFA:synonym>reinstate</IOFA:synonym>
-  <IOFA:synonym>attach</IOFA:synonym>
-  <IOFA:synonym>fit</IOFA:synonym>
-  <IOFA:synonym>insert</IOFA:synonym>
-  <IOFA:synonym>reattach</IOFA:synonym>
-  <IOFA:synonym>refit</IOFA:synonym>
-  <IOFA:synonym>reinstall</IOFA:synonym>
-  <IOFA:synonym>reinstate</IOFA:synonym>
-  <main:synonym>attach</main:synonym>
-  <main:synonym>fit</main:synonym>
-  <main:synonym>insert</main:synonym>
-  <main:synonym>reattach</main:synonym>
-  <main:synonym>refit</main:synonym>
-  <main:synonym>reinstall</main:synonym>
-  <main:synonym>reinstate</main:synonym>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#isolate">
@@ -6104,8 +6274,20 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <IOFA:synonym>reset</IOFA:synonym>
   <IOFA:synonym>un-bog</IOFA:synonym>
   <IOFA:synonym>unblock</IOFA:synonym>
-  <IOFA:elucidation>Under development</IOFA:elucidation>
-  <IOFA:elucidation>Under development</IOFA:elucidation>
+  <IOFA:elucidation>p is a repair activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some failed state or degraded state s and operating state s2
+- s disables f, p finishes s and p starts s2</IOFA:elucidation>
+  <IOFA:elucidation>p is a repair activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some failed state or degraded state s and operating state s2
+- s disables f, p finishes s and p starts s2</IOFA:elucidation>
   <IOFA:elucidation>Under development</IOFA:elucidation>
   <IOFA:naturalLanguageDefinition>Manual maintenance action performed to restore an item to its original appearance or state.</IOFA:naturalLanguageDefinition>
   <IOFA:naturalLanguageDefinition>Manual maintenance action performed to restore an item to its original appearance or state.</IOFA:naturalLanguageDefinition>
@@ -6161,6 +6343,8 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <IOFA:synonym>install</IOFA:synonym>
   <IOFA:synonym>re-install</IOFA:synonym>
   <IOFA:synonym>re-instate</IOFA:synonym>
+  <IOFA:synonym>reattach</IOFA:synonym>
+  <IOFA:synonym>reinstate</IOFA:synonym>
   <IOFA:synonym>remove</IOFA:synonym>
   <IOFA:synonym>replace</IOFA:synonym>
   <IOFA:synonym>swap</IOFA:synonym>
@@ -6172,18 +6356,34 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <IOFA:synonym>install</IOFA:synonym>
   <IOFA:synonym>re-install</IOFA:synonym>
   <IOFA:synonym>re-instate</IOFA:synonym>
+  <IOFA:synonym>reattach</IOFA:synonym>
+  <IOFA:synonym>reinstate</IOFA:synonym>
   <IOFA:synonym>remove</IOFA:synonym>
   <IOFA:synonym>replace</IOFA:synonym>
   <IOFA:synonym>swap</IOFA:synonym>
   <IOFA:synonym>switch</IOFA:synonym>
   <IOFA:synonym>transition</IOFA:synonym>
-  <IOFA:elucidation>Under development</IOFA:elucidation>
-  <IOFA:elucidation>Under development</IOFA:elucidation>
+  <IOFA:elucidation>p is a replace activity =
+Def. p is a process and there exists material artifacts a and b such that a and b participate in p at some
+time. The following is also true:
+- a has a function f and b has a function f2.
+- f and f2 are of type F
+- a is a continuant part of a system s at time t and b is not.
+- b is a continuant part of a system s at time t2 and a is not.
+- t precedes t2, p finishes t and p starts t2.</IOFA:elucidation>
+  <IOFA:elucidation>p is a replace activity =
+Def. p is a process and there exists material artifacts a and b such that a and b participate in p at some
+time. The following is also true:
+- a has a function f and b has a function f2.
+- f and f2 are of type F
+- a is a continuant part of a system s at time t and b is not.
+- b is a continuant part of a system s at time t2 and a is not.
+- t precedes t2, p finishes t and p starts t2.</IOFA:elucidation>
   <IOFA:elucidation>Under development</IOFA:elucidation>
   <IOFA:naturalLanguageDefinition>Replacement of an item by a new or refurbished item of the same type and make</IOFA:naturalLanguageDefinition>
   <IOFA:naturalLanguageDefinition>Replacement of an item by a new or refurbished item of the same type and make</IOFA:naturalLanguageDefinition>
-  <IOFA:semi-formalNaturalLanguageDefinition>A BFO: Process in which one item is removed and another item with the same required function is installed inits place.</IOFA:semi-formalNaturalLanguageDefinition>
-  <IOFA:semi-formalNaturalLanguageDefinition>A BFO: Process in which one item is removed and another item with the same required function is installed inits place.</IOFA:semi-formalNaturalLanguageDefinition>
+  <IOFA:semi-formalNaturalLanguageDefinition>A BFO: Process in which one item is removed and another item with the same required function is installed in its place.</IOFA:semi-formalNaturalLanguageDefinition>
+  <IOFA:semi-formalNaturalLanguageDefinition>A BFO: Process in which one item is removed and another item with the same required function is installed in its place.</IOFA:semi-formalNaturalLanguageDefinition>
   <main:synonym>change</main:synonym>
   <main:synonym>change out</main:synonym>
   <main:synonym>change over</main:synonym>
@@ -6240,13 +6440,27 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <IOFA:synonym>scan</IOFA:synonym>
   <IOFA:synonym>service</IOFA:synonym>
   <IOFA:synonym>tune</IOFA:synonym>
+  <IOFA:elucidation>p is a service activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some operating state s and operating state s2
+- p finishes s and starts s2
+- p is is prescribed by some part of a preventative maintenance strategy ps</IOFA:elucidation>
+  <IOFA:elucidation>p is a service activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some operating state s and operating state s2
+- p finishes s and starts s2
+- p is is prescribed by some part of a preventative maintenance strategy ps</IOFA:elucidation>
   <IOFA:elucidation>Under development</IOFA:elucidation>
-  <IOFA:elucidation>Under development</IOFA:elucidation>
-  <IOFA:elucidation>Under development</IOFA:elucidation>
-  <IOFA:naturalLanguageDefinition>Periodic service task: not normally dismantling of the item</IOFA:naturalLanguageDefinition>
-  <IOFA:naturalLanguageDefinition>Periodic service task: not normally dismantling of the item</IOFA:naturalLanguageDefinition>
-  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process scheduled at periodic intervals involving a change of state in an item that involves no change inthe capability of the item</IOFA:semi-formalNaturalLanguageDefinition>
-  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process scheduled at periodic intervals involving a change of state in an item that involves no change inthe capability of the item</IOFA:semi-formalNaturalLanguageDefinition>
+  <IOFA:naturalLanguageDefinition>Periodic service task: not normally dismantling of the item.</IOFA:naturalLanguageDefinition>
+  <IOFA:naturalLanguageDefinition>Periodic service task: not normally dismantling of the item.</IOFA:naturalLanguageDefinition>
+  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process, aligned with a preventative maintenance strategy, involving a change of state in an item that involves no change in the capability of the item</IOFA:semi-formalNaturalLanguageDefinition>
+  <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process, aligned with a preventative maintenance strategy, involving a change of state in an item that involves no change in the capability of the item</IOFA:semi-formalNaturalLanguageDefinition>
   <main:synonym>charge</main:synonym>
   <main:synonym>clean</main:synonym>
   <main:synonym>drain</main:synonym>
@@ -6305,19 +6519,6 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <main:synonym>train</main:synonym>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#LubricationSystem">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
-  <owl:equivalentClass>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#LubricationSystem"/>
-    </owl:Restriction>
-  </owl:equivalentClass>
-  <rdfs:label xml:lang="en">Lubrication System</rdfs:label>
-</owl:Class>
-
 <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#AdjustOrCalibrate">
   <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
   <owl:equivalentClass>
@@ -6328,25 +6529,6 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
       </owl:unionOf>
     </owl:Class>
   </owl:equivalentClass>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#ControlAndMonitoringSystem">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
-      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <owl:equivalentClass>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#ControlAndMonitoringSystem"/>
-    </owl:Restriction>
-  </owl:equivalentClass>
-  <rdfs:label xml:lang="en">Control and Monitoring System</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#CorrectiveAction">
@@ -6375,53 +6557,6 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
       </owl:unionOf>
     </owl:Class>
   </owl:equivalentClass>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#DriverAndElectricalSystem">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
-      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <owl:equivalentClass>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#DriverAndElectricalSystem"/>
-    </owl:Restriction>
-  </owl:equivalentClass>
-  <rdfs:label xml:lang="en">Driver and Electrical System</rdfs:label>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#GenericMaintenanceBreakdown">
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
-  <rdfs:comment xml:lang="en">A specification of an asset breakdown structure defined in a generic fashion for an entire class of asset for the purposes of maintenance: according to ISO 14224.</rdfs:comment>
-  <rdfs:label xml:lang="en">Generic Maintenance Asset</rdfs:label>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#GenericPumpSystem">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#GenericMaintenanceBreakdown"/>
-  <owl:equivalentClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#ISO14224_PumpSystemBreakdown"/>
-  <rdfs:comment xml:lang="en">A generic specification of a Pump System asset breakdown structure. For example, the ISO 14224 Pump System breakdown structure.</rdfs:comment>
-  <rdfs:label xml:lang="en">Generic Pump System</rdfs:label>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#ISO14224_PumpSystemBreakdown">
-  <owl:equivalentClass>
-    <owl:Class>
-      <owl:intersectionOf rdf:parseType="Collection">
-        <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump"/>
-        <owl:Restriction>
-          <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
-          <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Flowmeter"/>
-        </owl:Restriction>
-      </owl:intersectionOf>
-    </owl:Class>
-  </owl:equivalentClass>
-  <rdfs:label xml:lang="en">ISO 14224 Pump System</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#InferredActivity">
@@ -6548,48 +6683,6 @@ Flags an indidividual as having been classified in a way that matches the NLP ex
       </owl:intersectionOf>
     </owl:Class>
   </owl:equivalentClass>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpUnitSystem">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
-  <owl:equivalentClass>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpUnitSystem"/>
-    </owl:Restriction>
-  </owl:equivalentClass>
-  <rdfs:label xml:lang="en">Pump Unit System</rdfs:label>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PipingAndValvesSystem">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
-      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <owl:equivalentClass>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#PipingAndValvesSystem"/>
-    </owl:Restriction>
-  </owl:equivalentClass>
-  <rdfs:label>Piping and Valves System</rdfs:label>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PowerTransmissionSystem">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
-  <owl:equivalentClass>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-      <owl:hasValue rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#PowerTransmissionSystem"/>
-    </owl:Restriction>
-  </owl:equivalentClass>
-  <rdfs:label xml:lang="en">Power Transmisison System</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#PreventativeAction">
@@ -6805,7 +6898,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
 
 <work:WorkOrderFunctionalLocationTag rdf:about="http://www.semanticweb.org/data#MWO-31_functional_location_tag">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <main:refers_to rdf:resource="http://www.semanticweb.org/data#pump_001"/>
+  <work:refersTo rdf:resource="http://www.semanticweb.org/data#pump_001"/>
   <work:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PU001</work:hasValue>
 </work:WorkOrderFunctionalLocationTag>
 
@@ -7080,6 +7173,153 @@ Used to flag individuals where the classified maintenance activity type is unsur
   </swrl:head>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">we use stringEqualIgnoreCase to maximise the match in case of case differences</rdfs:comment>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inferred activity type matches NLP</rdfs:label>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
+          <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:IndividualPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://www.industrialontologies.org/core/describes"/>
+              <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+              <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+            </swrl:IndividualPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:ClassAtom>
+                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MaintenanceSupportingOrUnspecifiedActivity"/>
+                  <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+                </swrl:ClassAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#refersTo"/>
+                      <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                      <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
+                    </swrl:IndividualPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest>
+                    <swrl:AtomList>
+                      <rdf:first>
+                        <swrl:ClassAtom>
+                          <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+                          <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
+                        </swrl:ClassAtom>
+                      </rdf:first>
+                      <rdf:rest>
+                        <swrl:AtomList>
+                          <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                              <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
+                              <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
+                              <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
+                            </swrl:IndividualPropertyAtom>
+                          </rdf:first>
+                          <rdf:rest>
+                            <swrl:AtomList>
+                              <rdf:first>
+                                <swrl:ClassAtom>
+                                  <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+                                  <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
+                                </swrl:ClassAtom>
+                              </rdf:first>
+                              <rdf:rest>
+                                <swrl:AtomList>
+                                  <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                                      <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
+                                      <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunitType"/>
+                                    </swrl:IndividualPropertyAtom>
+                                  </rdf:first>
+                                  <rdf:rest>
+                                    <swrl:AtomList>
+                                      <rdf:first>
+                                        <swrl:IndividualPropertyAtom>
+                                          <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#refersTo"/>
+                                          <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                          <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunitType"/>
+                                        </swrl:IndividualPropertyAtom>
+                                      </rdf:first>
+                                      <rdf:rest>
+                                        <swrl:AtomList>
+                                          <rdf:first>
+                                            <swrl:IndividualPropertyAtom>
+                                              <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
+                                              <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
+                                              <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                                            </swrl:IndividualPropertyAtom>
+                                          </rdf:first>
+                                          <rdf:rest>
+                                            <swrl:AtomList>
+                                              <rdf:first>
+                                                <swrl:IndividualPropertyAtom>
+                                                  <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+                                                  <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+                                                  <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemType"/>
+                                                </swrl:IndividualPropertyAtom>
+                                              </rdf:first>
+                                              <rdf:rest>
+                                                <swrl:AtomList>
+                                                  <rdf:first>
+                                                    <swrl:IndividualPropertyAtom>
+                                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#refersTo"/>
+                                                      <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
+                                                      <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemType"/>
+                                                    </swrl:IndividualPropertyAtom>
+                                                  </rdf:first>
+                                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                </swrl:AtomList>
+                                              </rdf:rest>
+                                            </swrl:AtomList>
+                                          </rdf:rest>
+                                        </swrl:AtomList>
+                                      </rdf:rest>
+                                    </swrl:AtomList>
+                                  </rdf:rest>
+                                </swrl:AtomList>
+                              </rdf:rest>
+                            </swrl:AtomList>
+                          </rdf:rest>
+                        </swrl:AtomList>
+                      </rdf:rest>
+                    </swrl:AtomList>
+                  </rdf:rest>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:IndividualPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+          <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
+          <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
+        </swrl:IndividualPropertyAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This really only identifies the possible participants as opposed to the real participants</rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subunit components participate in described activity</rdfs:label>
   <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
 </swrl:Imp>
 
@@ -11747,153 +11987,6 @@ Used to flag individuals where the classified maintenance activity type is unsur
   </swrl:head>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">description refers to subunit class</rdfs:label>
-  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
-</swrl:Imp>
-
-<swrl:Imp>
-  <swrl:body>
-    <swrl:AtomList>
-      <rdf:first>
-        <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
-          <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
-        </swrl:ClassAtom>
-      </rdf:first>
-      <rdf:rest>
-        <swrl:AtomList>
-          <rdf:first>
-            <swrl:IndividualPropertyAtom>
-              <swrl:propertyPredicate rdf:resource="http://www.industrialontologies.org/core/describes"/>
-              <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
-              <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
-            </swrl:IndividualPropertyAtom>
-          </rdf:first>
-          <rdf:rest>
-            <swrl:AtomList>
-              <rdf:first>
-                <swrl:ClassAtom>
-                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MaintenanceSupportingOrUnspecifiedActivity"/>
-                  <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
-                </swrl:ClassAtom>
-              </rdf:first>
-              <rdf:rest>
-                <swrl:AtomList>
-                  <rdf:first>
-                    <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#refersTo"/>
-                      <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
-                      <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
-                    </swrl:IndividualPropertyAtom>
-                  </rdf:first>
-                  <rdf:rest>
-                    <swrl:AtomList>
-                      <rdf:first>
-                        <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
-                          <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
-                        </swrl:ClassAtom>
-                      </rdf:first>
-                      <rdf:rest>
-                        <swrl:AtomList>
-                          <rdf:first>
-                            <swrl:IndividualPropertyAtom>
-                              <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
-                              <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#asset"/>
-                              <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
-                            </swrl:IndividualPropertyAtom>
-                          </rdf:first>
-                          <rdf:rest>
-                            <swrl:AtomList>
-                              <rdf:first>
-                                <swrl:ClassAtom>
-                                  <swrl:classPredicate rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
-                                  <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
-                                </swrl:ClassAtom>
-                              </rdf:first>
-                              <rdf:rest>
-                                <swrl:AtomList>
-                                  <rdf:first>
-                                    <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-                                      <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
-                                      <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunitType"/>
-                                    </swrl:IndividualPropertyAtom>
-                                  </rdf:first>
-                                  <rdf:rest>
-                                    <swrl:AtomList>
-                                      <rdf:first>
-                                        <swrl:IndividualPropertyAtom>
-                                          <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#refersTo"/>
-                                          <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
-                                          <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunitType"/>
-                                        </swrl:IndividualPropertyAtom>
-                                      </rdf:first>
-                                      <rdf:rest>
-                                        <swrl:AtomList>
-                                          <rdf:first>
-                                            <swrl:IndividualPropertyAtom>
-                                              <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
-                                              <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#subunit"/>
-                                              <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
-                                            </swrl:IndividualPropertyAtom>
-                                          </rdf:first>
-                                          <rdf:rest>
-                                            <swrl:AtomList>
-                                              <rdf:first>
-                                                <swrl:IndividualPropertyAtom>
-                                                  <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-                                                  <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
-                                                  <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemType"/>
-                                                </swrl:IndividualPropertyAtom>
-                                              </rdf:first>
-                                              <rdf:rest>
-                                                <swrl:AtomList>
-                                                  <rdf:first>
-                                                    <swrl:IndividualPropertyAtom>
-                                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#refersTo"/>
-                                                      <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
-                                                      <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#itemType"/>
-                                                    </swrl:IndividualPropertyAtom>
-                                                  </rdf:first>
-                                                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                </swrl:AtomList>
-                                              </rdf:rest>
-                                            </swrl:AtomList>
-                                          </rdf:rest>
-                                        </swrl:AtomList>
-                                      </rdf:rest>
-                                    </swrl:AtomList>
-                                  </rdf:rest>
-                                </swrl:AtomList>
-                              </rdf:rest>
-                            </swrl:AtomList>
-                          </rdf:rest>
-                        </swrl:AtomList>
-                      </rdf:rest>
-                    </swrl:AtomList>
-                  </rdf:rest>
-                </swrl:AtomList>
-              </rdf:rest>
-            </swrl:AtomList>
-          </rdf:rest>
-        </swrl:AtomList>
-      </rdf:rest>
-    </swrl:AtomList>
-  </swrl:body>
-  <swrl:head>
-    <swrl:AtomList>
-      <rdf:first>
-        <swrl:IndividualPropertyAtom>
-          <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-          <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#activity"/>
-          <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#item"/>
-        </swrl:IndividualPropertyAtom>
-      </rdf:first>
-      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    </swrl:AtomList>
-  </swrl:head>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This really only identifies the possible participants as opposed to the real participants</rdfs:comment>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subunit components participate in described activity</rdfs:label>
   <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
 </swrl:Imp>
 
