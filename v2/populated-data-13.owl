@@ -12,6 +12,7 @@
          xmlns:core2="http://www.industrialontologies.org/core/"
          xmlns:main="http://www.semanticweb.org/maintenance-activity-classification-rules#"
          xmlns:asse="http://www.semanticweb.org/asset-list-ontology#"
+         xmlns:func="http://www.semanticweb.org/functional-breakdown-pump-ontology#"
          xmlns:obo="http://purl.obolibrary.org/obo/"
          xmlns:work="http://www.semanticweb.org/work-order-ontology#">
 
@@ -2320,7 +2321,7 @@ FOL:  isAvailableTo (x, y) → IndependentContinuant(x) ∧ Agent(y) ∧ ∃p, �
   <IOFA:naturalLanguageDefinition xml:lang="en">A relation between two processes wherein the former causes the latter to happen.</IOFA:naturalLanguageDefinition>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field">
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#hasDataField">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
   <owl:inverseOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of"/>
@@ -2366,7 +2367,7 @@ FOL:  isAvailableTo (x, y) → IndependentContinuant(x) ∧ Agent(y) ∧ ∃p, �
     <owl:Class>
       <owl:unionOf rdf:parseType="Collection">
         <rdf:Description rdf:about="http://www.industrialontologies.org/core/DesignativeInformationContentEntity"/>
-        <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+        <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
       </owl:unionOf>
     </owl:Class>
   </rdfs:domain>
@@ -5192,7 +5193,7 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:label xml:lang="en">Pump System Generic Breakdown Specification</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record">
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord">
   <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
   <rdfs:subClassOf>
     <owl:Class>
@@ -5219,37 +5220,37 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
           <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess"/>
         </owl:Restriction>
         <owl:Restriction>
-          <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
-          <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+          <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
         </owl:Restriction>
         <owl:Restriction>
-          <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
-          <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_created_date"/>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+          <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate"/>
           <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         </owl:Restriction>
         <owl:Restriction>
-          <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
-          <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+          <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
           <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         </owl:Restriction>
         <owl:Restriction>
-          <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
-          <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag"/>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+          <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderFunctionalLocationTag"/>
           <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         </owl:Restriction>
         <owl:Restriction>
-          <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
-          <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+          <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
           <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         </owl:Restriction>
         <owl:Restriction>
-          <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
-          <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+          <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaintenanceType"/>
           <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         </owl:Restriction>
         <owl:Restriction>
-          <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
-          <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+          <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
           <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         </owl:Restriction>
       </owl:intersectionOf>
@@ -5257,8 +5258,8 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   </rdfs:subClassOf>
   <rdfs:subClassOf>
     <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
-      <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+      <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
     </owl:Restriction>
   </rdfs:subClassOf>
   <owl:equivalentClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDocument"/>
@@ -5276,7 +5277,7 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
       </owl:intersectionOf>
     </owl:Class>
   </owl:equivalentClass>
-  <owl:disjointWith rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+  <owl:disjointWith rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
   <rdfs:label xml:lang="en">Maintenance Work Order record</rdfs:label>
 </owl:Class>
 
@@ -5308,12 +5309,12 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:label>Supporting Activity</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item">
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem">
   <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DescriptiveInformationContentEntity"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#is_data_field_of"/>
-      <owl:onClass rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+      <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
       <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </owl:Restriction>
   </rdfs:subClassOf>
@@ -5327,8 +5328,8 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:label xml:lang="en">Maintenance Work Order record data item</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_created_date">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
@@ -5338,19 +5339,19 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:label xml:lang="en">Work Order Created At (Date)</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
   <rdfs:label xml:lang="en">Work Order Description</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderFunctionalLocationTag">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
   <rdfs:comment xml:lang="en">Not shown in the table in the paper as the datatable in the paper shows only a subset of entries for a single functional location, hence, this field is implicit.</rdfs:comment>
   <rdfs:label xml:lang="en">Functional Location Tag</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
@@ -5360,14 +5361,14 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:label xml:lang="en">Labour Cost</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderMaintenanceType">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
   <rdfs:comment xml:lang="en">rigid</rdfs:comment>
   <rdfs:label xml:lang="en">Maintenance Type</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_record_data_item"/>
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
   <rdfs:subClassOf>
     <owl:Restriction>
       <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#hasValue"/>
@@ -5377,15 +5378,15 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:label xml:lang="en">Material Cost</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
-  <owl:disjointWith rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderCorrectiveMaintenance">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaintenanceType"/>
+  <owl:disjointWith rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
   <rdfs:comment xml:lang="en">non-rigid</rdfs:comment>
   <rdfs:label xml:lang="en">Corrective Maintenance Type</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaintenanceType"/>
   <rdfs:comment xml:lang="en">non-rigid</rdfs:comment>
   <rdfs:label xml:lang="en">Preventative Maintenance Type</rdfs:label>
 </owl:Class>
@@ -6755,31 +6756,31 @@ Used to flag individuals where the classified maintenance activity type is unsur
   <obo:BFO_0000111 rdf:resource="http://www.semanticweb.org/data#pump_001_unit"/>
 </asse:Pump>
 
-<main:ControlAndMonitoringSystem rdf:about="http://www.semanticweb.org/data#pump_001_control_system">
+<func:ControlAndMonitoringSystem rdf:about="http://www.semanticweb.org/data#pump_001_control_system">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#flow_meter_001"/>
   <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#pressure_switch_001"/>
-</main:ControlAndMonitoringSystem>
+</func:ControlAndMonitoringSystem>
 
-<main:DriverAndElectricalSystem rdf:about="http://www.semanticweb.org/data#pump_001_driver_system">
+<func:DriverAndElectricalSystem rdf:about="http://www.semanticweb.org/data#pump_001_driver_system">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#motor_001"/>
-</main:DriverAndElectricalSystem>
+</func:DriverAndElectricalSystem>
 
-<asse:LubricationSystem rdf:about="http://www.semanticweb.org/data#pump_001_lub_system">
+<func:LubricationSystem rdf:about="http://www.semanticweb.org/data#pump_001_lub_system">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#oil_001"/>
-</asse:LubricationSystem>
+</func:LubricationSystem>
 
-<main:PipingAndValvesSystem rdf:about="http://www.semanticweb.org/data#pump_001_piping_system">
+<func:PipingAndValvesSystem rdf:about="http://www.semanticweb.org/data#pump_001_piping_system">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#valve_001"/>
-</main:PipingAndValvesSystem>
+</func:PipingAndValvesSystem>
 
-<main:PumpUnitSystem rdf:about="http://www.semanticweb.org/data#pump_001_unit">
+<func:PumpUnitSystem rdf:about="http://www.semanticweb.org/data#pump_001_unit">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <obo:BFO_0000174 rdf:resource="http://www.semanticweb.org/data#seal_001"/>
-</main:PumpUnitSystem>
+</func:PumpUnitSystem>
 
 <asse:Valve rdf:about="http://www.semanticweb.org/data#valve_001">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -6789,39 +6790,39 @@ Used to flag individuals where the classified maintenance activity type is unsur
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </asse:MechanicalSeal>
 
-<main:work_order_created_date rdf:about="http://www.semanticweb.org/data#MWO-14_created_date">
+<work:WorkOrderCreatedDate rdf:about="http://www.semanticweb.org/data#MWO-14_created_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-20T00:00:00</main:hasValue>
-</main:work_order_created_date>
+</work:WorkOrderCreatedDate>
 
-<main:work_order_description_text rdf:about="http://www.semanticweb.org/data#MWO-14_description">
+<work:WorkOrderDescriptionText rdf:about="http://www.semanticweb.org/data#MWO-14_description">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
   <main:nlpIdentifiedSubunit rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#ControlAndMonitoringSystem"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure switch unserviceable</main:hasValue>
   <main:nlpIdentifiedActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">none</main:nlpIdentifiedActivity>
-</main:work_order_description_text>
+</work:WorkOrderDescriptionText>
 
-<main:work_order_functional_location_tag rdf:about="http://www.semanticweb.org/data#MWO-14_functional_location_tag">
+<work:WorkOrderFunctionalLocationTag rdf:about="http://www.semanticweb.org/data#MWO-14_functional_location_tag">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:refers_to rdf:resource="http://www.semanticweb.org/data#pump_001"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PU001</main:hasValue>
-</main:work_order_functional_location_tag>
+</work:WorkOrderFunctionalLocationTag>
 
-<main:work_order_labour_cost rdf:about="http://www.semanticweb.org/data#MWO-14_labour_cost">
+<work:WorkOrderLabourCost rdf:about="http://www.semanticweb.org/data#MWO-14_labour_cost">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">680.81</main:hasValue>
-</main:work_order_labour_cost>
+</work:WorkOrderLabourCost>
 
-<main:work_order_material_cost rdf:about="http://www.semanticweb.org/data#MWO-14_material_cost">
+<work:WorkOrderMaterialCost rdf:about="http://www.semanticweb.org/data#MWO-14_material_cost">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <main:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1133.13</main:hasValue>
-</main:work_order_material_cost>
+</work:WorkOrderMaterialCost>
 
-<main:work_order_maintenance_type rdf:about="http://www.semanticweb.org/data#MWO-14_maintenance_type">
+<work:WorkOrderMaintenanceType rdf:about="http://www.semanticweb.org/data#MWO-14_maintenance_type">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
-</main:work_order_maintenance_type>
+  <rdf:type rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCorrectiveMaintenance"/>
+</work:WorkOrderMaintenanceType>
 
 <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-14_activity">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -6841,18 +6842,18 @@ Used to flag individuals where the classified maintenance activity type is unsur
   <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/data#MWO-14_activity"/>
 </work:WorkOrderExecutionProcess>
 
-<main:Maintenance_Work_Order_Record rdf:about="http://www.semanticweb.org/data#MWO-14">
+<work:MaintenanceWorkOrderRecord rdf:about="http://www.semanticweb.org/data#MWO-14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <core2:describes rdf:resource="http://www.semanticweb.org/data#MWO-14_activity"/>
   <core2:describes rdf:resource="http://www.semanticweb.org/data#MWO-14_wo_execution_event"/>
   <core2:isInputOfAtSomeTime rdf:resource="http://www.semanticweb.org/data#MWO-14_wo_execution_event"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-14_created_date"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-14_description"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-14_functional_location_tag"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-14_labour_cost"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-14_material_cost"/>
-  <main:has_data_field rdf:resource="http://www.semanticweb.org/data#MWO-14_maintenance_type"/>
-</main:Maintenance_Work_Order_Record>
+  <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-14_created_date"/>
+  <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-14_description"/>
+  <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-14_functional_location_tag"/>
+  <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-14_labour_cost"/>
+  <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-14_material_cost"/>
+  <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-14_maintenance_type"/>
+</work:MaintenanceWorkOrderRecord>
 
 <owl:AllDifferent>
   <owl:distinctMembers rdf:parseType="Collection">
@@ -6882,7 +6883,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <swrl:AtomList>
           <rdf:first>
             <swrl:ClassAtom>
-              <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+              <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
             </swrl:ClassAtom>
           </rdf:first>
@@ -6913,7 +6914,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -6921,7 +6922,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <swrl:AtomList>
           <rdf:first>
             <swrl:IndividualPropertyAtom>
-              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#field"/>
             </swrl:IndividualPropertyAtom>
@@ -6964,7 +6965,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -6989,7 +6990,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
                     </swrl:IndividualPropertyAtom>
@@ -6998,7 +6999,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -7087,7 +7088,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -7121,7 +7122,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:IndividualPropertyAtom>
-                          <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                          <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                           <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
                         </swrl:IndividualPropertyAtom>
@@ -7130,7 +7131,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                         <swrl:AtomList>
                           <rdf:first>
                             <swrl:ClassAtom>
-                              <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+                              <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
                             </swrl:ClassAtom>
                           </rdf:first>
@@ -7179,7 +7180,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -7204,7 +7205,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -7213,7 +7214,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -7301,7 +7302,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -7326,7 +7327,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -7335,7 +7336,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -7370,7 +7371,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -7379,7 +7380,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -7466,7 +7467,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -7491,7 +7492,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -7500,7 +7501,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -7535,7 +7536,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -7544,7 +7545,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -7587,7 +7588,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -7596,7 +7597,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -7694,7 +7695,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -7719,7 +7720,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -7728,7 +7729,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -7763,7 +7764,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -7772,7 +7773,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -7815,7 +7816,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -7824,7 +7825,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -7932,7 +7933,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -7957,7 +7958,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -7966,7 +7967,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -8001,7 +8002,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -8010,7 +8011,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -8053,7 +8054,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -8062,7 +8063,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -8181,7 +8182,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -8206,7 +8207,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -8215,7 +8216,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -8250,7 +8251,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -8259,7 +8260,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -8302,7 +8303,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -8311,7 +8312,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -8461,7 +8462,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -8486,7 +8487,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -8495,7 +8496,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -8530,7 +8531,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -8539,7 +8540,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCorrectiveMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -8626,7 +8627,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -8651,7 +8652,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -8660,7 +8661,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -8695,7 +8696,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -8704,7 +8705,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCorrectiveMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -8747,7 +8748,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -8756,7 +8757,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -8854,7 +8855,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -8879,7 +8880,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -8888,7 +8889,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -8923,7 +8924,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -8932,7 +8933,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCorrectiveMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -8975,7 +8976,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -8984,7 +8985,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -9092,7 +9093,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -9117,7 +9118,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -9126,7 +9127,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -9161,7 +9162,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -9170,7 +9171,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCorrectiveMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -9213,7 +9214,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -9222,7 +9223,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -9373,7 +9374,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -9398,7 +9399,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -9407,7 +9408,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -9442,7 +9443,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -9451,7 +9452,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCorrectiveMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -9494,7 +9495,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -9503,7 +9504,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -9582,7 +9583,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                                                             <swrl:AtomList>
                                                                                               <rdf:first>
                                                                                                 <swrl:IndividualPropertyAtom>
-                                                                                                  <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                                  <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                                                                   <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
                                                                                                 </swrl:IndividualPropertyAtom>
@@ -9591,7 +9592,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                                                                 <swrl:AtomList>
                                                                                                   <rdf:first>
                                                                                                     <swrl:ClassAtom>
-                                                                                                      <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+                                                                                                      <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
                                                                                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
                                                                                                     </swrl:ClassAtom>
                                                                                                   </rdf:first>
@@ -9686,7 +9687,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -9711,7 +9712,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -9720,7 +9721,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -9755,7 +9756,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -9764,7 +9765,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -9807,7 +9808,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -9816,7 +9817,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -9987,7 +9988,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -10012,7 +10013,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -10021,7 +10022,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -10056,7 +10057,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -10065,7 +10066,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -10108,7 +10109,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -10117,7 +10118,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -10257,7 +10258,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -10282,7 +10283,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -10291,7 +10292,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -10326,7 +10327,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -10335,7 +10336,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -10378,7 +10379,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -10387,7 +10388,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -10538,7 +10539,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -10563,7 +10564,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -10572,7 +10573,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -10607,7 +10608,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -10616,7 +10617,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -10659,7 +10660,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -10668,7 +10669,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -10819,7 +10820,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -10844,7 +10845,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -10853,7 +10854,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -10888,7 +10889,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -10897,7 +10898,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -10940,7 +10941,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -10949,7 +10950,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -11100,7 +11101,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -11125,7 +11126,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                 <swrl:AtomList>
                   <rdf:first>
                     <swrl:IndividualPropertyAtom>
-                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                     </swrl:IndividualPropertyAtom>
@@ -11134,7 +11135,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                     <swrl:AtomList>
                       <rdf:first>
                         <swrl:ClassAtom>
-                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#labour_cost"/>
                         </swrl:ClassAtom>
                       </rdf:first>
@@ -11169,7 +11170,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                 <swrl:AtomList>
                                   <rdf:first>
                                     <swrl:IndividualPropertyAtom>
-                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                      <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                       <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                       <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                     </swrl:IndividualPropertyAtom>
@@ -11178,7 +11179,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                     <swrl:AtomList>
                                       <rdf:first>
                                         <swrl:ClassAtom>
-                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_corrective_maintenance"/>
+                                          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCorrectiveMaintenance"/>
                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_type"/>
                                         </swrl:ClassAtom>
                                       </rdf:first>
@@ -11221,7 +11222,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                         <swrl:AtomList>
                                                           <rdf:first>
                                                             <swrl:IndividualPropertyAtom>
-                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                              <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                               <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                             </swrl:IndividualPropertyAtom>
@@ -11230,7 +11231,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                             <swrl:AtomList>
                                                               <rdf:first>
                                                                 <swrl:ClassAtom>
-                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+                                                                  <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
                                                                   <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#material_cost"/>
                                                                 </swrl:ClassAtom>
                                                               </rdf:first>
@@ -11291,7 +11292,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                                                     <swrl:AtomList>
                                                                                       <rdf:first>
                                                                                         <swrl:IndividualPropertyAtom>
-                                                                                          <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#has_data_field"/>
+                                                                                          <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                                                                                           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
                                                                                           <swrl:argument2 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#tag"/>
                                                                                         </swrl:IndividualPropertyAtom>
@@ -11300,7 +11301,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
                                                                                         <swrl:AtomList>
                                                                                           <rdf:first>
                                                                                             <swrl:ClassAtom>
-                                                                                              <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag"/>
+                                                                                              <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderFunctionalLocationTag"/>
                                                                                               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#tag"/>
                                                                                             </swrl:ClassAtom>
                                                                                           </rdf:first>
@@ -11449,7 +11450,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -11583,7 +11584,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -11652,7 +11653,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <swrl:AtomList>
           <rdf:first>
             <swrl:ClassAtom>
-              <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+              <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
             </swrl:ClassAtom>
           </rdf:first>
@@ -11723,7 +11724,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
         <swrl:AtomList>
           <rdf:first>
             <swrl:ClassAtom>
-              <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+              <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
               <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#description"/>
             </swrl:ClassAtom>
           </rdf:first>
@@ -11754,7 +11755,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
     <swrl:AtomList>
       <rdf:first>
         <swrl:ClassAtom>
-          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+          <swrl:classPredicate rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
           <swrl:argument1 rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#record"/>
         </swrl:ClassAtom>
       </rdf:first>
@@ -11898,12 +11899,12 @@ Used to flag individuals where the classified maintenance activity type is unsur
 
 <owl:AllDisjointClasses>
   <owl:members rdf:parseType="Collection">
-    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_created_date"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderFunctionalLocationTag"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderMaintenanceType"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
   </owl:members>
 </owl:AllDisjointClasses>
 

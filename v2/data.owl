@@ -206,7 +206,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#Maintenance_Work_Order_Record"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord"/>
         <core:describes rdf:resource="http://www.semanticweb.org/data#work_order_execution_event_17_jan"/>
         <core:describes rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_activity"/>
         <core:isInputOfAtSomeTime rdf:resource="http://www.semanticweb.org/data#work_order_execution_event_17_jan"/>
@@ -238,7 +238,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_created_date -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_created_date">
-        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_created_date"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate"/>
         <maintenance-activity-classification-rules:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-02-14T00:00:00</maintenance-activity-classification-rules:hasValue>
     </owl:NamedIndividual>
     
@@ -247,7 +247,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_description -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_description">
-        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_description_text"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
         <maintenance-activity-classification-rules:nlpIdentifiedItem rdf:resource="http://www.semanticweb.org/asset-list-ontology#Valve"/>
         <maintenance-activity-classification-rules:nlpIdentifiedSubunit rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#PipingAndValvesSystem"/>
         <maintenance-activity-classification-rules:hasValue xml:lang="en">remove pressure switch</maintenance-activity-classification-rules:hasValue>
@@ -259,7 +259,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_functional_location_tag -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_functional_location_tag">
-        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_functional_location_tag"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderFunctionalLocationTag"/>
         <maintenance-activity-classification-rules:refers_to rdf:resource="http://www.semanticweb.org/data#pump_001"/>
         <maintenance-activity-classification-rules:hasValue>TBD</maintenance-activity-classification-rules:hasValue>
     </owl:NamedIndividual>
@@ -269,7 +269,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_labour_cost -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_labour_cost">
-        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_labour_cost"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
         <maintenance-activity-classification-rules:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1292</maintenance-activity-classification-rules:hasValue>
     </owl:NamedIndividual>
     
@@ -278,8 +278,8 @@
     <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_maintenance_type -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_maintenance_type">
-        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_maintenance_type"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_preventative_maintenance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaintenanceType"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderPreventativeMaintenance"/>
     </owl:NamedIndividual>
     
 
@@ -287,7 +287,7 @@
     <!-- http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_material_cost -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules#MWO-2_material_cost">
-        <rdf:type rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#work_order_material_cost"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
         <maintenance-activity-classification-rules:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">711</maintenance-activity-classification-rules:hasValue>
     </owl:NamedIndividual>
     

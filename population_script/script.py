@@ -88,7 +88,7 @@ def populate_single(index, row):
         row, mwo_name, activity, item_indiv)
 
     with onto:
-        mwo = mar.Maintenance_Work_Order_Record(mwo_name)
+        mwo = wo.MaintenanceWorkOrderRecord(mwo_name)
         AllDifferent([mwo, date, work_order, func_loc, labor,
                       material, maint_type, activity, wo_execution_event])
         mwo.has_data_field.append(date)
@@ -123,7 +123,7 @@ def populate(data_frame):
             row, mwo_name, activity, item_indiv)
 
         with onto:
-            mwo = mar.Maintenance_Work_Order_Record(mwo_name)
+            mwo = wo.MaintenanceWorkOrderRecord(mwo_name)
             AllDifferent([mwo, date, work_order, func_loc, labor,
                          material, maint_type, activity, wo_execution_event])
             mwo.has_data_field.append(date)
@@ -171,7 +171,7 @@ def add_work_order_created_date_individual(row, mwo_name):
     date_value = ""
     date_value = datetime.datetime.strptime(input_date, "%Y-%m-%dT%H:%M:%S")
     with onto:
-        date = mar.work_order_created_date(date_name)
+        date = wo.work_order_created_date(date_name)
         # todo: figure out how to make a date type
         date.hasValue.append(date_value)
         return date
@@ -181,7 +181,7 @@ def add_work_order_description_individual(row, mwo_name):
     description_name = mwo_name+"_description"
     description_value = row['Unstructured Text']
     with onto:
-        description = mar.work_order_description_text(description_name)
+        description = wo.work_order_description_text(description_name)
         description.hasValue.append(description_value)
         description.nlpIdentifiedActivity.append(
             row['NLP Identified Activity'])
@@ -199,7 +199,7 @@ def format_item(item_string):
 def add_functional_location_tag_individual(row, mwo_name, item):
     functional_location_tag_name = mwo_name+"_functional_location_tag"
     with onto:
-        functional_location_tag = mar.work_order_functional_location_tag(
+        functional_location_tag = wo.work_order_functional_location_tag(
             functional_location_tag_name)
         functional_location_tag.hasValue.append('PU001')
         functional_location_tag.refers_to.append(onto[item])
@@ -210,7 +210,7 @@ def add_labour_cost(row, mwo_name):
     labour_cost_name = mwo_name+"_labour_cost"
     labour_cost_value = row['Labor Cost']
     with onto:
-        labour_cost = mar.work_order_labour_cost(labour_cost_name)
+        labour_cost = wo.work_order_labour_cost(labour_cost_name)
         labour_cost.hasValue.append(labour_cost_value)
         return labour_cost
 
@@ -219,7 +219,7 @@ def add_material_cost(row, mwo_name):
     material_cost_name = mwo_name+"_material_cost"
     material_cost_value = row['Material Cost']
     with onto:
-        material_cost = mar.work_order_material_cost(material_cost_name)
+        material_cost = wo.work_order_material_cost(material_cost_name)
         material_cost.hasValue.append(material_cost_value)
         return material_cost
 
@@ -230,9 +230,9 @@ def add_maintenance_type(row, mwo_name):
     with onto:
         maintenance_type_value_string = 'work_order_' + \
             maintenance_type_value+'_maintenance'
-        maintenance_type = mar.work_order_maintenance_type(
+        maintenance_type = wo.work_order_maintenance_type(
             maintenance_type_name)
-        maintenance_type = mar[maintenance_type_value_string](
+        maintenance_type = wo[maintenance_type_value_string](
             maintenance_type_name)
         return maintenance_type
 
