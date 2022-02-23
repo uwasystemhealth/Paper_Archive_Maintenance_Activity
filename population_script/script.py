@@ -20,6 +20,7 @@ onto = None
 obo = None
 mar = None
 al = None
+fb = None
 ma = None
 owl = None
 wo = None
@@ -30,7 +31,7 @@ pump_number = '001'
 
 def load_ontology():
     global bfo_onto, iof_annotation_onto, iof_core_onto, functional_breakdown_onto, asset_list_onto, maintenance_activity_onto, work_order_onto, maint_activity_classification_rules_onto, onto
-    global obo, mar, ma, al, owl, wo, core
+    global obo, mar, ma, fb, al, owl, wo, core
     onto_path.append('../v2/imports')
     bfo_onto = get_ontology("bfo-v2.owl").load()
     iof_annotation_onto = get_ontology(
@@ -52,6 +53,8 @@ def load_ontology():
         "http://www.semanticweb.org/maintenance-activity-classification-rules#")
     al = asset_list_onto.get_namespace(
         'http://www.semanticweb.org/asset-list-ontology#')
+    fb = functional_breakdown_onto.get_namespace(
+        'http://www.semanticweb.org/functional-breakdown-pump-ontology#')
     ma = maintenance_activity_onto.get_namespace(
         'http://www.semanticweb.org/maintenance-activity#')
     owl = onto.get_namespace('http://www.w3.org/2002/07/owl#')
@@ -185,12 +188,8 @@ def add_work_order_description_individual(row, mwo_name):
         item_string = format_item(row['NLP Identified Item'])
         description.nlpIdentifiedItem.append(al[item_string])
         sub_unit_string = format_item(row['NLP Identified Subunit']) + "System"
-        if (sub_unit_string == "LubricationSystem"):
-            description.nlpIdentifiedSubunit.append(
-                al[sub_unit_string])  # todo: ask Matt about this
-        else:
-            description.nlpIdentifiedSubunit.append(mar[sub_unit_string])
-        return description
+        description.nlpIdentifiedSubunit.append(fb[sub_unit_string])
+    return description
 
 
 def format_item(item_string):
@@ -288,6 +287,4 @@ if __name__ == "__main__":
 
 
 # notes:
-# - lubrication system in wrong place
-# - pump unit system does not exist under engineered system
 # - what to do with func loc refers to.

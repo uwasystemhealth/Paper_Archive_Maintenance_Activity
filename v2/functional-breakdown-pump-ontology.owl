@@ -33,7 +33,7 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Flowmeter">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -52,7 +52,7 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#MechanicalSeal">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -65,7 +65,7 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Motor">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -84,7 +84,7 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Oil">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -97,7 +97,7 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -129,11 +129,41 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Valve">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/functional-breakdown-pump-ontology#ControlAndMonitoringSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#ControlAndMonitoringSystem">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/functional-breakdown-pump-ontology#DriverAndElectricalSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#DriverAndElectricalSystem">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -162,26 +192,85 @@
     
 
 
-    <!-- http://www.semanticweb.org/functional-breakdown-pump-ontology#MaintenanceGenericBreakdownSpecification -->
+    <!-- http://www.semanticweb.org/functional-breakdown-pump-ontology#LubricationSystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#MaintenanceGenericBreakdownSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DirectiveInformationContentEntity"/>
-        <rdfs:comment xml:lang="en">A specification of an asset breakdown structure defined in a generic fashion for an entire class of asset for the purposes of maintenance: e.g., according to ISO 14224.</rdfs:comment>
-        <rdfs:label xml:lang="en">Maintenance Generic Asset Breakdown Specification</rdfs:label>
+    <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#LubricationSystem">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/Component"/>
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpSystemGenericBreakdownSpecification -->
+    <!-- http://www.semanticweb.org/functional-breakdown-pump-ontology#PipingAndValvesSystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpSystemGenericBreakdownSpecification">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#MaintenanceGenericBreakdownSpecification"/>
-        <rdfs:comment xml:lang="en">A generic specification of a Pump System asset breakdown structure. For example, the ISO 14224 Pump System breakdown structure.</rdfs:comment>
-        <rdfs:label xml:lang="en">Pump System Generic Breakdown Specification</rdfs:label>
+    <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PipingAndValvesSystem">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/functional-breakdown-pump-ontology#PowerTransmissionSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PowerTransmissionSystem">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpUnitSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpUnitSystem">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/EngineeredSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#LubricationSystem">
+        <rdfs:label xml:lang="en">Lubrication System</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#ControlAndMonitoringSystem">
+        <rdfs:label xml:lang="en">Control and Monitoring System</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#DriverAndElectricalSystem">
+        <rdfs:label xml:lang="en">Driver and Electrical System</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PipingAndValvesSystem">
+        <rdfs:label>Piping and Valves System</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PowerTransmissionSystem">
+        <rdfs:label xml:lang="en">Power Transmission System</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#PumpUnitSystem">
+        <rdfs:label xml:lang="en">Pump Unit System</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
