@@ -9,12 +9,11 @@ import dateutil.parser as parser
 bfo_onto = None
 iof_annotation_onto = None
 iof_core_onto = None
-funtional_breakdown_onto = None
+functional_breakdown_onto = None
 asset_list_onto = None
 maintenance_activity_onto = None
 work_order_onto = None
 maint_activity_classification_rules_onto = None
-data_onto = None
 onto = None
 
 obo = None
@@ -71,6 +70,7 @@ def load_data(input_data_sheet_path):
 
 
 def populate_single(index, row):
+
     print('populating index + ' + str(index))
     # sub_unit_indiv = select_sub_unit(row['NLP Identified Subunit'])
     item_indiv = select_item(row['NLP Identified Item'])
@@ -100,41 +100,6 @@ def populate_single(index, row):
         mwo.describes.append(activity)
         mwo.describes.append(wo_execution_event)
         mwo.isInputOfAtSomeTime.append(wo_execution_event)
-
-
-def populate(data_frame):
-    print("Populating Ontology")
-
-    for index, row in data_frame.iterrows():
-
-        # sub_unit_indiv = select_sub_unit(row['NLP Identified Subunit'])
-        item_indiv = select_item(row['NLP Identified Item'])
-
-        mwo_name = "MWO-"+str(row['ID'])
-        date = add_work_order_created_date_individual(row, mwo_name)
-        work_order = add_work_order_description_individual(row, mwo_name)
-        func_loc = add_functional_location_tag_individual(
-            row, mwo_name, select_item('pump'))
-        labor = add_labour_cost(row, mwo_name)
-        material = add_material_cost(row, mwo_name)
-        maint_type = add_maintenance_type(row, mwo_name)
-        activity = add_activity_individual(row, mwo_name)
-        wo_execution_event = add_wo_execution_event(
-            row, mwo_name, activity, item_indiv)
-
-        with onto:
-            mwo = wo.MaintenanceWorkOrderRecord(mwo_name)
-            AllDifferent([mwo, date, work_order, func_loc, labor,
-                         material, maint_type, activity, wo_execution_event])
-            mwo.hasDataField.append(date)
-            mwo.hasDataField.append(work_order)
-            mwo.hasDataField.append(func_loc)
-            mwo.hasDataField.append(labor)
-            mwo.hasDataField.append(material)
-            mwo.hasDataField.append(maint_type)
-            mwo.describes.append(activity)
-            mwo.describes.append(wo_execution_event)
-            mwo.isInputOfAtSomeTime.append(wo_execution_event)
 
 
 def select_sub_unit(sub_unit):
@@ -172,7 +137,6 @@ def add_work_order_created_date_individual(row, mwo_name):
     date_value = datetime.datetime.strptime(input_date, "%Y-%m-%dT%H:%M:%S")
     with onto:
         date = wo.WorkOrderCreatedDate(date_name)
-        # todo: figure out how to make a date type
         date.hasValue.append(date_value)
         return date
 
@@ -208,7 +172,7 @@ def add_functional_location_tag_individual(row, mwo_name, item):
 
 def add_labour_cost(row, mwo_name):
     labour_cost_name = mwo_name+"_labour_cost"
-    labour_cost_value = row['Labor Cost']
+    labour_cost_value = int(row['Labor Cost'])
     with onto:
         labour_cost = wo.WorkOrderLabourCost(labour_cost_name)
         labour_cost.hasValue.append(labour_cost_value)
@@ -217,7 +181,7 @@ def add_labour_cost(row, mwo_name):
 
 def add_material_cost(row, mwo_name):
     material_cost_name = mwo_name+"_material_cost"
-    material_cost_value = row['Material Cost']
+    material_cost_value = int(row['Material Cost'])
     with onto:
         material_cost = wo.WorkOrderMaterialCost(material_cost_name)
         material_cost.hasValue.append(material_cost_value)
@@ -270,16 +234,12 @@ def main():
     data_frame = load_data(input_data_sheet_path)
 
     i = int(sys.argv[1])  # cannot loop because of owlready caching.
-    save_merged = bool(sys.argv[2]) if len(sys.argv) >= 2  else False
+    save_merged = bool(sys.argv[2]) if len(sys.argv) >= 2 else False
 
-    for index, row in data_frame.iterrows():
-        if index == i:  # must do one at a time because owlready caching
-
-            load_ontology()  # reload ontology each run.
-            populate_single(index, row)
-            save_ontology("../data/populated-data-"+str(index)+".owl", save_merged)
-
-    # populate(data_frame)
+    load_ontology()  # reload ontology each run.
+    populate_single(i, data_frame.loc[i])
+    save_ontology("../data/populated-data-" +
+                  str(i)+".owl", save_merged)
 
 
 if __name__ == "__main__":
