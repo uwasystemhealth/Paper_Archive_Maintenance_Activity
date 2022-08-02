@@ -99,7 +99,7 @@ def main(first_record=1, last_record=36):
     onto_path.append('../')
 
     classifications = []
-    results = []
+    non_matching = []
     records = []
 
     for i in range(first_record - 1, last_record):
@@ -128,15 +128,23 @@ def main(first_record=1, last_record=36):
                                      infer_data_property_values=True)
 
         i_results = query_not_matching(the_world)
-        results.extend(simplify_results(i_results))
+        non_matching.extend(simplify_results(i_results))
         r_results = query_records_and_classifications(the_world)
         records.extend(simplify_results(r_results))
         classifiers = simplify_results([data[f'MWO-{i + 1}_activity'].is_a])
         classifications.append((f'MWO-{i + 1}_activity', classifiers[0]))
 
-    print(classifications)
-    print(results)
-    print(records)
+    print('= All Activity Classifications')
+    print('  id, list of classifiers (including anonymous)')
+    print("\n".join([str(c) for c in classifications]), end="\n\n")
+
+    print('= Activity classifications not matching Activity Term from text')
+    print('  activity id, shortened classifier, term')
+    print("\n".join([str(n) for n in non_matching]), end="\n\n")
+
+    print('= MWO Records with Activity Classifications')
+    print('  ?record, ?tag_name, ?tagged_item, ?text, ?activity, ?item, ?unit, ?labour_cost, ?material_cost, ?date_time, ?maint_type, ?activityType, ?nlpActivityRef')
+    print("\n".join([str(r) for r in records]))
 
 
 if __name__ == '__main__':

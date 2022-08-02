@@ -244,7 +244,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# notes:
-# - what to do with func loc refers to.
