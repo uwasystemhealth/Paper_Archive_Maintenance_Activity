@@ -76,7 +76,7 @@ def populate_single(index, row):
     item_indiv = select_item(row['NLP Identified Item'])
 
     mwo_name = "MWO-"+str(row['ID'])
-    date = add_work_order_created_date_individual(row, mwo_name)
+    date = add_work_order_started_date_individual(row, mwo_name)
     work_order = add_work_order_description_individual(row, mwo_name)
     func_loc = add_functional_location_tag_individual(
         row, mwo_name, select_item('pump'))
@@ -130,13 +130,13 @@ def select_item(item):
     return individual_map[index][1]
 
 
-def add_work_order_created_date_individual(row, mwo_name):
-    date_name = mwo_name+"_created_date"
+def add_work_order_started_date_individual(row, mwo_name):
+    date_name = mwo_name+"_started_date"
     input_date = parser.parse(row['Date']).isoformat()
     date_value = ""
     date_value = datetime.datetime.strptime(input_date, "%Y-%m-%dT%H:%M:%S")
     with onto:
-        date = wo.WorkOrderCreatedDate(date_name)
+        date = wo.WorkOrderStartedDate(date_name)
         date.hasValue.append(date_value)
         return date
 

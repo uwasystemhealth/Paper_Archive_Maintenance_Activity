@@ -5198,6 +5198,26 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
     </owl:Restriction>
   </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+      <owl:allValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
+            <owl:Class>
+              <owl:unionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Flowmeter"/>
+                <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
+                <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Sensor"/>
+              </owl:unionOf>
+            </owl:Class>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:allValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
   <owl:equivalentClass>
     <owl:Restriction>
       <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
@@ -5222,6 +5242,20 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
     <owl:Restriction>
       <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+      <owl:allValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Motor"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:allValuesFrom>
     </owl:Restriction>
   </rdfs:subClassOf>
   <owl:equivalentClass>
@@ -5261,6 +5295,20 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
     </owl:Restriction>
   </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+      <owl:allValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Oil"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:allValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
   <owl:equivalentClass>
     <owl:Restriction>
       <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
@@ -5284,6 +5332,20 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
     <owl:Restriction>
       <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+      <owl:allValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Valve"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:allValuesFrom>
     </owl:Restriction>
   </rdfs:subClassOf>
   <owl:equivalentClass>
@@ -5334,6 +5396,25 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
     <owl:Restriction>
       <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
       <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+      <owl:allValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
+            <owl:Class>
+              <owl:unionOf rdf:parseType="Collection">
+                <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#MechanicalSeal"/>
+                <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+              </owl:unionOf>
+            </owl:Class>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:allValuesFrom>
     </owl:Restriction>
   </rdfs:subClassOf>
   <owl:equivalentClass>
@@ -5396,11 +5477,6 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
         </owl:Restriction>
         <owl:Restriction>
           <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
-          <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate"/>
-          <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-        </owl:Restriction>
-        <owl:Restriction>
-          <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
           <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
           <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         </owl:Restriction>
@@ -5422,6 +5498,11 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
         <owl:Restriction>
           <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
           <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
+          <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+          <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderStartedDate"/>
           <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         </owl:Restriction>
       </owl:intersectionOf>
@@ -5480,17 +5561,6 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   <rdfs:label>Supporting Activity</rdfs:label>
 </owl:Class>
 
-<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate">
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasValue"/>
-      <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:label xml:lang="en">Work Order Created At (Date)</rdfs:label>
-</owl:Class>
-
 <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText">
   <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
   <rdfs:label xml:lang="en">Work Order Description</rdfs:label>
@@ -5528,6 +5598,17 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
     </owl:Restriction>
   </rdfs:subClassOf>
   <rdfs:label xml:lang="en">Material Cost</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderStartedDate">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasValue"/>
+      <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label xml:lang="en">Work Order Started At (Date)</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderCorrectiveMaintenance">
@@ -6889,10 +6970,10 @@ Used to flag individuals where the classified maintenance activity type is unsur
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </asse:MechanicalSeal>
 
-<work:WorkOrderCreatedDate rdf:about="http://www.semanticweb.org/data#MWO-28_created_date">
+<work:WorkOrderStartedDate rdf:about="http://www.semanticweb.org/data#MWO-28_started_date">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <work:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-12T00:00:00</work:hasValue>
-</work:WorkOrderCreatedDate>
+</work:WorkOrderStartedDate>
 
 <work:WorkOrderDescriptionText rdf:about="http://www.semanticweb.org/data#MWO-28_description">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -6946,7 +7027,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
   <core2:describes rdf:resource="http://www.semanticweb.org/data#MWO-28_activity"/>
   <core2:describes rdf:resource="http://www.semanticweb.org/data#MWO-28_wo_execution_event"/>
   <core2:isInputOfAtSomeTime rdf:resource="http://www.semanticweb.org/data#MWO-28_wo_execution_event"/>
-  <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-28_created_date"/>
+  <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-28_started_date"/>
   <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-28_description"/>
   <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-28_functional_location_tag"/>
   <work:hasDataField rdf:resource="http://www.semanticweb.org/data#MWO-28_labour_cost"/>
@@ -6957,7 +7038,7 @@ Used to flag individuals where the classified maintenance activity type is unsur
 <owl:AllDifferent>
   <owl:distinctMembers rdf:parseType="Collection">
     <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-28"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-28_created_date"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-28_started_date"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-28_description"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-28_functional_location_tag"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/data#MWO-28_labour_cost"/>
@@ -11133,12 +11214,12 @@ Used to flag individuals where the classified maintenance activity type is unsur
 
 <owl:AllDisjointClasses>
   <owl:members rdf:parseType="Collection">
-    <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderFunctionalLocationTag"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderMaintenanceType"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderStartedDate"/>
   </owl:members>
 </owl:AllDisjointClasses>
 

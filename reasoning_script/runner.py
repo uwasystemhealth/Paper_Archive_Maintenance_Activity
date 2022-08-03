@@ -63,7 +63,7 @@ def query_records_and_classifications(world):
             work:hasValue ?labour_cost .
         ?material a work:WorkOrderMaterialCost ;
             work:hasValue ?material_cost .
-        ?date a work:WorkOrderCreatedDate ;
+        ?date a work:WorkOrderStartedDate ;
             work:hasValue ?date_time .
         ?_maint_type a work:WorkOrderMaintenanceType ;
             a ?maint_type .

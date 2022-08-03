@@ -74,18 +74,18 @@
     <!-- http://www.semanticweb.org/work-order-ontology#hasValue -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/work-order-ontology#hasValue">
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    <rdfs:domain>
-        <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-                <rdf:Description rdf:about="http://www.industrialontologies.org/core/DesignativeInformationContentEntity"/>
-                <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
-            </owl:unionOf>
-        </owl:Class>
-    </rdfs:domain>
-    <rdfs:comment xml:lang="en">A property allowing the assignment of concrete values to the Maintenance Work Order Record data items that require them. Allows reasoning about numbers, for instance. Aims to be compatible with IAO or similar, but specific to our information content classes for the moment. We also do not restrict the type of value to any particular literal type; whether or not there is value in specialising the data property is not yet determined.</rdfs:comment>
-    <rdfs:label xml:lang="en">has value</rdfs:label>
-</owl:DatatypeProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.industrialontologies.org/core/DesignativeInformationContentEntity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">A property allowing the assignment of concrete values to the Maintenance Work Order Record data items that require them. Allows reasoning about numbers, for instance. Aims to be compatible with IAO or similar, but specific to our information content classes for the moment. We also do not restrict the type of value to any particular literal type; whether or not there is value in specialising the data property is not yet determined.</rdfs:comment>
+        <rdfs:label xml:lang="en">has value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -150,11 +150,6 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
-                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
                     </owl:Restriction>
                     <owl:Restriction>
@@ -176,6 +171,11 @@
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
                         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasDataField"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderStartedDate"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -226,26 +226,31 @@
     
 
 
-    <!-- http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasValue"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Work Order Created At (Date)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
         <rdfs:label xml:lang="en">Work Order Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/work-order-ontology#WorkOrderDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDocument">
+        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DirectiveInformationContentEntity"/>
+        <rdfs:comment>A document that describes some Work Order Execution Process.</rdfs:comment>
+        <rdfs:label>Work Order Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:comment>A process that is initiated by a work order document. Work order executions will always contain an activity (maintenance or supporting) and will have a functional part as a participant.</rdfs:comment>
+        <rdfs:label>Work Order Execution Process</rdfs:label>
     </owl:Class>
     
 
@@ -310,22 +315,17 @@
     
 
 
-    <!-- http://www.semanticweb.org/work-order-ontology#WorkOrderDocument -->
+    <!-- http://www.semanticweb.org/work-order-ontology#WorkOrderStartedDate -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDocument">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DirectiveInformationContentEntity"/>
-        <rdfs:comment>A document that describes some Work Order Execution Process.</rdfs:comment>
-        <rdfs:label>Work Order Document</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:comment>A process that is initiated by a work order document. Work order executions will always contain an activity (maintenance or supporting) and will have a functional part as a participant.</rdfs:comment>
-        <rdfs:label>Work Order Execution Process</rdfs:label>
+    <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderStartedDate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/work-order-ontology#hasValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Work Order Started At (Date)</rdfs:label>
     </owl:Class>
     
 
@@ -341,12 +341,12 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderCreatedDate"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderFunctionalLocationTag"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderMaintenanceType"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderStartedDate"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
@@ -354,3 +354,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
