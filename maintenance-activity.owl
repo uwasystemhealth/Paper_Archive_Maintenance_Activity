@@ -19,6 +19,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</dc:license>
+        <terms:rights xml:lang="en"></terms:rights>
     </owl:Ontology>
     
 
@@ -150,6 +151,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>top-up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>track</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>train</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>adjust</rdfs:label>
     </owl:Class>
     
 
@@ -171,6 +173,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>reschedule</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>scope</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>sign</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>admin</rdfs:label>
     </owl:Class>
     
 
@@ -192,6 +195,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>rebuild</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>set up</IOFAnnotationVocabulary:synonym>
         <rdfs:comment>insert</rdfs:comment>
+        <rdfs:label>assemble</rdfs:label>
     </owl:Class>
     
 
@@ -215,6 +219,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>To come</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
         <IOFAnnotationVocabulary:synonym>calibrate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>re-calibrate</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>calibrate</rdfs:label>
     </owl:Class>
     
 
@@ -244,6 +249,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>re-test</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>troubleshooot</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>verify</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>diagnose</rdfs:label>
     </owl:Class>
     
 
@@ -268,6 +274,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>test</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>thermography</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>thickness test</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>inspect</rdfs:label>
     </owl:Class>
     
 
@@ -277,6 +284,7 @@ time. The following is also true:
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#isolate">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
         <IOFAnnotationVocabulary:synonym>deisolate</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>isolate</rdfs:label>
     </owl:Class>
     
 
@@ -287,6 +295,7 @@ time. The following is also true:
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
         <IOFAnnotationVocabulary:synonym>resample</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>sample</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>measure</rdfs:label>
     </owl:Class>
     
 
@@ -308,6 +317,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>trim</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>upgrade</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>weld</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>modify</rdfs:label>
     </owl:Class>
     
 
@@ -341,6 +351,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>suspend</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>transfer</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>unbog</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>move</rdfs:label>
     </owl:Class>
     
 
@@ -359,6 +370,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>run</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>startup</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>trip</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>operate</rdfs:label>
     </owl:Class>
     
 
@@ -377,6 +389,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>prepare</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>rework</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>work</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>perform</rdfs:label>
     </owl:Class>
     
 
@@ -425,6 +438,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>reset</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>un-bog</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>unblock</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>repair</rdfs:label>
     </owl:Class>
     
 
@@ -456,6 +470,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>swap</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>switch</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>transition</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>replace</rdfs:label>
     </owl:Class>
     
 
@@ -490,6 +505,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>scan</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>service</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>tune</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>service</rdfs:label>
     </owl:Class>
     
 
@@ -507,6 +523,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>supply</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>support</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>train</IOFAnnotationVocabulary:synonym>
+        <rdfs:label>teamwork</rdfs:label>
     </owl:Class>
     
 
