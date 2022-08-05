@@ -14,6 +14,12 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/work-order-ontology">
         <owl:imports rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/maintenance-activity"/>
+        <dc:license>Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</dc:license>
     </owl:Ontology>
     
 
@@ -34,6 +40,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#hasDataField">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/work-order-ontology#isDataFieldOf"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:comment xml:lang="en">Convenience property to describe the &apos;proper continuant parthood at all times&apos; relationship between a data record and its individual data items.</rdfs:comment>
         <rdfs:label xml:lang="en">has field</rdfs:label>
     </owl:ObjectProperty>
@@ -44,6 +52,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#isDataFieldOf">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:comment xml:lang="en">Convenience property to describe the &apos;proper continuant parthood at all times&apos; relationship between a data record and its individual data items.</rdfs:comment>
         <rdfs:label xml:lang="en">is field of</rdfs:label>
     </owl:ObjectProperty>
@@ -54,6 +64,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#refersTo">
         <rdfs:subPropertyOf rdf:resource="http://www.industrialontologies.org/core/isAbout"/>
+        <rdfs:domain rdf:resource="http://www.industrialontologies.org/core/InformationContentEntity"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <IOFAnnotationVocabulary:elucidation xml:lang="en">If an ICE &apos;refers to&apos; an entity then it uses, evokes, or references the entity or concept in some way that is not necessarily descriptive, designative, nor prescriptive.</IOFAnnotationVocabulary:elucidation>
         <rdfs:label xml:lang="en">refers to</rdfs:label>
     </owl:ObjectProperty>
@@ -83,6 +95,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="en">A property allowing the assignment of concrete values to the Maintenance Work Order Record data items that require them. Allows reasoning about numbers, for instance. Aims to be compatible with IAO or similar, but specific to our information content classes for the moment. We also do not restrict the type of value to any particular literal type; whether or not there is value in specialising the data property is not yet determined.</rdfs:comment>
         <rdfs:label xml:lang="en">has value</rdfs:label>
     </owl:DatatypeProperty>
@@ -103,7 +116,6 @@
     <!-- http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecord">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDocument"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -231,16 +243,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
         <rdfs:label xml:lang="en">Work Order Description</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/work-order-ontology#WorkOrderDocument -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDocument">
-        <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DirectiveInformationContentEntity"/>
-        <rdfs:comment>A document that describes some Work Order Execution Process.</rdfs:comment>
-        <rdfs:label>Work Order Document</rdfs:label>
     </owl:Class>
     
 
