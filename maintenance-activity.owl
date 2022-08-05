@@ -13,6 +13,12 @@
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/maintenance-activity">
         <owl:imports rdf:resource="http://www.industrialontologies.org/core/"/>
+        <dc:license xml:lang="en">Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</dc:license>
     </owl:Ontology>
     
 
@@ -194,6 +200,7 @@ time. The following is also true:
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#calibrate">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
+        <IOFAnnotationVocabulary:elucidation>To come</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:elucidation>p is a calibrate activity =
 Def p is a process and there exists a material artifact m that has a function f and participates in p at some
 time. The following is also true:
@@ -202,20 +209,9 @@ time. The following is also true:
 - m participates at some time in fp
 - m has state at some time some failed state or degraded state or operating state s and operating state s2
 - s disables f, p finishes s and p starts s2</IOFAnnotationVocabulary:elucidation>
+        <IOFAnnotationVocabulary:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function</IOFAnnotationVocabulary:naturalLanguageDefinition>
         <IOFAnnotationVocabulary:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function.</IOFAnnotationVocabulary:naturalLanguageDefinition>
         <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process performed on equipment instrumentation, to estimate the capability of the instrumentation and restore if needed.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
-        <IOFAnnotationVocabulary:synonym>calibrate</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>re-calibrate</IOFAnnotationVocabulary:synonym>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/maintenance-activity#calibrate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#calibrate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
-        <IOFAnnotationVocabulary:elucidation>To come</IOFAnnotationVocabulary:elucidation>
-        <IOFAnnotationVocabulary:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function</IOFAnnotationVocabulary:naturalLanguageDefinition>
         <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>To come</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
         <IOFAnnotationVocabulary:synonym>calibrate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>re-calibrate</IOFAnnotationVocabulary:synonym>
@@ -512,8 +508,46 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>support</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>train</IOFAnnotationVocabulary:synonym>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#adjust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#calibrate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#inspect"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#repair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#replace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#service"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#admin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#assemble"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#isolate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#measure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#modify"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#move"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#operate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#perform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
