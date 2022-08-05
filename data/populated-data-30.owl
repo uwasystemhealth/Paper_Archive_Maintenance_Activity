@@ -114,29 +114,73 @@ The particular annotations that are required or used will depend on the represen
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/asset-list-ontology">
   <owl:imports rdf:resource="http://www.industrialontologies.org/core"/>
+  <term:license>Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</term:license>
 </owl:Ontology>
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology">
   <owl:imports rdf:resource="http://www.semanticweb.org/asset-list-ontology"/>
+  <x_1.1:license>Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</x_1.1:license>
 </owl:Ontology>
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/work-order-ontology">
   <owl:imports rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology"/>
   <owl:imports rdf:resource="http://www.semanticweb.org/maintenance-activity"/>
+  <x_1.1:license>Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</x_1.1:license>
 </owl:Ontology>
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/maintenance-activity">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
   <owl:imports rdf:resource="http://www.industrialontologies.org/core"/>
   <owl:imports rdf:resource="http://www.industrialontologies.org/core"/>
+  <x_1.1:license xml:lang="en">Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</x_1.1:license>
+  <x_1.1:license xml:lang="en">Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</x_1.1:license>
+  <term:rights xml:lang="en"></term:rights>
+  <term:rights xml:lang="en"></term:rights>
 </owl:Ontology>
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/maintenance-activity-classification-rules">
   <owl:imports rdf:resource="http://www.semanticweb.org/work-order-ontology"/>
+  <term:license>Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</term:license>
 </owl:Ontology>
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/data">
   <owl:imports rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules"/>
+  <x_1.1:license>Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</x_1.1:license>
 </owl:Ontology>
 
 <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
@@ -2323,6 +2367,8 @@ FOL:  isAvailableTo (x, y) → IndependentContinuant(x) ∧ Agent(y) ∧ ∃p, �
 
 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#hasDataField">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+  <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
   <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000174"/>
   <owl:inverseOf rdf:resource="http://www.semanticweb.org/work-order-ontology#isDataFieldOf"/>
   <rdfs:comment xml:lang="en">Convenience property to describe the 'proper continuant parthood at all times' relationship between a data record and its individual data items.</rdfs:comment>
@@ -2331,6 +2377,8 @@ FOL:  isAvailableTo (x, y) → IndependentContinuant(x) ∧ Agent(y) ∧ ∃p, �
 
 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#isDataFieldOf">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+  <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
   <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
   <rdfs:comment xml:lang="en">Convenience property to describe the 'proper continuant parthood at all times' relationship between a data record and its individual data items.</rdfs:comment>
   <rdfs:label xml:lang="en">is field of</rdfs:label>
@@ -2338,6 +2386,8 @@ FOL:  isAvailableTo (x, y) → IndependentContinuant(x) ∧ Agent(y) ∧ ∃p, �
 
 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/work-order-ontology#refersTo">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdfs:domain rdf:resource="http://www.industrialontologies.org/core/InformationContentEntity"/>
+  <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
   <rdfs:subPropertyOf rdf:resource="http://www.industrialontologies.org/core/isAbout"/>
   <rdfs:label xml:lang="en">refers to</rdfs:label>
   <IOFA:elucidation xml:lang="en">If an ICE 'refers to' an entity then it uses, evokes, or references the entity or concept in some way that is not necessarily descriptive, designative, nor prescriptive.</IOFA:elucidation>
@@ -2372,6 +2422,7 @@ FOL:  isAvailableTo (x, y) → IndependentContinuant(x) ∧ Agent(y) ∧ ∃p, �
       </owl:unionOf>
     </owl:Class>
   </rdfs:domain>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
   <rdfs:comment xml:lang="en">A property allowing the assignment of concrete values to the Maintenance Work Order Record data items that require them. Allows reasoning about numbers, for instance. Aims to be compatible with IAO or similar, but specific to our information content classes for the moment. We also do not restrict the type of value to any particular literal type; whether or not there is value in specialising the data property is not yet determined.</rdfs:comment>
   <rdfs:label xml:lang="en">has value</rdfs:label>
@@ -5043,6 +5094,7 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
       <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#Flowmeter"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <owl:disjointWith rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
   <rdfs:label>Flowmeter</rdfs:label>
   <core:altLabel>Flow Meter</core:altLabel>
   <core:prefLabel>Flowmeter</core:prefLabel>
@@ -5050,6 +5102,33 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
 
 <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Sensor">
   <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asset-list-ontology#Sensor"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
+      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
+      <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:label>Pressure Switch</rdfs:label>
+  <core:altLabel>Switch</core:altLabel>
+  <core:prefLabel>Pressure Switch</core:prefLabel>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#MechanicalSeal">
@@ -5110,33 +5189,6 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
     </owl:Restriction>
   </owl:equivalentClass>
   <rdfs:label>Oil</rdfs:label>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
-  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asset-list-ontology#Sensor"/>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asset-list-ontology#Pump"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <rdfs:subClassOf>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.industrialontologies.org/core/RO_0000087"/>
-      <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole"/>
-    </owl:Restriction>
-  </rdfs:subClassOf>
-  <owl:equivalentClass>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="http://www.semanticweb.org/maintenance-activity-classification-rules#kindOf"/>
-      <owl:hasValue rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
-    </owl:Restriction>
-  </owl:equivalentClass>
-  <rdfs:label>Pressure Switch</rdfs:label>
-  <core:altLabel>Switch</core:altLabel>
-  <core:prefLabel>Pressure Switch</core:prefLabel>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump">
@@ -5514,7 +5566,6 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
       <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
     </owl:Restriction>
   </rdfs:subClassOf>
-  <owl:equivalentClass rdf:resource="http://www.semanticweb.org/work-order-ontology#WorkOrderDocument"/>
   <owl:equivalentClass>
     <owl:Class>
       <owl:intersectionOf rdf:parseType="Collection">
@@ -5531,12 +5582,6 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
   </owl:equivalentClass>
   <owl:disjointWith rdf:resource="http://www.semanticweb.org/work-order-ontology#MaintenanceWorkOrderRecordDataItem"/>
   <rdfs:label xml:lang="en">Maintenance Work Order record</rdfs:label>
-</owl:Class>
-
-<owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDocument">
-  <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/DirectiveInformationContentEntity"/>
-  <rdfs:comment>A document that describes some Work Order Execution Process.</rdfs:comment>
-  <rdfs:label>Work Order Document</rdfs:label>
 </owl:Class>
 
 <owl:Class rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderExecutionProcess">
@@ -5668,6 +5713,8 @@ Formalization for this term from 2019 TD discussions: "Supplier Role(​x)​ �
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#adjust"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>adjust</rdfs:label>
+  <rdfs:label>adjust</rdfs:label>
   <IOFA:synonym>add</IOFA:synonym>
   <IOFA:synonym>adjust</IOFA:synonym>
   <IOFA:synonym>align</IOFA:synonym>
@@ -5778,6 +5825,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#admin"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>admin</rdfs:label>
+  <rdfs:label>admin</rdfs:label>
   <IOFA:synonym>approve</IOFA:synonym>
   <IOFA:synonym>audit</IOFA:synonym>
   <IOFA:synonym>commission</IOFA:synonym>
@@ -5832,6 +5881,8 @@ time. The following is also true:
   </owl:equivalentClass>
   <rdfs:comment>insert</rdfs:comment>
   <rdfs:comment>insert</rdfs:comment>
+  <rdfs:label>assemble</rdfs:label>
+  <rdfs:label>assemble</rdfs:label>
   <IOFA:synonym>attach</IOFA:synonym>
   <IOFA:synonym>build</IOFA:synonym>
   <IOFA:synonym>create</IOFA:synonym>
@@ -5879,18 +5930,12 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#calibrate"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>calibrate</rdfs:label>
+  <rdfs:label>calibrate</rdfs:label>
   <IOFA:synonym>calibrate</IOFA:synonym>
   <IOFA:synonym>re-calibrate</IOFA:synonym>
   <IOFA:synonym>calibrate</IOFA:synonym>
   <IOFA:synonym>re-calibrate</IOFA:synonym>
-  <IOFA:elucidation>p is a calibrate activity =
-Def p is a process and there exists a material artifact m that has a function f and participates in p at some
-time. The following is also true:
-- m is the bearer of a control and monitoring role r
-- f is realised in some functioning process fp
-- m participates at some time in fp
-- m has state at some time some failed state or degraded state or operating state s and operating state s2
-- s disables f, p finishes s and p starts s2</IOFA:elucidation>
   <IOFA:elucidation>To come</IOFA:elucidation>
   <IOFA:elucidation>p is a calibrate activity =
 Def p is a process and there exists a material artifact m that has a function f and participates in p at some
@@ -5901,10 +5946,18 @@ time. The following is also true:
 - m has state at some time some failed state or degraded state or operating state s and operating state s2
 - s disables f, p finishes s and p starts s2</IOFA:elucidation>
   <IOFA:elucidation>To come</IOFA:elucidation>
-  <IOFA:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function.</IOFA:naturalLanguageDefinition>
+  <IOFA:elucidation>p is a calibrate activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- m is the bearer of a control and monitoring role r
+- f is realised in some functioning process fp
+- m participates at some time in fp
+- m has state at some time some failed state or degraded state or operating state s and operating state s2
+- s disables f, p finishes s and p starts s2</IOFA:elucidation>
   <IOFA:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function</IOFA:naturalLanguageDefinition>
   <IOFA:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function.</IOFA:naturalLanguageDefinition>
   <IOFA:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function</IOFA:naturalLanguageDefinition>
+  <IOFA:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function.</IOFA:naturalLanguageDefinition>
   <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process performed on equipment instrumentation, to estimate the capability of the instrumentation and restore if needed.</IOFA:semi-formalNaturalLanguageDefinition>
   <IOFA:semi-formalNaturalLanguageDefinition>To come</IOFA:semi-formalNaturalLanguageDefinition>
   <IOFA:semi-formalNaturalLanguageDefinition>A BFO:Process performed on equipment instrumentation, to estimate the capability of the instrumentation and restore if needed.</IOFA:semi-formalNaturalLanguageDefinition>
@@ -5924,6 +5977,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#diagnose"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>diagnose</rdfs:label>
+  <rdfs:label>diagnose</rdfs:label>
   <IOFA:synonym>analyse</IOFA:synonym>
   <IOFA:synonym>assess</IOFA:synonym>
   <IOFA:synonym>check</IOFA:synonym>
@@ -5992,6 +6047,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#inspect"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>inspect</rdfs:label>
+  <rdfs:label>inspect</rdfs:label>
   <IOFA:synonym>measure</IOFA:synonym>
   <IOFA:synonym>monitor</IOFA:synonym>
   <IOFA:synonym>read</IOFA:synonym>
@@ -6044,6 +6101,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#isolate"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>isolate</rdfs:label>
+  <rdfs:label>isolate</rdfs:label>
   <IOFA:synonym>deisolate</IOFA:synonym>
   <IOFA:synonym>deisolate</IOFA:synonym>
   <main:synonym>deisolate</main:synonym>
@@ -6060,6 +6119,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#measure"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>measure</rdfs:label>
+  <rdfs:label>measure</rdfs:label>
   <IOFA:synonym>resample</IOFA:synonym>
   <IOFA:synonym>sample</IOFA:synonym>
   <IOFA:synonym>resample</IOFA:synonym>
@@ -6079,6 +6140,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#modify"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>modify</rdfs:label>
+  <rdfs:label>modify</rdfs:label>
   <IOFA:synonym>buff</IOFA:synonym>
   <IOFA:synonym>clip</IOFA:synonym>
   <IOFA:synonym>correct</IOFA:synonym>
@@ -6131,6 +6194,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#move"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>move</rdfs:label>
+  <rdfs:label>move</rdfs:label>
   <IOFA:synonym>demobilise</IOFA:synonym>
   <IOFA:synonym>drop</IOFA:synonym>
   <IOFA:synonym>drop down</IOFA:synonym>
@@ -6219,6 +6284,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#operate"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>operate</rdfs:label>
+  <rdfs:label>operate</rdfs:label>
   <IOFA:synonym>activate</IOFA:synonym>
   <IOFA:synonym>disable</IOFA:synonym>
   <IOFA:synonym>launch</IOFA:synonym>
@@ -6262,6 +6329,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#perform"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>perform</rdfs:label>
+  <rdfs:label>perform</rdfs:label>
   <IOFA:synonym>carry</IOFA:synonym>
   <IOFA:synonym>carry out</IOFA:synonym>
   <IOFA:synonym>collect</IOFA:synonym>
@@ -6305,6 +6374,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#repair"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>repair</rdfs:label>
+  <rdfs:label>repair</rdfs:label>
   <IOFA:synonym>fix</IOFA:synonym>
   <IOFA:synonym>free-up</IOFA:synonym>
   <IOFA:synonym>patch</IOFA:synonym>
@@ -6430,6 +6501,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#replace"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>replace</rdfs:label>
+  <rdfs:label>replace</rdfs:label>
   <IOFA:synonym>change</IOFA:synonym>
   <IOFA:synonym>change out</IOFA:synonym>
   <IOFA:synonym>change over</IOFA:synonym>
@@ -6501,6 +6574,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#service"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>service</rdfs:label>
+  <rdfs:label>service</rdfs:label>
   <IOFA:synonym>charge</IOFA:synonym>
   <IOFA:synonym>clean</IOFA:synonym>
   <IOFA:synonym>drain</IOFA:synonym>
@@ -6583,6 +6658,8 @@ time. The following is also true:
       <owl:hasValue rdf:resource="http://www.semanticweb.org/maintenance-activity#teamwork"/>
     </owl:Restriction>
   </owl:equivalentClass>
+  <rdfs:label>teamwork</rdfs:label>
+  <rdfs:label>teamwork</rdfs:label>
   <IOFA:synonym>assist</IOFA:synonym>
   <IOFA:synonym>attend</IOFA:synonym>
   <IOFA:synonym>call</IOFA:synonym>
@@ -11214,12 +11291,76 @@ Used to flag individuals where the classified maintenance activity type is unsur
 
 <owl:AllDisjointClasses>
   <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#admin"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#assemble"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#isolate"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#measure"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#modify"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#move"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#operate"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#perform"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#calibrate"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#repair"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#replace"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#service"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#admin"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#assemble"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#isolate"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#measure"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#modify"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#move"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#operate"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#perform"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#teamwork"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#adjust"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#calibrate"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#inspect"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#repair"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#replace"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#service"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderDescriptionText"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderFunctionalLocationTag"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderLabourCost"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderMaintenanceType"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderMaterialCost"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/work-order-ontology#WorkOrderStartedDate"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Flowmeter"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#MechanicalSeal"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Motor"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Oil"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Valve"/>
   </owl:members>
 </owl:AllDisjointClasses>
 
