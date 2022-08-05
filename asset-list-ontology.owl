@@ -13,6 +13,12 @@
      xmlns:IOFAnnotationVocabulary="http://www.industrialontologies.org/IOFAnnotationVocabulary/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/asset-list-ontology">
         <owl:imports rdf:resource="http://www.industrialontologies.org/core/"/>
+        <terms:license>Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</terms:license>
     </owl:Ontology>
     
 
@@ -62,6 +68,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/asset-list-ontology#Flowmeter">
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asset-list-ontology#Sensor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
         <rdfs:label>Flowmeter</rdfs:label>
         <skos:altLabel>Flow Meter</skos:altLabel>
         <skos:prefLabel>Flowmeter</skos:prefLabel>
@@ -131,6 +138,29 @@
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/MaterialArtifact"/>
         <rdfs:label>Valve</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Flowmeter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#MechanicalSeal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Motor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Oil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#PressureSwitch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Pump"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asset-list-ontology#Valve"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
