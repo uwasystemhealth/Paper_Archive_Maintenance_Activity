@@ -4,3 +4,5 @@ population_script/lib/*
 population_script/include/*
 population_script/catalog-v001.xml
 **/.DS_Store
+
+venv
