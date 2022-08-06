@@ -119,12 +119,13 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
         <IOFAnnotationVocabulary:elucidation>p is an adjust activity =
 Def p is a process and there exists a material artifact m that has a function f and participates in p at some
 time. The following is also true:
-- f is realised in some functioning process fp
-- m participates at some time in fp
 - m has state at some time some sub-optimal operating state s1 and optimal operating state s2
-- p finishes s1 and p starts s2</IOFAnnotationVocabulary:elucidation>
+- f is impacted by s1
+- p occurs at some time tp
+- tp finishes s1 and p starts s2</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:naturalLanguageDefinition>Bringing any out of tolerance condition into tolerance.</IOFAnnotationVocabulary:naturalLanguageDefinition>
-        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process involving a change of state in an item that involves no change in capability of the item</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
+        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process involving a change of state in an item that improves the ability of an item to perform its
+function or fulfil its capabilities without requiring restoration of the function/capability</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
         <IOFAnnotationVocabulary:synonym>add</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>adjust</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>align</IOFAnnotationVocabulary:synonym>
@@ -204,19 +205,17 @@ time. The following is also true:
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#calibrate">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
-        <IOFAnnotationVocabulary:elucidation>To come</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:elucidation>p is a calibrate activity =
 Def p is a process and there exists a material artifact m that has a function f and participates in p at some
 time. The following is also true:
-- m is the bearer of a control and monitoring role r
-- f is realised in some functioning process fp
-- m participates at some time in fp
+- m is the bearer of a control and monitoring role ry
 - m has state at some time some failed state or degraded state or operating state s and operating state s2
-- s disables f, p finishes s and p starts s2</IOFAnnotationVocabulary:elucidation>
+- if s is failed state or degraded state then s disables f
+- if s is sub-optimal operating state then s impacts f
+- p occurs at some time tp: tp finishes s and tp starts s2
+- p is is prescribed by some part of a preventative maintenance strategy ps</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function</IOFAnnotationVocabulary:naturalLanguageDefinition>
-        <IOFAnnotationVocabulary:naturalLanguageDefinition>A task involving testing and adjustment of instrumentation to assess and restore function.</IOFAnnotationVocabulary:naturalLanguageDefinition>
-        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process performed on equipment instrumentation, to estimate the capability of the instrumentation and restore if needed.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
-        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>To come</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
+        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process performed on equipment instrumentation, to estimate the ability of the instrumentation and restore if needed.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
         <IOFAnnotationVocabulary:synonym>calibrate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>re-calibrate</IOFAnnotationVocabulary:synonym>
         <rdfs:label>calibrate</rdfs:label>
@@ -228,15 +227,13 @@ time. The following is also true:
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
-        <IOFAnnotationVocabulary:elucidation>p is an diagnose activity =
-Def p is a process and there exists a material artifact m that has a function f and participates in p at some
-time. The following is also true:
-- f is realised in some functioning process fp
-- m participates at some time in fp
+        <IOFAnnotationVocabulary:elucidation>p is an diagnose activity = 
+Def p is a process and there exists a material artifact m that has a function (or capability) f and participates in p at some time. The following is also true:
 - m has state at some time some degraded state or failed state state s
-- s is observed in some observation process o</IOFAnnotationVocabulary:elucidation>
-        <IOFAnnotationVocabulary:naturalLanguageDefinition>The cause of failure is investigated but no maintenance action performed, or action is deferred. Able to regain function by simple actions, e.g.restart or resetting.</IOFAnnotationVocabulary:naturalLanguageDefinition>
-        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process, performed on observation of an equipment failure, to estimate the capability of an item to perform its required function.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
+- f is disabled by s
+- s is observed in some observation process </IOFAnnotationVocabulary:elucidation>  
+        <IOFAnnotationVocabulary:naturalLanguageDefinition>The cause of failure, or degradation, is investigated but no maintenance action performed, or action is deferred. </IOFAnnotationVocabulary:naturalLanguageDefinition>
+        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process, performed on observation of an equipment failure or degradation, to estimate the ability of an item to perform its required function.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
         <IOFAnnotationVocabulary:synonym>analyse</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>assess</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>check</IOFAnnotationVocabulary:synonym>
@@ -261,13 +258,11 @@ time. The following is also true:
         <IOFAnnotationVocabulary:elucidation>p is an inspect activity =
 Def p is a process and there exists a material artifact m that has a function f and participates in p at some
 time. The following is also true:
-- f is realised in some functioning process fp
-- m participates at some time in fp
 - m has state at some time some state s
 - s is observed in some observation process o
 - p is prescribed by some part of a preventative maintenance strategy ps</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:naturalLanguageDefinition>Periodic, careful scrutiny of an item carried out with or without dismantling.</IOFAnnotationVocabulary:naturalLanguageDefinition>
-        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process, aligned with a preventative maintenance strategy, to estimate the capability of an item to perform its required function.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
+        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process, aligned with a preventative maintenance strategy, to estimate the ability of an item to perform its required function.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
         <IOFAnnotationVocabulary:synonym>measure</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>monitor</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>read</IOFAnnotationVocabulary:synonym>
@@ -401,12 +396,12 @@ time. The following is also true:
         <IOFAnnotationVocabulary:elucidation>p is a repair activity =
 Def p is a process and there exists a material artifact m that has a function f and participates in p at some
 time. The following is also true:
-- f is realised in some functioning process fp
-- m participates at some time in fp
 - m has state at some time some failed state or degraded state s and operating state s2
-- s disables f, p finishes s and p starts s2</IOFAnnotationVocabulary:elucidation>
+- p occurs at some time tp
+- s disables f, tp finishes s and tp starts s2</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:naturalLanguageDefinition>Manual maintenance action performed to restore an item to its original appearance or state.</IOFAnnotationVocabulary:naturalLanguageDefinition>
-        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process that improves the capability of an item to perform its required function</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
+        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process that improves the ability of an item to perform its required function, including restoration of the function 
+        </IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
         <IOFAnnotationVocabulary:synonym>fix</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>free-up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>patch</IOFAnnotationVocabulary:synonym>
@@ -452,8 +447,9 @@ Def. p is a process and there exists material artifacts a and b such that a and 
 time. The following is also true:
 - a has a function f and b has a function f2.
 - f and f2 are of type F
-- a is a continuant part of a system s at time t and b is not.
-- b is a continuant part of a system s at time t2 and a is not.
+- a is a continuant part of a system s at time t and b is not
+- b is a continuant part of a system s at time t2 and a is not
+- p occurs at some time tp
 - t precedes t2, p finishes t and p starts t2.</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:naturalLanguageDefinition>Replacement of an item by a new or refurbished item of the same type and make</IOFAnnotationVocabulary:naturalLanguageDefinition>
         <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO: Process in which one item is removed and another item with the same required function is installed in its place.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
@@ -482,13 +478,11 @@ time. The following is also true:
         <IOFAnnotationVocabulary:elucidation>p is a service activity =
 Def p is a process and there exists a material artifact m that has a function f and participates in p at some
 time. The following is also true:
-- f is realised in some functioning process fp
-- m participates at some time in fp
 - m has state at some time some operating state s and operating state s2
-- p finishes s and starts s2
+- p occurs at some time tp: tp finishes s and tp starts s2
 - p is is prescribed by some part of a preventative maintenance strategy ps</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:naturalLanguageDefinition>Periodic service task: not normally dismantling of the item.</IOFAnnotationVocabulary:naturalLanguageDefinition>
-        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process, aligned with a preventative maintenance strategy, involving a change of state in an item that involves no change in the capability of the item</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
+        <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process, aligned with a preventative maintenance strategy, involving a change of state in an item that involves no change in the ability of the item</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
         <IOFAnnotationVocabulary:synonym>charge</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>clean</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>drain</IOFAnnotationVocabulary:synonym>

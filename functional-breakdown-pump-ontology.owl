@@ -240,7 +240,7 @@ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 
     <owl:Class rdf:about="http://www.semanticweb.org/functional-breakdown-pump-ontology#FunctionalComponentRole">
         <rdfs:subClassOf rdf:resource="http://www.industrialontologies.org/core/ComponentRole"/>
-        <rdfs:comment>Fhe role that a material artifact bears if it is a critial part of the larger system. For example, a pump cannot operate without a motor. Therefore, the motor will play a critical component role in the pump system.</rdfs:comment>
+        <rdfs:comment>The role that a material artifact bears if it is a functional part of the larger system. For example, a pump cannot operate without a motor. Therefore, the motor will play a critical component role in the pump system.</rdfs:comment>
         <rdfs:label>Functional Component Role</rdfs:label>
     </owl:Class>
     
