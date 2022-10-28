@@ -233,7 +233,7 @@ time. The following is also true:
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
-        <IOFAnnotationVocabulary:elucidation>p is an check activity = 
+        <IOFAnnotationVocabulary:elucidation>p is an diagnose activity = 
 Def p is a process and there exists a material artifact m that has a function (or capability) f and participates in p at some time. The following is also true:
 - m has state at some time some degraded state or failed state state s
 - f is disabled by s
@@ -242,9 +242,9 @@ Def p is a process and there exists a material artifact m that has a function (o
         <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process, performed on observation of an equipment failure or degradation, to estimate the ability of an item to perform its required function.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
         <IOFAnnotationVocabulary:synonym>analyse</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>assess</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>check</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>check out</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>detect</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>diagnose</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fault find</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>find</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>identify</IOFAnnotationVocabulary:synonym>
@@ -253,7 +253,7 @@ Def p is a process and there exists a material artifact m that has a function (o
         <IOFAnnotationVocabulary:synonym>test</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>troubleshooot</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>verify</IOFAnnotationVocabulary:synonym>
-        <rdfs:label>check</rdfs:label>
+        <rdfs:label>diagnose</rdfs:label>
     </owl:Class>
     
 
