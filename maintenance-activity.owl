@@ -143,15 +143,22 @@ function or fulfil its capabilities without requiring restoration of the functio
         <IOFAnnotationVocabulary:synonym>re-align</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>readjust</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>realign</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>regulate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reposition</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>review</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>set</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>shim</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>straighten</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>tension</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>tighten</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>tilt</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>top up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>top-up</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>torque</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>track</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>train</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>tune</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>turn</IOFAnnotationVocabulary:synonym>
         <rdfs:label>adjust</rdfs:label>
     </owl:Class>
     
@@ -188,7 +195,6 @@ function or fulfil its capabilities without requiring restoration of the functio
         <IOFAnnotationVocabulary:synonym>create</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>develop</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fabricate</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>fit</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>make</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>make up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>manufacture</IOFAnnotationVocabulary:synonym>
@@ -227,16 +233,16 @@ time. The following is also true:
 
     <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#diagnose">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"/>
-        <IOFAnnotationVocabulary:elucidation>p is an diagnose activity = 
+        <IOFAnnotationVocabulary:elucidation>p is an check activity = 
 Def p is a process and there exists a material artifact m that has a function (or capability) f and participates in p at some time. The following is also true:
 - m has state at some time some degraded state or failed state state s
 - f is disabled by s
-- s is observed in some observation process </IOFAnnotationVocabulary:elucidation>  
+- s is observed in some observation process</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:naturalLanguageDefinition>The cause of failure, or degradation, is investigated but no maintenance action performed, or action is deferred. </IOFAnnotationVocabulary:naturalLanguageDefinition>
         <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process, performed on observation of an equipment failure or degradation, to estimate the ability of an item to perform its required function.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
         <IOFAnnotationVocabulary:synonym>analyse</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>assess</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>check</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>check out</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>detect</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>diagnose</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fault find</IOFAnnotationVocabulary:synonym>
@@ -244,9 +250,10 @@ Def p is a process and there exists a material artifact m that has a function (o
         <IOFAnnotationVocabulary:synonym>identify</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>investigate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>re-test</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>test</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>troubleshooot</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>verify</IOFAnnotationVocabulary:synonym>
-        <rdfs:label>diagnose</rdfs:label>
+        <rdfs:label>check</rdfs:label>
     </owl:Class>
     
 
@@ -263,10 +270,11 @@ time. The following is also true:
 - p is prescribed by some part of a preventative maintenance strategy ps</IOFAnnotationVocabulary:elucidation>
         <IOFAnnotationVocabulary:naturalLanguageDefinition>Periodic, careful scrutiny of an item carried out with or without dismantling.</IOFAnnotationVocabulary:naturalLanguageDefinition>
         <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process, aligned with a preventative maintenance strategy, to estimate the ability of an item to perform its required function.</IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
+        <IOFAnnotationVocabulary:synonym>crack test</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>measure</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>monitor</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>ndt</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>read</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>test</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>thermography</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>thickness test</IOFAnnotationVocabulary:synonym>
         <rdfs:label>inspect</rdfs:label>
@@ -280,17 +288,6 @@ time. The following is also true:
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
         <IOFAnnotationVocabulary:synonym>deisolate</IOFAnnotationVocabulary:synonym>
         <rdfs:label>isolate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/maintenance-activity#measure -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/maintenance-activity#measure">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maintenance-activity#SupportingActivity"/>
-        <IOFAnnotationVocabulary:synonym>resample</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>sample</IOFAnnotationVocabulary:synonym>
-        <rdfs:label>measure</rdfs:label>
     </owl:Class>
     
 
@@ -311,7 +308,6 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>reweld</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>trim</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>upgrade</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>weld</IOFAnnotationVocabulary:synonym>
         <rdfs:label>modify</rdfs:label>
     </owl:Class>
     
@@ -342,7 +338,6 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>reposition</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reroute</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>return</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>rotate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>suspend</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>transfer</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>unbog</IOFAnnotationVocabulary:synonym>
@@ -402,8 +397,13 @@ time. The following is also true:
         <IOFAnnotationVocabulary:naturalLanguageDefinition>Manual maintenance action performed to restore an item to its original appearance or state.</IOFAnnotationVocabulary:naturalLanguageDefinition>
         <IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>A BFO:Process that improves the ability of an item to perform its required function, including restoration of the function 
         </IOFAnnotationVocabulary:semi-formalNaturalLanguageDefinition>
+        <IOFAnnotationVocabulary:synonym>build up</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>fix</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>free-up</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>grind</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>heat</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>mount</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>overhaul</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>patch</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>re-attach</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>re-build</IOFAnnotationVocabulary:synonym>
@@ -427,12 +427,19 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>reactivate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>rectify</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>refurbish</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>regas</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reinforce</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>renew</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>repair</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>rerail</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reseal</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>reset</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>rewheel</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>rewire</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>seal</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>un-bog</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>unblock</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>weld</IOFAnnotationVocabulary:synonym>
         <rdfs:label>repair</rdfs:label>
     </owl:Class>
     
@@ -456,6 +463,8 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>change</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>change out</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>change over</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>connect</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>fit</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>install</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>re-install</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>re-instate</IOFAnnotationVocabulary:synonym>
@@ -497,8 +506,7 @@ time. The following is also true:
         <IOFAnnotationVocabulary:synonym>rotate</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>sample</IOFAnnotationVocabulary:synonym>
         <IOFAnnotationVocabulary:synonym>scan</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>service</IOFAnnotationVocabulary:synonym>
-        <IOFAnnotationVocabulary:synonym>tune</IOFAnnotationVocabulary:synonym>
+        <IOFAnnotationVocabulary:synonym>wash</IOFAnnotationVocabulary:synonym>
         <rdfs:label>service</rdfs:label>
     </owl:Class>
     
@@ -540,20 +548,6 @@ time. The following is also true:
             <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#repair"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#replace"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#service"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#admin"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#assemble"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#isolate"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#measure"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#modify"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#move"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#operate"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#perform"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/maintenance-activity#teamwork"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
