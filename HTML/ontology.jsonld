@@ -1,0 +1,750 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"
+    }, {
+      "@id" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/maintenance-activity#adjust"
+    }, {
+      "@id" : "http://www.semanticweb.org/maintenance-activity#calibrate"
+    }, {
+      "@id" : "http://www.semanticweb.org/maintenance-activity#diagnose"
+    }, {
+      "@id" : "http://www.semanticweb.org/maintenance-activity#inspect"
+    }, {
+      "@id" : "http://www.semanticweb.org/maintenance-activity#repair"
+    }, {
+      "@id" : "http://www.semanticweb.org/maintenance-activity#replace"
+    }, {
+      "@id" : "http://www.semanticweb.org/maintenance-activity#service"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/license" : [ {
+    "@language" : "en",
+    "@value" : "Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.industrialontologies.org/core/"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#MaintenanceActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Maintenance Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Supporting Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes a maintenance or supporting activity where we are not sure of its classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Unspecified Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#adjust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation" : [ {
+    "@value" : "p is an adjust activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some sub-optimal operating state s1 and optimal operating state s2\n- f is impacted by s1\n- p occurs at some time tp\n- tp finishes s1 and p starts s2"
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition" : [ {
+    "@value" : "Bringing any out of tolerance condition into tolerance."
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition" : [ {
+    "@value" : "A BFO:Process involving a change of state in an item that improves the ability of an item to perform its\nfunction or fulfil its capabilities without requiring restoration of the function/capability"
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "add"
+  }, {
+    "@value" : "adjust"
+  }, {
+    "@value" : "align"
+  }, {
+    "@value" : "amend"
+  }, {
+    "@value" : "confirm"
+  }, {
+    "@value" : "correct"
+  }, {
+    "@value" : "detension"
+  }, {
+    "@value" : "discharge"
+  }, {
+    "@value" : "fill"
+  }, {
+    "@value" : "free-up"
+  }, {
+    "@value" : "guide"
+  }, {
+    "@value" : "position"
+  }, {
+    "@value" : "program"
+  }, {
+    "@value" : "re-adjust"
+  }, {
+    "@value" : "re-align"
+  }, {
+    "@value" : "readjust"
+  }, {
+    "@value" : "realign"
+  }, {
+    "@value" : "regulate"
+  }, {
+    "@value" : "reposition"
+  }, {
+    "@value" : "review"
+  }, {
+    "@value" : "set"
+  }, {
+    "@value" : "shim"
+  }, {
+    "@value" : "straighten"
+  }, {
+    "@value" : "tension"
+  }, {
+    "@value" : "tighten"
+  }, {
+    "@value" : "tilt"
+  }, {
+    "@value" : "top up"
+  }, {
+    "@value" : "top-up"
+  }, {
+    "@value" : "torque"
+  }, {
+    "@value" : "track"
+  }, {
+    "@value" : "train"
+  }, {
+    "@value" : "tune"
+  }, {
+    "@value" : "turn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "adjust"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#admin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "approve"
+  }, {
+    "@value" : "audit"
+  }, {
+    "@value" : "commission"
+  }, {
+    "@value" : "design"
+  }, {
+    "@value" : "label"
+  }, {
+    "@value" : "order"
+  }, {
+    "@value" : "print"
+  }, {
+    "@value" : "quote"
+  }, {
+    "@value" : "redesign"
+  }, {
+    "@value" : "report"
+  }, {
+    "@value" : "reschedule"
+  }, {
+    "@value" : "scope"
+  }, {
+    "@value" : "sign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "admin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#assemble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "attach"
+  }, {
+    "@value" : "build"
+  }, {
+    "@value" : "create"
+  }, {
+    "@value" : "develop"
+  }, {
+    "@value" : "fabricate"
+  }, {
+    "@value" : "make"
+  }, {
+    "@value" : "make up"
+  }, {
+    "@value" : "manufacture"
+  }, {
+    "@value" : "pre fabricate"
+  }, {
+    "@value" : "rebuild"
+  }, {
+    "@value" : "set up"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "insert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "assemble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#calibrate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation" : [ {
+    "@value" : "p is a calibrate activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m is the bearer of a control and monitoring role ry\n- m has state at some time some failed state or degraded state or operating state s and operating state s2\n- if s is failed state or degraded state then s disables f\n- if s is sub-optimal operating state then s impacts f\n- p occurs at some time tp: tp finishes s and tp starts s2\n- p is is prescribed by some part of a preventative maintenance strategy ps"
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition" : [ {
+    "@value" : "A task involving testing and adjustment of instrumentation to assess and restore function"
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition" : [ {
+    "@value" : "A BFO:Process performed on equipment instrumentation, to estimate the ability of the instrumentation and restore if needed."
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "calibrate"
+  }, {
+    "@value" : "re-calibrate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "calibrate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#diagnose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation" : [ {
+    "@value" : "p is an diagnose activity = \nDef p is a process and there exists a material artifact m that has a function (or capability) f and participates in p at some time. The following is also true:\n- m has state at some time some degraded state or failed state state s\n- f is disabled by s\n- s is observed in some observation process"
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition" : [ {
+    "@value" : "The cause of failure, or degradation, is investigated but no maintenance action performed, or action is deferred. "
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition" : [ {
+    "@value" : "A BFO:Process, performed on observation of an equipment failure or degradation, to estimate the ability of an item to perform its required function."
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "analyse"
+  }, {
+    "@value" : "assess"
+  }, {
+    "@value" : "check"
+  }, {
+    "@value" : "check out"
+  }, {
+    "@value" : "detect"
+  }, {
+    "@value" : "fault find"
+  }, {
+    "@value" : "find"
+  }, {
+    "@value" : "identify"
+  }, {
+    "@value" : "investigate"
+  }, {
+    "@value" : "re-test"
+  }, {
+    "@value" : "test"
+  }, {
+    "@value" : "troubleshooot"
+  }, {
+    "@value" : "verify"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "diagnose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#inspect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation" : [ {
+    "@value" : "p is an inspect activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some state s\n- s is observed in some observation process o\n- p is prescribed by some part of a preventative maintenance strategy ps"
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition" : [ {
+    "@value" : "Periodic, careful scrutiny of an item carried out with or without dismantling."
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition" : [ {
+    "@value" : "A BFO:Process, aligned with a preventative maintenance strategy, to estimate the ability of an item to perform its required function."
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "crack test"
+  }, {
+    "@value" : "measure"
+  }, {
+    "@value" : "monitor"
+  }, {
+    "@value" : "ndt"
+  }, {
+    "@value" : "read"
+  }, {
+    "@value" : "thermography"
+  }, {
+    "@value" : "thickness test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inspect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#isolate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "deisolate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isolate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#modify",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "buff"
+  }, {
+    "@value" : "clip"
+  }, {
+    "@value" : "correct"
+  }, {
+    "@value" : "cut"
+  }, {
+    "@value" : "cut off"
+  }, {
+    "@value" : "improve"
+  }, {
+    "@value" : "laminate"
+  }, {
+    "@value" : "refurbish"
+  }, {
+    "@value" : "resplice"
+  }, {
+    "@value" : "reweld"
+  }, {
+    "@value" : "trim"
+  }, {
+    "@value" : "upgrade"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "modify"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#move",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "demobilise"
+  }, {
+    "@value" : "drop"
+  }, {
+    "@value" : "drop down"
+  }, {
+    "@value" : "erect"
+  }, {
+    "@value" : "guide"
+  }, {
+    "@value" : "life"
+  }, {
+    "@value" : "locate"
+  }, {
+    "@value" : "mobilise"
+  }, {
+    "@value" : "pack up"
+  }, {
+    "@value" : "pop out"
+  }, {
+    "@value" : "position"
+  }, {
+    "@value" : "pull"
+  }, {
+    "@value" : "push"
+  }, {
+    "@value" : "put"
+  }, {
+    "@value" : "raise"
+  }, {
+    "@value" : "rearrange"
+  }, {
+    "@value" : "relocate"
+  }, {
+    "@value" : "remove"
+  }, {
+    "@value" : "reposition"
+  }, {
+    "@value" : "reroute"
+  }, {
+    "@value" : "return"
+  }, {
+    "@value" : "suspend"
+  }, {
+    "@value" : "transfer"
+  }, {
+    "@value" : "unbog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "move"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#operate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "activate"
+  }, {
+    "@value" : "disable"
+  }, {
+    "@value" : "launch"
+  }, {
+    "@value" : "re-run"
+  }, {
+    "@value" : "reactivate"
+  }, {
+    "@value" : "reset"
+  }, {
+    "@value" : "reterminate"
+  }, {
+    "@value" : "run"
+  }, {
+    "@value" : "startup"
+  }, {
+    "@value" : "trip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "operate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#perform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "carry"
+  }, {
+    "@value" : "carry out"
+  }, {
+    "@value" : "collect"
+  }, {
+    "@value" : "compile"
+  }, {
+    "@value" : "complete"
+  }, {
+    "@value" : "conduct"
+  }, {
+    "@value" : "generate"
+  }, {
+    "@value" : "prepare"
+  }, {
+    "@value" : "rework"
+  }, {
+    "@value" : "work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "perform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#repair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation" : [ {
+    "@value" : "p is a repair activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some failed state or degraded state s and operating state s2\n- p occurs at some time tp\n- s disables f, tp finishes s and tp starts s2"
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition" : [ {
+    "@value" : "Manual maintenance action performed to restore an item to its original appearance or state."
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition" : [ {
+    "@value" : "A BFO:Process that improves the ability of an item to perform its required function, including restoration of the function \n        "
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "build up"
+  }, {
+    "@value" : "fix"
+  }, {
+    "@value" : "free-up"
+  }, {
+    "@value" : "grind"
+  }, {
+    "@value" : "heat"
+  }, {
+    "@value" : "mount"
+  }, {
+    "@value" : "overhaul"
+  }, {
+    "@value" : "patch"
+  }, {
+    "@value" : "re-attach"
+  }, {
+    "@value" : "re-build"
+  }, {
+    "@value" : "re-clamp"
+  }, {
+    "@value" : "re-connect"
+  }, {
+    "@value" : "re-engage"
+  }, {
+    "@value" : "re-fit"
+  }, {
+    "@value" : "re-line"
+  }, {
+    "@value" : "re-mount"
+  }, {
+    "@value" : "re-route"
+  }, {
+    "@value" : "re-run"
+  }, {
+    "@value" : "re-seal"
+  }, {
+    "@value" : "re-seat"
+  }, {
+    "@value" : "re-secure"
+  }, {
+    "@value" : "re-splice"
+  }, {
+    "@value" : "re-tension"
+  }, {
+    "@value" : "re-torque"
+  }, {
+    "@value" : "re-track"
+  }, {
+    "@value" : "re-weld"
+  }, {
+    "@value" : "re-work"
+  }, {
+    "@value" : "reactivate"
+  }, {
+    "@value" : "rectify"
+  }, {
+    "@value" : "refurbish"
+  }, {
+    "@value" : "regas"
+  }, {
+    "@value" : "reinforce"
+  }, {
+    "@value" : "renew"
+  }, {
+    "@value" : "repair"
+  }, {
+    "@value" : "rerail"
+  }, {
+    "@value" : "reseal"
+  }, {
+    "@value" : "reset"
+  }, {
+    "@value" : "rewheel"
+  }, {
+    "@value" : "rewire"
+  }, {
+    "@value" : "seal"
+  }, {
+    "@value" : "un-bog"
+  }, {
+    "@value" : "unblock"
+  }, {
+    "@value" : "weld"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "repair"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#replace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation" : [ {
+    "@value" : "p is a replace activity =\nDef. p is a process and there exists material artifacts a and b such that a and b participate in p at some\ntime. The following is also true:\n- a has a function f and b has a function f2.\n- f and f2 are of type F\n- a is a continuant part of a system s at time t and b is not\n- b is a continuant part of a system s at time t2 and a is not\n- p occurs at some time tp\n- t precedes t2, p finishes t and p starts t2."
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition" : [ {
+    "@value" : "Replacement of an item by a new or refurbished item of the same type and make"
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition" : [ {
+    "@value" : "A BFO: Process in which one item is removed and another item with the same required function is installed in its place."
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "change"
+  }, {
+    "@value" : "change out"
+  }, {
+    "@value" : "change over"
+  }, {
+    "@value" : "connect"
+  }, {
+    "@value" : "fit"
+  }, {
+    "@value" : "install"
+  }, {
+    "@value" : "re-install"
+  }, {
+    "@value" : "re-instate"
+  }, {
+    "@value" : "reattach"
+  }, {
+    "@value" : "reinstate"
+  }, {
+    "@value" : "remove"
+  }, {
+    "@value" : "replace"
+  }, {
+    "@value" : "swap"
+  }, {
+    "@value" : "switch"
+  }, {
+    "@value" : "transition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "replace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation" : [ {
+    "@value" : "p is a service activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some operating state s and operating state s2\n- p occurs at some time tp: tp finishes s and tp starts s2\n- p is is prescribed by some part of a preventative maintenance strategy ps"
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition" : [ {
+    "@value" : "Periodic service task: not normally dismantling of the item."
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition" : [ {
+    "@value" : "A BFO:Process, aligned with a preventative maintenance strategy, involving a change of state in an item that involves no change in the ability of the item"
+  } ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "charge"
+  }, {
+    "@value" : "clean"
+  }, {
+    "@value" : "drain"
+  }, {
+    "@value" : "fill"
+  }, {
+    "@value" : "grease"
+  }, {
+    "@value" : "hose-out"
+  }, {
+    "@value" : "lubricate"
+  }, {
+    "@value" : "maintain"
+  }, {
+    "@value" : "purge"
+  }, {
+    "@value" : "re-charge"
+  }, {
+    "@value" : "re-fill"
+  }, {
+    "@value" : "rotate"
+  }, {
+    "@value" : "sample"
+  }, {
+    "@value" : "scan"
+  }, {
+    "@value" : "wash"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#MaintenanceActivity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/maintenance-activity#teamwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym" : [ {
+    "@value" : "assist"
+  }, {
+    "@value" : "attend"
+  }, {
+    "@value" : "call"
+  }, {
+    "@value" : "call out"
+  }, {
+    "@value" : "follow up"
+  }, {
+    "@value" : "provide"
+  }, {
+    "@value" : "supply"
+  }, {
+    "@value" : "support"
+  }, {
+    "@value" : "train"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "teamwork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity"
+  } ]
+} ]

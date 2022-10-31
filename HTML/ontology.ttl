@@ -1,0 +1,468 @@
+@prefix : <http://www.semanticweb.org/maintenance-activity#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/maintenance-activity#> .
+
+<http://www.semanticweb.org/maintenance-activity> rdf:type owl:Ontology ;
+                                                   owl:imports <http://www.industrialontologies.org/core/> ;
+                                                   <http://purl.org/dc/elements/1.1/license> """Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."""@en ;
+                                                   <http://purl.org/dc/terms/rights> ""@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation
+<http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition
+<http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition
+<http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym
+<http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maintenance-activity#MaintenanceActivity
+:MaintenanceActivity rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                     rdfs:label "Maintenance Activity" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#SupportingActivity
+:SupportingActivity rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                    rdfs:label "Supporting Activity" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity
+:UnspecifiedActivity rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                     [ rdf:type owl:Class ;
+                                       owl:unionOf ( :MaintenanceActivity
+                                                     :SupportingActivity
+                                                   )
+                                     ] ;
+                     rdfs:comment "Describes a maintenance or supporting activity where we are not sure of its classification" ;
+                     rdfs:label "Unspecified Activity" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#adjust
+:adjust rdf:type owl:Class ;
+        rdfs:subClassOf :MaintenanceActivity ;
+        <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> """p is an adjust activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- m has state at some time some sub-optimal operating state s1 and optimal operating state s2
+- f is impacted by s1
+- p occurs at some time tp
+- tp finishes s1 and p starts s2""" ;
+        <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "Bringing any out of tolerance condition into tolerance." ;
+        <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> """A BFO:Process involving a change of state in an item that improves the ability of an item to perform its
+function or fulfil its capabilities without requiring restoration of the function/capability""" ;
+        <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "add" ,
+                                                                              "adjust" ,
+                                                                              "align" ,
+                                                                              "amend" ,
+                                                                              "confirm" ,
+                                                                              "correct" ,
+                                                                              "detension" ,
+                                                                              "discharge" ,
+                                                                              "fill" ,
+                                                                              "free-up" ,
+                                                                              "guide" ,
+                                                                              "position" ,
+                                                                              "program" ,
+                                                                              "re-adjust" ,
+                                                                              "re-align" ,
+                                                                              "readjust" ,
+                                                                              "realign" ,
+                                                                              "regulate" ,
+                                                                              "reposition" ,
+                                                                              "review" ,
+                                                                              "set" ,
+                                                                              "shim" ,
+                                                                              "straighten" ,
+                                                                              "tension" ,
+                                                                              "tighten" ,
+                                                                              "tilt" ,
+                                                                              "top up" ,
+                                                                              "top-up" ,
+                                                                              "torque" ,
+                                                                              "track" ,
+                                                                              "train" ,
+                                                                              "tune" ,
+                                                                              "turn" ;
+        rdfs:label "adjust" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#admin
+:admin rdf:type owl:Class ;
+       rdfs:subClassOf :SupportingActivity ;
+       <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "approve" ,
+                                                                             "audit" ,
+                                                                             "commission" ,
+                                                                             "design" ,
+                                                                             "label" ,
+                                                                             "order" ,
+                                                                             "print" ,
+                                                                             "quote" ,
+                                                                             "redesign" ,
+                                                                             "report" ,
+                                                                             "reschedule" ,
+                                                                             "scope" ,
+                                                                             "sign" ;
+       rdfs:label "admin" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#assemble
+:assemble rdf:type owl:Class ;
+          rdfs:subClassOf :SupportingActivity ;
+          <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "attach" ,
+                                                                                "build" ,
+                                                                                "create" ,
+                                                                                "develop" ,
+                                                                                "fabricate" ,
+                                                                                "make" ,
+                                                                                "make up" ,
+                                                                                "manufacture" ,
+                                                                                "pre fabricate" ,
+                                                                                "rebuild" ,
+                                                                                "set up" ;
+          rdfs:comment "insert" ;
+          rdfs:label "assemble" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#calibrate
+:calibrate rdf:type owl:Class ;
+           rdfs:subClassOf :MaintenanceActivity ;
+           <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> """p is a calibrate activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- m is the bearer of a control and monitoring role ry
+- m has state at some time some failed state or degraded state or operating state s and operating state s2
+- if s is failed state or degraded state then s disables f
+- if s is sub-optimal operating state then s impacts f
+- p occurs at some time tp: tp finishes s and tp starts s2
+- p is is prescribed by some part of a preventative maintenance strategy ps""" ;
+           <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "A task involving testing and adjustment of instrumentation to assess and restore function" ;
+           <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO:Process performed on equipment instrumentation, to estimate the ability of the instrumentation and restore if needed." ;
+           <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "calibrate" ,
+                                                                                 "re-calibrate" ;
+           rdfs:label "calibrate" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#diagnose
+:diagnose rdf:type owl:Class ;
+          rdfs:subClassOf :MaintenanceActivity ;
+          <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> """p is an diagnose activity = 
+Def p is a process and there exists a material artifact m that has a function (or capability) f and participates in p at some time. The following is also true:
+- m has state at some time some degraded state or failed state state s
+- f is disabled by s
+- s is observed in some observation process""" ;
+          <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "The cause of failure, or degradation, is investigated but no maintenance action performed, or action is deferred. " ;
+          <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO:Process, performed on observation of an equipment failure or degradation, to estimate the ability of an item to perform its required function." ;
+          <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "analyse" ,
+                                                                                "assess" ,
+                                                                                "check" ,
+                                                                                "check out" ,
+                                                                                "detect" ,
+                                                                                "fault find" ,
+                                                                                "find" ,
+                                                                                "identify" ,
+                                                                                "investigate" ,
+                                                                                "re-test" ,
+                                                                                "test" ,
+                                                                                "troubleshooot" ,
+                                                                                "verify" ;
+          rdfs:label "diagnose" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#inspect
+:inspect rdf:type owl:Class ;
+         rdfs:subClassOf :MaintenanceActivity ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> """p is an inspect activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- m has state at some time some state s
+- s is observed in some observation process o
+- p is prescribed by some part of a preventative maintenance strategy ps""" ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "Periodic, careful scrutiny of an item carried out with or without dismantling." ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO:Process, aligned with a preventative maintenance strategy, to estimate the ability of an item to perform its required function." ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "crack test" ,
+                                                                               "measure" ,
+                                                                               "monitor" ,
+                                                                               "ndt" ,
+                                                                               "read" ,
+                                                                               "thermography" ,
+                                                                               "thickness test" ;
+         rdfs:label "inspect" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#isolate
+:isolate rdf:type owl:Class ;
+         rdfs:subClassOf :SupportingActivity ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "deisolate" ;
+         rdfs:label "isolate" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#modify
+:modify rdf:type owl:Class ;
+        rdfs:subClassOf :SupportingActivity ;
+        <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "buff" ,
+                                                                              "clip" ,
+                                                                              "correct" ,
+                                                                              "cut" ,
+                                                                              "cut off" ,
+                                                                              "improve" ,
+                                                                              "laminate" ,
+                                                                              "refurbish" ,
+                                                                              "resplice" ,
+                                                                              "reweld" ,
+                                                                              "trim" ,
+                                                                              "upgrade" ;
+        rdfs:label "modify" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#move
+:move rdf:type owl:Class ;
+      rdfs:subClassOf :SupportingActivity ;
+      <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "demobilise" ,
+                                                                            "drop" ,
+                                                                            "drop down" ,
+                                                                            "erect" ,
+                                                                            "guide" ,
+                                                                            "life" ,
+                                                                            "locate" ,
+                                                                            "mobilise" ,
+                                                                            "pack up" ,
+                                                                            "pop out" ,
+                                                                            "position" ,
+                                                                            "pull" ,
+                                                                            "push" ,
+                                                                            "put" ,
+                                                                            "raise" ,
+                                                                            "rearrange" ,
+                                                                            "relocate" ,
+                                                                            "remove" ,
+                                                                            "reposition" ,
+                                                                            "reroute" ,
+                                                                            "return" ,
+                                                                            "suspend" ,
+                                                                            "transfer" ,
+                                                                            "unbog" ;
+      rdfs:label "move" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#operate
+:operate rdf:type owl:Class ;
+         rdfs:subClassOf :SupportingActivity ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "activate" ,
+                                                                               "disable" ,
+                                                                               "launch" ,
+                                                                               "re-run" ,
+                                                                               "reactivate" ,
+                                                                               "reset" ,
+                                                                               "reterminate" ,
+                                                                               "run" ,
+                                                                               "startup" ,
+                                                                               "trip" ;
+         rdfs:label "operate" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#perform
+:perform rdf:type owl:Class ;
+         rdfs:subClassOf :SupportingActivity ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "carry" ,
+                                                                               "carry out" ,
+                                                                               "collect" ,
+                                                                               "compile" ,
+                                                                               "complete" ,
+                                                                               "conduct" ,
+                                                                               "generate" ,
+                                                                               "prepare" ,
+                                                                               "rework" ,
+                                                                               "work" ;
+         rdfs:label "perform" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#repair
+:repair rdf:type owl:Class ;
+        rdfs:subClassOf :MaintenanceActivity ;
+        <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> """p is a repair activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- m has state at some time some failed state or degraded state s and operating state s2
+- p occurs at some time tp
+- s disables f, tp finishes s and tp starts s2""" ;
+        <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "Manual maintenance action performed to restore an item to its original appearance or state." ;
+        <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> """A BFO:Process that improves the ability of an item to perform its required function, including restoration of the function 
+        """ ;
+        <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "build up" ,
+                                                                              "fix" ,
+                                                                              "free-up" ,
+                                                                              "grind" ,
+                                                                              "heat" ,
+                                                                              "mount" ,
+                                                                              "overhaul" ,
+                                                                              "patch" ,
+                                                                              "re-attach" ,
+                                                                              "re-build" ,
+                                                                              "re-clamp" ,
+                                                                              "re-connect" ,
+                                                                              "re-engage" ,
+                                                                              "re-fit" ,
+                                                                              "re-line" ,
+                                                                              "re-mount" ,
+                                                                              "re-route" ,
+                                                                              "re-run" ,
+                                                                              "re-seal" ,
+                                                                              "re-seat" ,
+                                                                              "re-secure" ,
+                                                                              "re-splice" ,
+                                                                              "re-tension" ,
+                                                                              "re-torque" ,
+                                                                              "re-track" ,
+                                                                              "re-weld" ,
+                                                                              "re-work" ,
+                                                                              "reactivate" ,
+                                                                              "rectify" ,
+                                                                              "refurbish" ,
+                                                                              "regas" ,
+                                                                              "reinforce" ,
+                                                                              "renew" ,
+                                                                              "repair" ,
+                                                                              "rerail" ,
+                                                                              "reseal" ,
+                                                                              "reset" ,
+                                                                              "rewheel" ,
+                                                                              "rewire" ,
+                                                                              "seal" ,
+                                                                              "un-bog" ,
+                                                                              "unblock" ,
+                                                                              "weld" ;
+        rdfs:label "repair" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#replace
+:replace rdf:type owl:Class ;
+         rdfs:subClassOf :MaintenanceActivity ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> """p is a replace activity =
+Def. p is a process and there exists material artifacts a and b such that a and b participate in p at some
+time. The following is also true:
+- a has a function f and b has a function f2.
+- f and f2 are of type F
+- a is a continuant part of a system s at time t and b is not
+- b is a continuant part of a system s at time t2 and a is not
+- p occurs at some time tp
+- t precedes t2, p finishes t and p starts t2.""" ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "Replacement of an item by a new or refurbished item of the same type and make" ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO: Process in which one item is removed and another item with the same required function is installed in its place." ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "change" ,
+                                                                               "change out" ,
+                                                                               "change over" ,
+                                                                               "connect" ,
+                                                                               "fit" ,
+                                                                               "install" ,
+                                                                               "re-install" ,
+                                                                               "re-instate" ,
+                                                                               "reattach" ,
+                                                                               "reinstate" ,
+                                                                               "remove" ,
+                                                                               "replace" ,
+                                                                               "swap" ,
+                                                                               "switch" ,
+                                                                               "transition" ;
+         rdfs:label "replace" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#service
+:service rdf:type owl:Class ;
+         rdfs:subClassOf :MaintenanceActivity ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> """p is a service activity =
+Def p is a process and there exists a material artifact m that has a function f and participates in p at some
+time. The following is also true:
+- m has state at some time some operating state s and operating state s2
+- p occurs at some time tp: tp finishes s and tp starts s2
+- p is is prescribed by some part of a preventative maintenance strategy ps""" ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "Periodic service task: not normally dismantling of the item." ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO:Process, aligned with a preventative maintenance strategy, involving a change of state in an item that involves no change in the ability of the item" ;
+         <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "charge" ,
+                                                                               "clean" ,
+                                                                               "drain" ,
+                                                                               "fill" ,
+                                                                               "grease" ,
+                                                                               "hose-out" ,
+                                                                               "lubricate" ,
+                                                                               "maintain" ,
+                                                                               "purge" ,
+                                                                               "re-charge" ,
+                                                                               "re-fill" ,
+                                                                               "rotate" ,
+                                                                               "sample" ,
+                                                                               "scan" ,
+                                                                               "wash" ;
+         rdfs:label "service" .
+
+
+###  http://www.semanticweb.org/maintenance-activity#teamwork
+:teamwork rdf:type owl:Class ;
+          rdfs:subClassOf :SupportingActivity ;
+          <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "assist" ,
+                                                                                "attend" ,
+                                                                                "call" ,
+                                                                                "call out" ,
+                                                                                "follow up" ,
+                                                                                "provide" ,
+                                                                                "supply" ,
+                                                                                "support" ,
+                                                                                "train" ;
+          rdfs:label "teamwork" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :adjust
+                :calibrate
+                :diagnose
+                :inspect
+                :repair
+                :replace
+                :service
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

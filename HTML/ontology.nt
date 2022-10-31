@@ -1,0 +1,417 @@
+<http://www.semanticweb.org/maintenance-activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/maintenance-activity> <http://www.w3.org/2002/07/owl#imports> <http://www.industrialontologies.org/core/> .
+<http://www.semanticweb.org/maintenance-activity> <http://purl.org/dc/elements/1.1/license> "Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."@en .
+<http://www.semanticweb.org/maintenance-activity> <http://purl.org/dc/terms/rights> ""@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation
+<http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition
+<http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition
+<http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym
+<http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/maintenance-activity#MaintenanceActivity
+<http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Activity" .
+# 
+# http://www.semanticweb.org/maintenance-activity#SupportingActivity
+<http://www.semanticweb.org/maintenance-activity#SupportingActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#SupportingActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/maintenance-activity#SupportingActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Supporting Activity" .
+# 
+# http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity
+<http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/maintenance-activity#SupportingActivity> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a maintenance or supporting activity where we are not sure of its classification" .
+<http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Unspecified Activity" .
+# 
+# http://www.semanticweb.org/maintenance-activity#adjust
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> "p is an adjust activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some sub-optimal operating state s1 and optimal operating state s2\n- f is impacted by s1\n- p occurs at some time tp\n- tp finishes s1 and p starts s2" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "Bringing any out of tolerance condition into tolerance." .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO:Process involving a change of state in an item that improves the ability of an item to perform its\nfunction or fulfil its capabilities without requiring restoration of the function/capability" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "add" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "adjust" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "align" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "amend" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "confirm" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "correct" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "detension" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "discharge" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "fill" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "free-up" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "guide" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "position" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "program" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-adjust" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-align" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "readjust" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "realign" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "regulate" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reposition" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "review" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "set" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "shim" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "straighten" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "tension" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "tighten" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "tilt" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "top up" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "top-up" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "torque" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "track" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "train" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "tune" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "turn" .
+<http://www.semanticweb.org/maintenance-activity#adjust> <http://www.w3.org/2000/01/rdf-schema#label> "adjust" .
+# 
+# http://www.semanticweb.org/maintenance-activity#admin
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#SupportingActivity> .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "approve" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "audit" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "commission" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "design" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "label" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "order" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "print" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "quote" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "redesign" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "report" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reschedule" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "scope" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "sign" .
+<http://www.semanticweb.org/maintenance-activity#admin> <http://www.w3.org/2000/01/rdf-schema#label> "admin" .
+# 
+# http://www.semanticweb.org/maintenance-activity#assemble
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#SupportingActivity> .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "attach" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "build" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "create" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "develop" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "fabricate" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "make" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "make up" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "manufacture" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "pre fabricate" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "rebuild" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "set up" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.w3.org/2000/01/rdf-schema#comment> "insert" .
+<http://www.semanticweb.org/maintenance-activity#assemble> <http://www.w3.org/2000/01/rdf-schema#label> "assemble" .
+# 
+# http://www.semanticweb.org/maintenance-activity#calibrate
+<http://www.semanticweb.org/maintenance-activity#calibrate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#calibrate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> .
+<http://www.semanticweb.org/maintenance-activity#calibrate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> "p is a calibrate activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m is the bearer of a control and monitoring role ry\n- m has state at some time some failed state or degraded state or operating state s and operating state s2\n- if s is failed state or degraded state then s disables f\n- if s is sub-optimal operating state then s impacts f\n- p occurs at some time tp: tp finishes s and tp starts s2\n- p is is prescribed by some part of a preventative maintenance strategy ps" .
+<http://www.semanticweb.org/maintenance-activity#calibrate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "A task involving testing and adjustment of instrumentation to assess and restore function" .
+<http://www.semanticweb.org/maintenance-activity#calibrate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO:Process performed on equipment instrumentation, to estimate the ability of the instrumentation and restore if needed." .
+<http://www.semanticweb.org/maintenance-activity#calibrate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "calibrate" .
+<http://www.semanticweb.org/maintenance-activity#calibrate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-calibrate" .
+<http://www.semanticweb.org/maintenance-activity#calibrate> <http://www.w3.org/2000/01/rdf-schema#label> "calibrate" .
+# 
+# http://www.semanticweb.org/maintenance-activity#diagnose
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> "p is an diagnose activity = \nDef p is a process and there exists a material artifact m that has a function (or capability) f and participates in p at some time. The following is also true:\n- m has state at some time some degraded state or failed state state s\n- f is disabled by s\n- s is observed in some observation process" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "The cause of failure, or degradation, is investigated but no maintenance action performed, or action is deferred. " .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO:Process, performed on observation of an equipment failure or degradation, to estimate the ability of an item to perform its required function." .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "analyse" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "assess" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "check" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "check out" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "detect" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "fault find" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "find" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "identify" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "investigate" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-test" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "test" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "troubleshooot" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "verify" .
+<http://www.semanticweb.org/maintenance-activity#diagnose> <http://www.w3.org/2000/01/rdf-schema#label> "diagnose" .
+# 
+# http://www.semanticweb.org/maintenance-activity#inspect
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> "p is an inspect activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some state s\n- s is observed in some observation process o\n- p is prescribed by some part of a preventative maintenance strategy ps" .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "Periodic, careful scrutiny of an item carried out with or without dismantling." .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO:Process, aligned with a preventative maintenance strategy, to estimate the ability of an item to perform its required function." .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "crack test" .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "measure" .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "monitor" .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "ndt" .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "read" .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "thermography" .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "thickness test" .
+<http://www.semanticweb.org/maintenance-activity#inspect> <http://www.w3.org/2000/01/rdf-schema#label> "inspect" .
+# 
+# http://www.semanticweb.org/maintenance-activity#isolate
+<http://www.semanticweb.org/maintenance-activity#isolate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#isolate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#SupportingActivity> .
+<http://www.semanticweb.org/maintenance-activity#isolate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "deisolate" .
+<http://www.semanticweb.org/maintenance-activity#isolate> <http://www.w3.org/2000/01/rdf-schema#label> "isolate" .
+# 
+# http://www.semanticweb.org/maintenance-activity#modify
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#SupportingActivity> .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "buff" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "clip" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "correct" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "cut" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "cut off" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "improve" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "laminate" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "refurbish" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "resplice" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reweld" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "trim" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "upgrade" .
+<http://www.semanticweb.org/maintenance-activity#modify> <http://www.w3.org/2000/01/rdf-schema#label> "modify" .
+# 
+# http://www.semanticweb.org/maintenance-activity#move
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#SupportingActivity> .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "demobilise" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "drop" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "drop down" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "erect" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "guide" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "life" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "locate" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "mobilise" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "pack up" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "pop out" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "position" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "pull" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "push" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "put" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "raise" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "rearrange" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "relocate" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "remove" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reposition" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reroute" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "return" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "suspend" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "transfer" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "unbog" .
+<http://www.semanticweb.org/maintenance-activity#move> <http://www.w3.org/2000/01/rdf-schema#label> "move" .
+# 
+# http://www.semanticweb.org/maintenance-activity#operate
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#SupportingActivity> .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "activate" .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "disable" .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "launch" .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-run" .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reactivate" .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reset" .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reterminate" .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "run" .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "startup" .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "trip" .
+<http://www.semanticweb.org/maintenance-activity#operate> <http://www.w3.org/2000/01/rdf-schema#label> "operate" .
+# 
+# http://www.semanticweb.org/maintenance-activity#perform
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#SupportingActivity> .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "carry" .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "carry out" .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "collect" .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "compile" .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "complete" .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "conduct" .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "generate" .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "prepare" .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "rework" .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "work" .
+<http://www.semanticweb.org/maintenance-activity#perform> <http://www.w3.org/2000/01/rdf-schema#label> "perform" .
+# 
+# http://www.semanticweb.org/maintenance-activity#repair
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> "p is a repair activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some failed state or degraded state s and operating state s2\n- p occurs at some time tp\n- s disables f, tp finishes s and tp starts s2" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "Manual maintenance action performed to restore an item to its original appearance or state." .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO:Process that improves the ability of an item to perform its required function, including restoration of the function \n        " .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "build up" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "fix" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "free-up" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "grind" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "heat" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "mount" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "overhaul" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "patch" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-attach" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-build" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-clamp" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-connect" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-engage" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-fit" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-line" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-mount" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-route" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-run" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-seal" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-seat" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-secure" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-splice" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-tension" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-torque" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-track" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-weld" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-work" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reactivate" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "rectify" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "refurbish" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "regas" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reinforce" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "renew" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "repair" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "rerail" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reseal" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reset" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "rewheel" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "rewire" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "seal" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "un-bog" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "unblock" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "weld" .
+<http://www.semanticweb.org/maintenance-activity#repair> <http://www.w3.org/2000/01/rdf-schema#label> "repair" .
+# 
+# http://www.semanticweb.org/maintenance-activity#replace
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> "p is a replace activity =\nDef. p is a process and there exists material artifacts a and b such that a and b participate in p at some\ntime. The following is also true:\n- a has a function f and b has a function f2.\n- f and f2 are of type F\n- a is a continuant part of a system s at time t and b is not\n- b is a continuant part of a system s at time t2 and a is not\n- p occurs at some time tp\n- t precedes t2, p finishes t and p starts t2." .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "Replacement of an item by a new or refurbished item of the same type and make" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO: Process in which one item is removed and another item with the same required function is installed in its place." .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "change" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "change out" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "change over" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "connect" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "fit" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "install" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-install" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-instate" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reattach" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "reinstate" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "remove" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "replace" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "swap" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "switch" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "transition" .
+<http://www.semanticweb.org/maintenance-activity#replace> <http://www.w3.org/2000/01/rdf-schema#label> "replace" .
+# 
+# http://www.semanticweb.org/maintenance-activity#service
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#MaintenanceActivity> .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/elucidation> "p is a service activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some operating state s and operating state s2\n- p occurs at some time tp: tp finishes s and tp starts s2\n- p is is prescribed by some part of a preventative maintenance strategy ps" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/naturalLanguageDefinition> "Periodic service task: not normally dismantling of the item." .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/semi-formalNaturalLanguageDefinition> "A BFO:Process, aligned with a preventative maintenance strategy, involving a change of state in an item that involves no change in the ability of the item" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "charge" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "clean" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "drain" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "fill" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "grease" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "hose-out" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "lubricate" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "maintain" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "purge" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-charge" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "re-fill" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "rotate" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "sample" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "scan" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "wash" .
+<http://www.semanticweb.org/maintenance-activity#service> <http://www.w3.org/2000/01/rdf-schema#label> "service" .
+# 
+# http://www.semanticweb.org/maintenance-activity#teamwork
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/maintenance-activity#SupportingActivity> .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "assist" .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "attend" .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "call" .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "call out" .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "follow up" .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "provide" .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "supply" .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "support" .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.industrialontologies.org/IOFAnnotationVocabulary/synonym> "train" .
+<http://www.semanticweb.org/maintenance-activity#teamwork> <http://www.w3.org/2000/01/rdf-schema#label> "teamwork" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid4 <http://www.w3.org/2002/07/owl#members> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/maintenance-activity#service> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/maintenance-activity#replace> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/maintenance-activity#repair> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/maintenance-activity#inspect> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/maintenance-activity#diagnose> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/maintenance-activity#calibrate> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/maintenance-activity#adjust> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

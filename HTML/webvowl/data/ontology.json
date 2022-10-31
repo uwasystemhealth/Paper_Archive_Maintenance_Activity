@@ -1,0 +1,1857 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.obolibrary.org/obo", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/maintenance-activity" ],
+    "iri" : "http://www.semanticweb.org/maintenance-activity",
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "en",
+        "value" : "Copyright 2022 Caitlin Woods, Matt Selway, Tyler Bikaun, Markus Stumptner, Melinda Hodkiewicz\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#isolate",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "deisolate",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isolate",
+      "undefined" : "isolate"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#SupportingActivity",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SupportingActivity",
+      "undefined" : "Supporting Activity"
+    },
+    "subClasses" : [ "6", "7", "8", "9", "3", "10", "11", "12" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#admin",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "redesign",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "commission",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "print",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "audit",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reschedule",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "order",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "sign",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "scope",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "design",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "approve",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "quote",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "report",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "label",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "admin",
+      "undefined" : "admin"
+    },
+    "id" : "9",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#repair",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "unblock",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reinforce",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-clamp",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-fit",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-connect",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-work",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-splice",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-seal",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "seal",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-seat",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-line",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reset",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "rectify",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "patch",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-engage",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-attach",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-torque",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reseal",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "heat",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "renew",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "refurbish",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "rewire",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reactivate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "rerail",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-secure",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "overhaul",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "repair",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "weld",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "mount",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-build",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "build up",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "grind",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "regas",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "rewheel",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-weld",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-track",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "free-up",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-tension",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "un-bog",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-mount",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-route",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "fix",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-run",
+        "type" : "label"
+      } ],
+      "elucidation" : [ {
+        "identifier" : "elucidation",
+        "language" : "undefined",
+        "value" : "p is a repair activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some failed state or degraded state s and operating state s2\n- p occurs at some time tp\n- s disables f, tp finishes s and tp starts s2",
+        "type" : "label"
+      } ],
+      "naturalLanguageDefinition" : [ {
+        "identifier" : "naturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "Manual maintenance action performed to restore an item to its original appearance or state.",
+        "type" : "label"
+      } ],
+      "semi-formalNaturalLanguageDefinition" : [ {
+        "identifier" : "semi-formalNaturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "A BFO:Process that improves the ability of an item to perform its required function, including restoration of the function \n        ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "repair",
+      "undefined" : "repair"
+    },
+    "id" : "19",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#calibrate",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-calibrate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "calibrate",
+        "type" : "label"
+      } ],
+      "elucidation" : [ {
+        "identifier" : "elucidation",
+        "language" : "undefined",
+        "value" : "p is a calibrate activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m is the bearer of a control and monitoring role ry\n- m has state at some time some failed state or degraded state or operating state s and operating state s2\n- if s is failed state or degraded state then s disables f\n- if s is sub-optimal operating state then s impacts f\n- p occurs at some time tp: tp finishes s and tp starts s2\n- p is is prescribed by some part of a preventative maintenance strategy ps",
+        "type" : "label"
+      } ],
+      "naturalLanguageDefinition" : [ {
+        "identifier" : "naturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "A task involving testing and adjustment of instrumentation to assess and restore function",
+        "type" : "label"
+      } ],
+      "semi-formalNaturalLanguageDefinition" : [ {
+        "identifier" : "semi-formalNaturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "A BFO:Process performed on equipment instrumentation, to estimate the ability of the instrumentation and restore if needed.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "calibrate",
+      "undefined" : "calibrate"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#assemble",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "develop",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "rebuild",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "attach",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "build",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "pre fabricate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "manufacture",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "set up",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "make",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "make up",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "fabricate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "create",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "assemble",
+      "undefined" : "assemble"
+    },
+    "comment" : {
+      "undefined" : "insert"
+    },
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#perform",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "complete",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "prepare",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "collect",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "carry",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "work",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "rework",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "conduct",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "compile",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "carry out",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "generate",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "perform",
+      "undefined" : "perform"
+    },
+    "id" : "7",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#teamwork",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "supply",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "train",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "follow up",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "support",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "provide",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "call out",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "attend",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "assist",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "call",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "teamwork",
+      "undefined" : "teamwork"
+    },
+    "id" : "8",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#move",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "remove",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "pack up",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "pop out",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "rearrange",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "locate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reroute",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "unbog",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "raise",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "drop down",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reposition",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "position",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "life",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "put",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "push",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "mobilise",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "drop",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "relocate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "pull",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "erect",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "return",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "suspend",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "transfer",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "guide",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "demobilise",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "move",
+      "undefined" : "move"
+    },
+    "id" : "11",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000015",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BFO_0000015"
+    },
+    "subClasses" : [ "34", "2", "4" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#diagnose",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "test",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "fault find",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "troubleshooot",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "investigate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "check out",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "assess",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "check",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "identify",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "detect",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "verify",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-test",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "analyse",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "find",
+        "type" : "label"
+      } ],
+      "elucidation" : [ {
+        "identifier" : "elucidation",
+        "language" : "undefined",
+        "value" : "p is an diagnose activity = \nDef p is a process and there exists a material artifact m that has a function (or capability) f and participates in p at some time. The following is also true:\n- m has state at some time some degraded state or failed state state s\n- f is disabled by s\n- s is observed in some observation process",
+        "type" : "label"
+      } ],
+      "naturalLanguageDefinition" : [ {
+        "identifier" : "naturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "The cause of failure, or degradation, is investigated but no maintenance action performed, or action is deferred. ",
+        "type" : "label"
+      } ],
+      "semi-formalNaturalLanguageDefinition" : [ {
+        "identifier" : "semi-formalNaturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "A BFO:Process, performed on observation of an equipment failure or degradation, to estimate the ability of an item to perform its required function.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "diagnose",
+      "undefined" : "diagnose"
+    },
+    "id" : "32",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#replace",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "transition",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-instate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "install",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "remove",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "fit",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reattach",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "swap",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "replace",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "connect",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "change over",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reinstate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "change out",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-install",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "switch",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "change",
+        "type" : "label"
+      } ],
+      "elucidation" : [ {
+        "identifier" : "elucidation",
+        "language" : "undefined",
+        "value" : "p is a replace activity =\nDef. p is a process and there exists material artifacts a and b such that a and b participate in p at some\ntime. The following is also true:\n- a has a function f and b has a function f2.\n- f and f2 are of type F\n- a is a continuant part of a system s at time t and b is not\n- b is a continuant part of a system s at time t2 and a is not\n- p occurs at some time tp\n- t precedes t2, p finishes t and p starts t2.",
+        "type" : "label"
+      } ],
+      "naturalLanguageDefinition" : [ {
+        "identifier" : "naturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "Replacement of an item by a new or refurbished item of the same type and make",
+        "type" : "label"
+      } ],
+      "semi-formalNaturalLanguageDefinition" : [ {
+        "identifier" : "semi-formalNaturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "A BFO: Process in which one item is removed and another item with the same required function is installed in its place.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "replace",
+      "undefined" : "replace"
+    },
+    "id" : "23",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#service",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "scan",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "maintain",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "lubricate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "fill",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "wash",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-fill",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "clean",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "purge",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "sample",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "rotate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "hose-out",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "grease",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-charge",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "drain",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "charge",
+        "type" : "label"
+      } ],
+      "elucidation" : [ {
+        "identifier" : "elucidation",
+        "language" : "undefined",
+        "value" : "p is a service activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some operating state s and operating state s2\n- p occurs at some time tp: tp finishes s and tp starts s2\n- p is is prescribed by some part of a preventative maintenance strategy ps",
+        "type" : "label"
+      } ],
+      "naturalLanguageDefinition" : [ {
+        "identifier" : "naturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "Periodic service task: not normally dismantling of the item.",
+        "type" : "label"
+      } ],
+      "semi-formalNaturalLanguageDefinition" : [ {
+        "identifier" : "semi-formalNaturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "A BFO:Process, aligned with a preventative maintenance strategy, involving a change of state in an item that involves no change in the ability of the item",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "service",
+      "undefined" : "service"
+    },
+    "id" : "24",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#modify",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "correct",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reweld",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "clip",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "cut off",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "cut",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "laminate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "trim",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "upgrade",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "resplice",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "refurbish",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "buff",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "improve",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "modify",
+      "undefined" : "modify"
+    },
+    "id" : "10",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#MaintenanceActivity",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaintenanceActivity",
+      "undefined" : "Maintenance Activity"
+    },
+    "subClasses" : [ "14", "1", "32", "29", "23", "24", "19" ],
+    "id" : "2",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#adjust",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "adjust",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "top up",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "tilt",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-adjust",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "realign",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "review",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "torque",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "guide",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "tune",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "fill",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "discharge",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "turn",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "straighten",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "position",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "amend",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "free-up",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-align",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "confirm",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "correct",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "add",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "align",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "train",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reposition",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "regulate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "track",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "detension",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "tighten",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "set",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "tension",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "program",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "top-up",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "shim",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "readjust",
+        "type" : "label"
+      } ],
+      "elucidation" : [ {
+        "identifier" : "elucidation",
+        "language" : "undefined",
+        "value" : "p is an adjust activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some sub-optimal operating state s1 and optimal operating state s2\n- f is impacted by s1\n- p occurs at some time tp\n- tp finishes s1 and p starts s2",
+        "type" : "label"
+      } ],
+      "naturalLanguageDefinition" : [ {
+        "identifier" : "naturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "Bringing any out of tolerance condition into tolerance.",
+        "type" : "label"
+      } ],
+      "semi-formalNaturalLanguageDefinition" : [ {
+        "identifier" : "semi-formalNaturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "A BFO:Process involving a change of state in an item that improves the ability of an item to perform its\nfunction or fulfil its capabilities without requiring restoration of the function/capability",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "adjust",
+      "undefined" : "adjust"
+    },
+    "id" : "14",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#UnspecifiedActivity",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnspecifiedActivity",
+      "undefined" : "Unspecified Activity"
+    },
+    "union" : [ "2", "4" ],
+    "comment" : {
+      "undefined" : "Describes a maintenance or supporting activity where we are not sure of its classification"
+    },
+    "attributes" : [ "union" ],
+    "id" : "34",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#inspect",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "thickness test",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "ndt",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "thermography",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "monitor",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "read",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "crack test",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "measure",
+        "type" : "label"
+      } ],
+      "elucidation" : [ {
+        "identifier" : "elucidation",
+        "language" : "undefined",
+        "value" : "p is an inspect activity =\nDef p is a process and there exists a material artifact m that has a function f and participates in p at some\ntime. The following is also true:\n- m has state at some time some state s\n- s is observed in some observation process o\n- p is prescribed by some part of a preventative maintenance strategy ps",
+        "type" : "label"
+      } ],
+      "naturalLanguageDefinition" : [ {
+        "identifier" : "naturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "Periodic, careful scrutiny of an item carried out with or without dismantling.",
+        "type" : "label"
+      } ],
+      "semi-formalNaturalLanguageDefinition" : [ {
+        "identifier" : "semi-formalNaturalLanguageDefinition",
+        "language" : "undefined",
+        "value" : "A BFO:Process, aligned with a preventative maintenance strategy, to estimate the ability of an item to perform its required function.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inspect",
+      "undefined" : "inspect"
+    },
+    "id" : "29",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/maintenance-activity#operate",
+    "baseIri" : "http://www.semanticweb.org/maintenance-activity",
+    "instances" : 0,
+    "annotations" : {
+      "synonym" : [ {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "trip",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "run",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "disable",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reset",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "launch",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "startup",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "activate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reactivate",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "re-run",
+        "type" : "label"
+      }, {
+        "identifier" : "synonym",
+        "language" : "undefined",
+        "value" : "reterminate",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "operate",
+      "undefined" : "operate"
+    },
+    "id" : "12",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "4",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "4",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "4",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "4",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "23",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "24",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "24",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "24",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "23",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "23",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "19",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "24",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "19",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "29",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "29",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "19",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "23",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "24",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "32",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "29",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "19",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "23",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "1",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "32",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "5",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "2",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "5",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "2",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "2",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "2",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "2",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  } ]
+}
